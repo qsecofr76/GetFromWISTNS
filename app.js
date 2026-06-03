@@ -317,7 +317,7 @@ async function loadCatalog() {
                     </p>
                     <p style="font-size: 0.8rem; font-weight: 600; margin-bottom: 6px; color: var(--neon-cyan);">Risoluzione rapida - Avvia un server web locale:</p>
                     <ol style="font-size: 0.8rem; margin-left: 20px; margin-bottom: 12px; line-height: 1.5; color: var(--text-secondary);">
-                        <li>Apri il terminale (o PowerShell) nella cartella del progetto: <code>C:\\ProgettiVari\\GetFromWISTNS</code></li>
+                        <li>Apri il terminale (o PowerShell) nella cartella del progetto: <code>C:\\ProgettiVari\\SupernovaHunter</code></li>
                         <li>Esegui il comando Python: <code style="background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px; color: #fff; font-family: monospace;">python -m http.server 8000</code></li>
                         <li>Oppure il comando Node: <code style="background: rgba(0,0,0,0.5); padding: 2px 6px; border-radius: 4px; color: #fff; font-family: monospace;">npx http-server -p 8000</code></li>
                         <li>Apri nel browser l'indirizzo: <a href="http://localhost:8000" target="_blank" style="color: var(--neon-cyan); text-decoration: underline; font-weight: 600;">http://localhost:8000</a></li>

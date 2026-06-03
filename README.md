@@ -10,8 +10,8 @@ Il sistema combina un **backend di prelievo automatizzato** (Python + GitHub Act
 
 Il portale è pubblicato e consultabile direttamente su **GitHub Pages** tramite i seguenti link:
 
-* 📡 **[Radar Tracker (Mappa Celeste)](https://qsecofr76.github.io/GetFromWISTNS/)**: Visualizzazione radar Alt-Azimutale in tempo reale delle supernove visibili dalla propria posizione.
-* 🔍 **[Ricerca Area Celeste](https://qsecofr76.github.io/GetFromWISTNS/search.html)**: Ricerca per coordinate o nome oggetto (Messier, NGC, IC, stelle) con calcolo delle supernove nel raggio e integrazione con il Minor Planet Center (MPC) per individuare asteroidi (Mag < 20).
+* 📡 **[Radar Tracker (Mappa Celeste)](https://qsecofr76.github.io/SupernovaHunter/)**: Visualizzazione radar Alt-Azimutale in tempo reale delle supernove visibili dalla propria posizione.
+* 🔍 **[Ricerca Area Celeste](https://qsecofr76.github.io/SupernovaHunter/search.html)**: Ricerca per coordinate o nome oggetto (Messier, NGC, IC, stelle) con calcolo delle supernove nel raggio e integrazione con il Minor Planet Center (MPC) per individuare asteroidi (Mag < 20).
 
 ---
 
