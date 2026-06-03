@@ -562,13 +562,21 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
 
     const mpcUrl = `https://minorplanetcenter.net/cgi-bin/mpcheck.cgi?year=${year}&month=${month}&day=${dayStr}&which=pos&ra=${encodeURIComponent(raStr)}&decl=${encodeURIComponent(decStr)}&TextArea=&radius=${radiusArcmin}&limit=${limitMag}&oc=500&sort=d&mot=h&tmot=s&pdes=u&needed=f&ps=n&type=p`;
     
+    // Update debug panel URL
+    const debugUrlEl = document.getElementById("debugMpcUrl");
+    if (debugUrlEl) debugUrlEl.value = mpcUrl;
+
     const proxyUrl = `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(mpcUrl)}`;
     
     try {
         const response = await fetch(proxyUrl);
-        if (!response.ok) throw new Error("MPC Query failed");
+        if (!response.ok) throw new Error(`MPC Query failed (HTTP ${response.status})`);
         
         const html = await response.text();
+        
+        // Update debug panel response HTML
+        const debugRespEl = document.getElementById("debugMpcResponse");
+        if (debugRespEl) debugRespEl.value = html;
         
         // Check if the MPC returned its WebCS validation error
         if (html.includes("Error from WebCS Script") || html.includes("Invalid data")) {
@@ -583,14 +591,20 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
     } catch (e) {
         console.error("CORS MPC fetch failed, showing fallback redirection options.", e);
         
+        // Update debug panel with error message
+        const debugRespEl = document.getElementById("debugMpcResponse");
+        if (debugRespEl) {
+            debugRespEl.value = `ERRORE COLLEGAMENTO / RISPOSTA:\n${e.message || e.toString()}\n\nControlla se l'URL sopra funziona direttamente visitandolo in un'altra scheda.`;
+        }
+
         // Show fallback UI
         document.getElementById("mpcFallbackContainer").style.display = "block";
         document.getElementById("asteroidResultsBody").innerHTML = `
             <tr>
                 <td colspan="8" class="table-placeholder" style="color: var(--neon-red);">
-                    ❌ Impossibile caricare direttamente i dati MPC dal browser (blocco CORS, timeout o errore di validazione).<br>
-                    Usa il modulo arancione visualizzato qui sotto per consultare MPC in una nuova scheda.<br>
-                    <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace; display: inline-block; margin-top: 8px;">Dettaglio Errore: ${e.message || e.toString()}</span>
+                     ❌ Impossibile caricare direttamente i dati MPC dal browser (blocco CORS, timeout o errore di validazione).<br>
+                     Usa il modulo arancione visualizzato qui sotto per consultare MPC in una nuova scheda.<br>
+                     <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace; display: inline-block; margin-top: 8px;">Dettaglio Errore: ${e.message || e.toString()}</span>
                 </td>
             </tr>
         `;
