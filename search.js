@@ -459,9 +459,13 @@ function updateBannerInfo(coords, radius, date) {
     const summary = document.getElementById("searchSummaryText");
     
     const formattedDate = date.toUTCString();
+    const aladinTarget = `${coords.ra} ${coords.dec}`;
+    const aladinUrl = `https://aladin.cds.unistra.fr/AladinLite/?target=${encodeURIComponent(aladinTarget)}&fov=${radius}&survey=P%2FDSS2%2Fcolor`;
+    
     summary.innerHTML = `
         Target J2000: <strong>RA: ${formatRA(coords.ra)} (${coords.ra.toFixed(3)}°)</strong> | 
-        <strong>Dec: ${formatDec(coords.dec)} (${coords.dec.toFixed(3)}°)</strong><br>
+        <strong>Dec: ${formatDec(coords.dec)} (${coords.dec.toFixed(3)}°)</strong>
+        <a href="${aladinUrl}" target="_blank" class="btn-aladin-inline">🌌 Aladin Lite</a><br>
         Raggio: <strong>${radius}°</strong> | Data Ricerca: <strong>${formattedDate}</strong>
     `;
     banner.className = "info-banner";
