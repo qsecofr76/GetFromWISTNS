@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernova Hunter - Real-time Sky Visibility Tracker</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cosmos-bg"></div>
+    <div class="stars-overlay"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-logo-container">
+                <a href="https://www.astrofilipontedipiave.it" target="_blank" class="brand-logo-link">
+                    <img src="LogoAstrofili.png" alt="Logo Astrofili Ponte di Piave" class="brand-logo-img">
+                </a>
+                <div class="header-logo">
+                    <div class="logo-glow"></div>
+                    <span class="logo-icon">✦</span>
+                    <h1>SUPERNOVA HUNTER</h1>
+                </div>
+            </div>
+            <p class="header-subtitle">Rilevatore in tempo reale di Supernove visibili nel cielo notturno (Dati ufficiali WIS-TNS)</p>
+            <div class="header-dedication">
+                Dedicato alla memoria di <strong class="dedication-highlight">Paolo Campaner</strong>, amico indimenticato, appassionato scopritore di supernove e fondatore del gruppo <a href="https://www.astrofilipontedipiave.it" target="_blank" class="dedication-link">"Astrofili Ponte di Piave"</a>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item active">
+                    <span>📡</span> Radar Tracker
+                </a>
+                <a href="search.html" class="nav-item">
+                    <span>🔍</span> Ricerca Area Celeste
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main Layout Grid -->
+        <main class="app-grid">
+            
+            <!-- Left Column: Controls & Celestial Radar -->
+            <section class="grid-left">
+                
+                <!-- Configuration Palette (Pannello Configurazione) -->
+                <div class="card glass-card config-panel" id="configPanel">
+                    <div class="card-header">
+                        <h2>⚙️ Configurazione Osservatore</h2>
+                        <span class="badge badge-info" id="gpsStatus">GPS Pronto</span>
+                    </div>
+                    <form id="configForm" class="config-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="lat">Latitudine (°)</label>
+                                <input type="number" id="lat" step="0.0001" min="-90" max="90" required placeholder="es. 45.464">
+                            </div>
+                            <div class="form-group">
+                                <label for="lon">Longitudine (°)</label>
+                                <input type="number" id="lon" step="0.0001" min="-180" max="180" required placeholder="es. 9.189">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="obsDate">Data di Osservazione</label>
+                                <input type="date" id="obsDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="obsTime">Ora Inizio</label>
+                                <input type="time" id="obsTime" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="maxMag">Magnitudine Limite (Mag <)</label>
+                                <input type="number" id="maxMag" step="0.1" min="1" max="25" value="19.0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="minAlt">Altezza Minima Orizzonte (°)</label>
+                                <input type="number" id="minAlt" step="1" min="0" max="90" value="10" required>
+                            </div>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" id="btnGps" class="btn btn-secondary">
+                                <span class="icon">📍</span> Rileva GPS
+                            </button>
+                            <button type="button" id="btnTonight" class="btn btn-secondary">
+                                <span class="icon">🌃</span> Stasera (Buio)
+                            </button>
+                            <button type="submit" id="btnApply" class="btn btn-primary">
+                                <span class="icon">🔭</span> Applica e Calcola
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Celestial Sky Map (Radar Celeste) -->
+                <div class="card glass-card radar-card">
+                    <div class="card-header">
+                        <h2>🌌 Mappa Celeste (Radar, Mag &lt; 17.5)</h2>
+                        <span class="badge badge-purple" id="radarTimeLabel">T + 0h (Inizio)</span>
+                    </div>
+                    <div class="radar-container">
+                        <div class="radar-compass">
+                            <span class="compass-label north">N</span>
+                            <span class="compass-label east">E</span>
+                            <span class="compass-label south">S</span>
+                            <span class="compass-label west">W</span>
+                            <canvas id="skyRadar" width="340" height="340"></canvas>
+                        </div>
+                        
+                        <!-- Radar Legend -->
+                        <div class="radar-legend">
+                            <div class="legend-item"><span class="dot sn-type-ia"></span> SN Ia</div>
+                            <div class="legend-item"><span class="dot sn-type-ii"></span> SN II</div>
+                            <div class="legend-item"><span class="dot sn-type-other"></span> Altro Transiente</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Time Scrubbing Slider -->
+                    <div class="time-scrubber">
+                        <div class="slider-header">
+                            <label for="timeSlider">Scorri il tempo nella finestra di 6 ore:</label>
+                            <span id="sliderValue" class="slider-val">Ora Inizio (T + 0h)</span>
+                        </div>
+                        <input type="range" id="timeSlider" min="0" max="6" step="0.25" value="0">
+                        <div class="slider-ticks">
+                            <span>T+0h</span>
+                            <span>T+1.5h</span>
+                            <span>T+3h</span>
+                            <span>T+4.5h</span>
+                            <span>T+6h</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- Right Column: Results & Tables -->
+            <section class="grid-right">
+                
+                <!-- Live Info Banner -->
+                <div class="info-banner" id="infoBanner">
+                    <div class="banner-glow"></div>
+                    <div class="banner-content">
+                        <div class="banner-title-group">
+                            <span class="pulse-icon">📡</span>
+                            <h3>Stato Osservativo Notturno</h3>
+                        </div>
+                        <p id="obsSummaryText">Caricamento delle coordinate dell'osservatore in corso...</p>
+                    </div>
+                </div>
+
+                <!-- Supernovae Results List -->
+                <div class="card glass-card results-card">
+                    <div class="card-header">
+                        <div class="header-title-wrapper">
+                            <h2>☄️ Supernove Visibili nelle prossime 6 Ore</h2>
+                            <span class="count-badge" id="resultsCount">0 trovate</span>
+                        </div>
+                        <div class="search-box">
+                            <input type="text" id="tableSearch" placeholder="Cerca per SN, costellazione, tipo...">
+                        </div>
+                    </div>
+                    
+                    <!-- Results Table Wrapper -->
+                    <div class="table-wrapper">
+                        <table class="supernovae-table" id="snTable">
+                            <thead>
+                                <tr>
+                                    <th>SN</th>
+                                    <th>Tipo</th>
+                                    <th>Brillantezza (Mag)</th>
+                                    <th>Costellazione</th>
+                                    <th>Galassia</th>
+                                    <th>Altezza Attuale / Peak</th>
+                                    <th>Direzione (Azimut)</th>
+                                    <th>Dati Fisici (RA/Dec)</th>
+                                    <th>Scopritore</th>
+                                    <th>Scoperta</th>
+                                </tr>
+                            </thead>
+                            <tbody id="snTableBody">
+                                <!-- Dynamic Content -->
+                                <tr>
+                                    <td colspan="10" class="table-placeholder">
+                                        <div class="loader"></div>
+                                        <p>Caricamento del catalogo in corso...</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </section>
+            
+        </main>
+        
+        <!-- Footer -->
+        <footer class="app-footer-bar">
+            <p>Generato da **Supernova Hunter** | Database aggiornato via GitHub Actions | <span id="lastUpdateText">Ultimo aggiornamento: in caricamento...</span></p>
+        </footer>
+    </div>
+
+    <!-- Detailed Overlay Modal -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-header">
+                <h2 id="modalSnName">SN 2026xyz</h2>
+                <span class="badge" id="modalSnType">SN Ia</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-grid">
+                    <div class="info-block">
+                        <span class="label">Costellazione</span>
+                        <span class="value" id="modalConstellation">Ursa Major</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Magnitudine Scoperta</span>
+                        <span class="value" id="modalMag">16.5</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Filtro Rilevazione</span>
+                        <span class="value" id="modalFilter">Clear (g-ZTF)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Redshift (z)</span>
+                        <span class="value" id="modalRedshift">0.015</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Ascensione Retta</span>
+                        <span class="value" id="modalRa">12h 34m 56s (188.74°)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Declinazione</span>
+                        <span class="value" id="modalDec">+16° 28' 14" (16.47°)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Gruppo Scopritore</span>
+                        <span class="value" id="modalGroup">ATLAS collaboration</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Data di Rilevazione</span>
+                        <span class="value" id="modalDate">2026-05-18 09:31:51</span>
+                    </div>
+                </div>
+                
+                <!-- Visibility Timeline inside Modal -->
+                <div class="modal-visibility-tracker">
+                    <h3>📈 Finestra Visibilità (Prossime 6 Ore)</h3>
+                    <div class="visibility-timeline" id="modalTimeline">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary">Apri scheda su WIS-TNS</a>
+                <a href="#" target="_blank" id="btnAladinLink" class="btn btn-secondary" style="background: rgba(34, 211, 238, 0.2); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); text-shadow: 0 0 5px var(--neon-cyan); font-weight: 600;">🌌 Aladin Lite</a>
+                <button type="button" class="btn btn-secondary" id="btnModalClose">Chiudi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

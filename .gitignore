@@ -1,0 +1,9 @@
+# Ignora il file con le credenziali segrete
+.env
+
+# Ignora la cache di Python
+__pycache__/
+*.pyc
+
+# Ignora i file generati localmente (opzionale, ma consigliato se gestito da GitHub Actions)
+# supernovae.json

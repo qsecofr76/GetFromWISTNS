@@ -1,0 +1,4 @@
+requests>=2.28.0
+astronomy-engine>=2.1.0
+pyongc>=1.2.2
+PySocks>=1.7.1

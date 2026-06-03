@@ -1,0 +1,63 @@
+name: Daily Supernovae Data Update
+
+on:
+  schedule:
+    # Run every day at 18:00 UTC (20:00 Italian Time)
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+    # Allows manual triggering from the GitHub Actions tab
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required to allow GitHub Actions to commit and push changes
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip' # Speeds up subsequent runs by caching pip downloads
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Install and Start Tor Proxy
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tor
+          sudo service tor start
+          # Wait for Tor circuit to establish
+          sleep 4
+
+      - name: Run Fetcher and Parser Script
+        env:
+          TNS_BOT_ID: ${{ secrets.TNS_BOT_ID }}
+          TNS_BOT_NAME: ${{ secrets.TNS_BOT_NAME }}
+          TNS_API_KEY: ${{ secrets.TNS_API_KEY }}
+          DAYS_LIMIT: 180
+        run: python scripts/update_data.py
+
+      - name: Commit and Push Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Stage the generated supernovae.json file
+          git add supernovae.json
+          
+          # Only commit and push if the file actually changed
+          if ! git diff --cached --exit-code --quiet; then
+            echo "[*] Changes detected in supernovae.json. Committing..."
+            git commit -m "Auto-update supernovae data [skip ci]"
+            git push
+            echo "[+] Data successfully updated and pushed!"
+          else
+            echo "[*] No changes detected in supernovae.json. Skipping commit."
+          fi

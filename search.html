@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supernova & Asteroid Search - Celestial Area Lookup</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cosmos-bg"></div>
+    <div class="stars-overlay"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-logo-container">
+                <a href="https://www.astrofilipontedipiave.it" target="_blank" class="brand-logo-link">
+                    <img src="LogoAstrofili.png" alt="Logo Astrofili Ponte di Piave" class="brand-logo-img">
+                </a>
+                <div class="header-logo">
+                    <div class="logo-glow"></div>
+                    <span class="logo-icon">✦</span>
+                    <h1>SUPERNOVA HUNTER</h1>
+                </div>
+            </div>
+            <p class="header-subtitle">Rilevatore e motore di ricerca celeste per Transienti ed Asteroidi</p>
+            
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-item">
+                    <span>📡</span> Radar Tracker
+                </a>
+                <a href="search.html" class="nav-item active">
+                    <span>🔍</span> Ricerca Area Celeste
+                </a>
+            </nav>
+        </header>
+
+        <!-- Main Layout Grid -->
+        <main class="app-grid">
+            
+            <!-- Left Column: Search Form & Target Visualizer -->
+            <section class="grid-left">
+                
+                <!-- Target Configuration Card -->
+                <div class="card glass-card">
+                    <div class="card-header">
+                        <h2>🔍 Parametri di Ricerca</h2>
+                    </div>
+                    
+                    <form id="searchForm" class="config-form">
+                        <!-- DSO Text Search -->
+                        <div class="form-group">
+                            <label for="dsoSearch">Cerca Oggetto (Messier, NGC, IC, Stelle...)</label>
+                            <div class="search-container">
+                                <input type="text" id="dsoSearch" placeholder="es. M31, NGC 7000, Vega..." autocomplete="off">
+                                <div id="searchSuggestions" class="suggestions-list" style="display: none;"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Epoch Coordinate System Toggle -->
+                        <div class="form-group">
+                            <label>Sistema di Coordinate (Epoca)</label>
+                            <div class="radio-group-container">
+                                <input type="radio" name="coordEpoch" id="epochJ2000" value="J2000" checked>
+                                <label for="epochJ2000" class="radio-btn-label">J2000 (Standard)</label>
+                                
+                                <input type="radio" name="coordEpoch" id="epochJNow" value="JNow">
+                                <label for="epochJNow" class="radio-btn-label">JNow (Data di Ricerca)</label>
+                            </div>
+                        </div>
+
+                        <!-- RA and Dec Inputs -->
+                        <div class="form-group">
+                            <label for="inputRA">Ascensione Retta (RA) — [es. 21h 01m 07s o 315.28]</label>
+                            <input type="text" id="inputRA" required placeholder="es. 21h 01m 07s o 315.28">
+                        </div>
+                        <div class="form-group" style="margin-top: 12px;">
+                            <label for="inputDec">Declinazione (Dec) — [es. +41° 16' 07&quot; o 41.269]</label>
+                            <input type="text" id="inputDec" required placeholder="es. +41° 16' 07&quot; o 41.269">
+                        </div>
+
+                        <!-- Date and Time of Observation (for Precession & MPC calculations) -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="searchDate">Data Osservazione (UT)</label>
+                                <input type="date" id="searchDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="searchTime">Ora Osservazione (UT)</label>
+                                <input type="time" id="searchTime" required>
+                            </div>
+                        </div>
+
+                        <!-- Radius and Limiting Mag -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="searchRadius">Raggio di Ricerca (degr.)</label>
+                                <input type="number" id="searchRadius" step="0.1" min="0.1" max="5.0" value="1.5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="limitMag">Mag. Asteroidi Limite</label>
+                                <input type="number" id="limitMag" step="0.5" min="10" max="25" value="20.0" required>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn btn-search">
+                                <span>🔭</span> Avvia Ricerca Area
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Coordinates Target Mini-Map Visualizer -->
+                <div class="card glass-card coord-viz-card">
+                    <div class="card-header" style="width: 100%;">
+                        <h2>🎯 Campo di Vista (FOV)</h2>
+                    </div>
+                    <div class="coord-canvas-container">
+                        <canvas id="coordVisualizer" width="300" height="300"></canvas>
+                    </div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 8px;">
+                        Il mirino mostra l'area di ricerca selezionata (Raggio: <span id="fovRadiusLabel">1.5</span>°).
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- Right Column: Results Sections -->
+            <section class="grid-right">
+                
+                <!-- Live Search Summary Banner -->
+                <div class="info-banner" id="searchInfoBanner">
+                    <div class="banner-glow"></div>
+                    <div class="banner-content">
+                        <div class="banner-title-group">
+                            <span class="pulse-icon">🔍</span>
+                            <h3>Stato Ricerca Celeste</h3>
+                        </div>
+                        <p id="searchSummaryText">Inserisci le coordinate o cerca un oggetto celeste per iniziare.</p>
+                    </div>
+                </div>
+
+                <!-- Supernovae Results Table Card -->
+                <div class="card glass-card results-card">
+                    <div class="card-header">
+                        <div class="header-title-wrapper">
+                            <h2>🌌 Supernove Rilevate nell'Area</h2>
+                            <span class="count-badge" id="snCountBadge">0 trovate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-wrapper">
+                        <table class="supernovae-table">
+                            <thead>
+                                <tr>
+                                    <th>Supernova</th>
+                                    <th>Tipo</th>
+                                    <th>Mag. Scoperta</th>
+                                    <th>Costellazione</th>
+                                    <th>Galassia Ospite</th>
+                                    <th>Distanza Centro</th>
+                                    <th>Dati Fisici (RA/Dec)</th>
+                                    <th>Data Scoperta</th>
+                                </tr>
+                            </thead>
+                            <tbody id="snResultsBody">
+                                <tr>
+                                    <td colspan="8" class="table-placeholder">
+                                        Nessuna ricerca effettuata. Inserisci i parametri a sinistra.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Minor Planets / Asteroids Results Table Card -->
+                <div class="card glass-card results-card" style="margin-top: 10px;">
+                    <div class="card-header">
+                        <div class="header-title-wrapper">
+                            <h2>☄️ Asteroidi Rilevati nell'Area (MPC)</h2>
+                            <span class="count-badge badge-asteroid" id="asteroidCountBadge">0 trovati</span>
+                        </div>
+                    </div>
+                    
+                    <div class="table-wrapper">
+                        <table class="supernovae-table">
+                            <thead>
+                                <tr>
+                                    <th>Asterode / Designazione</th>
+                                    <th>Magnitudine (V)</th>
+                                    <th>Distanza Centro</th>
+                                    <th>Offset RA</th>
+                                    <th>Offset Dec</th>
+                                    <th>Movimento RA</th>
+                                    <th>Movimento Dec</th>
+                                    <th>Dettagli / Orbita</th>
+                                </tr>
+                            </thead>
+                            <tbody id="asteroidResultsBody">
+                                <tr>
+                                    <td colspan="8" class="table-placeholder">
+                                        Nessuna ricerca effettuata. Inserisci i parametri a sinistra.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Fallback Form for MPC Redirect -->
+                <div id="mpcFallbackContainer" class="card glass-card" style="display: none; border-color: rgba(245, 158, 11, 0.3);">
+                    <div style="display: flex; gap: 12px; align-items: flex-start;">
+                        <span style="font-size: 1.5rem;">⚠️</span>
+                        <div>
+                            <h4 style="color: var(--neon-gold); font-family: var(--font-display); margin-bottom: 4px;">Problema con l'interrogazione diretta dell'MPC</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px;">
+                                La richiesta diretta ai server del Minor Planet Center è stata bloccata (CORS o timeout). Puoi comunque produrre la lista ufficiale compilando la richiesta ufficiale in una nuova finestra.
+                            </p>
+                            
+                            <!-- Hidden form to submit to MPC -->
+                            <form action="https://minorplanetcenter.net/cgi-bin/mpcheck.cgi" method="POST" target="_blank" id="mpcRedirectForm">
+                                <input type="hidden" name="year" id="fallbackYear">
+                                <input type="hidden" name="month" id="fallbackMonth">
+                                <input type="hidden" name="day" id="fallbackDay">
+                                <input type="hidden" name="which" value="pos">
+                                <input type="hidden" name="ra" id="fallbackRA">
+                                <input type="hidden" name="decl" id="fallbackDec">
+                                <input type="hidden" name="radius" id="fallbackRadius">
+                                <input type="hidden" name="limit" id="fallbackLimit">
+                                <input type="hidden" name="oc" value="500">
+                                <input type="hidden" name="sort" value="d">
+                                <input type="hidden" name="mot" value="h">
+                                <input type="hidden" name="tmot" value="s">
+                                <input type="hidden" name="pdes" value="u">
+                                <input type="hidden" name="needed" value="f">
+                                <input type="hidden" name="type" value="p">
+                                
+                                <button type="submit" class="btn btn-secondary" style="border-color: var(--neon-gold); color: var(--neon-gold); background: rgba(245, 158, 11, 0.1);">
+                                    🔗 Apri Ricerca su Minor Planet Center (Nuova Scheda)
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+        </main>
+        
+        <!-- Footer -->
+        <footer class="app-footer-bar">
+            <p>Generato da **Supernova Hunter** | Integrazione con MPC | Dedicato a **Paolo Campaner**</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="search.js"></script>
+</body>
+</html>
