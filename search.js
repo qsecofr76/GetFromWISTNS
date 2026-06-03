@@ -225,14 +225,31 @@ function triggerCoordinatesUpdate() {
 function parseRA(raInput) {
     raInput = raInput.trim();
     if (isNaN(raInput)) {
-        // Match sexagesimal hours: e.g. 00h 42m 44.3s or 00:42:44.3
-        const regex = /(?:(\d+)\s*[h:]\s*)?(?:(\d+)\s*[m:]\s*)?(\d+(?:\.\d+)?)\s*s?/i;
-        const match = raInput.match(regex);
-        if (match) {
-            const h = parseFloat(match[1] || 0);
-            const m = parseFloat(match[2] || 0);
-            const s = parseFloat(match[3] || 0);
-            return (h + m / 60 + s / 3600) * 15; // convert to degrees
+        // First check if there are explicit labels (h, m, s)
+        const hasH = /h/i.test(raInput);
+        const hasM = /m/i.test(raInput);
+        const hasS = /s/i.test(raInput);
+
+        if (hasH || hasM || hasS) {
+            let h = 0, m = 0, s = 0;
+            const hMatch = raInput.match(/(\d+(?:\.\d+)?)\s*h/i);
+            const mMatch = raInput.match(/(\d+(?:\.\d+)?)\s*m/i);
+            const sMatch = raInput.match(/(\d+(?:\.\d+)?)\s*s/i);
+            if (hMatch) h = parseFloat(hMatch[1]);
+            if (mMatch) m = parseFloat(mMatch[1]);
+            if (sMatch) s = parseFloat(sMatch[1]);
+            if (hMatch || mMatch || sMatch) {
+                return (h + m / 60 + s / 3600) * 15; // convert to degrees
+            }
+        }
+
+        // If no explicit h/m/s labels, match by separator (colons or spaces)
+        const numbers = raInput.match(/(\d+(?:\.\d+)?)/g);
+        if (numbers && numbers.length > 0) {
+            const h = parseFloat(numbers[0] || 0);
+            const m = parseFloat(numbers[1] || 0);
+            const s = parseFloat(numbers[2] || 0);
+            return (h + m / 60 + s / 3600) * 15;
         }
     }
     return parseFloat(raInput);
@@ -241,14 +258,35 @@ function parseRA(raInput) {
 function parseDec(decInput) {
     decInput = decInput.trim();
     if (isNaN(decInput)) {
-        // Match sexagesimal degrees: e.g. +41° 16' 07.5" or -41:16:07.5
-        const regex = /([+-]?)\s*(?:(\d+)\s*[°d:]\s*)?(?:(\d+)\s*['m:]\s*)?(\d+(?:\.\d+)?)\s*"?/i;
-        const match = decInput.match(regex);
-        if (match) {
-            const sign = match[1] === '-' ? -1 : 1;
-            const d = parseFloat(match[2] || 0);
-            const m = parseFloat(match[3] || 0);
-            const s = parseFloat(match[4] || 0);
+        // Determine sign
+        const sign = decInput.startsWith('-') ? -1 : 1;
+        // Strip out the leading sign so it doesn't interfere with parsing numbers
+        const cleanInput = decInput.replace(/^[+-]\s*/, '');
+
+        // Check if there are explicit labels (°/d, ', ")
+        const hasD = /[°d]/i.test(cleanInput);
+        const hasM = /['m]/i.test(cleanInput);
+        const hasS = /["s]/i.test(cleanInput);
+
+        if (hasD || hasM || hasS) {
+            let d = 0, m = 0, s = 0;
+            const dMatch = cleanInput.match(/(\d+(?:\.\d+)?)\s*[°d]/i);
+            const mMatch = cleanInput.match(/(\d+(?:\.\d+)?)\s*['m]/i);
+            const sMatch = cleanInput.match(/(\d+(?:\.\d+)?)\s*["s]/i);
+            if (dMatch) d = parseFloat(dMatch[1]);
+            if (mMatch) m = parseFloat(mMatch[1]);
+            if (sMatch) s = parseFloat(sMatch[1]);
+            if (dMatch || mMatch || sMatch) {
+                return sign * (d + m / 60 + s / 3600);
+            }
+        }
+
+        // If no explicit labels, match by separator (colons, spaces, etc.)
+        const numbers = cleanInput.match(/(\d+(?:\.\d+)?)/g);
+        if (numbers && numbers.length > 0) {
+            const d = parseFloat(numbers[0] || 0);
+            const m = parseFloat(numbers[1] || 0);
+            const s = parseFloat(numbers[2] || 0);
             return sign * (d + m / 60 + s / 3600);
         }
     }
