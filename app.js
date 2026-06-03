@@ -148,6 +148,7 @@ let observerSettings = {
 // Canvas variables
 let radarCanvas;
 let radarCtx;
+let plottedRadarObjects = [];
 
 // --- INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
@@ -287,6 +288,40 @@ function parseUrlParams() {
 function initRadar() {
     radarCanvas = document.getElementById("skyRadar");
     radarCtx = radarCanvas.getContext("2d");
+    
+    // Canvas click event to open details modal of supernova
+    radarCanvas.addEventListener("click", (e) => {
+        const rect = radarCanvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        const clickedObj = plottedRadarObjects.find(obj => {
+            const dx = mouseX - obj.x;
+            const dy = mouseY - obj.y;
+            const threshold = Math.max(12, obj.size + 8);
+            return (dx * dx + dy * dy) <= (threshold * threshold);
+        });
+        
+        if (clickedObj) {
+            openModal(clickedObj.sn.objid);
+        }
+    });
+
+    // Hover effect (change cursor to pointer)
+    radarCanvas.addEventListener("mousemove", (e) => {
+        const rect = radarCanvas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mouseY = e.clientY - rect.top;
+        
+        const isHovering = plottedRadarObjects.some(obj => {
+            const dx = mouseX - obj.x;
+            const dy = mouseY - obj.y;
+            const threshold = Math.max(12, obj.size + 8);
+            return (dx * dx + dy * dy) <= (threshold * threshold);
+        });
+        
+        radarCanvas.style.cursor = isHovering ? "pointer" : "default";
+    });
 }
 
 // Load Supernovae Catalog JSON file
@@ -751,6 +786,9 @@ function drawRadar(offsetHours) {
     
     const checkDate = new Date(startDate.getTime() + offsetHours * 3600000);
     
+    // Reset plotted radar objects
+    plottedRadarObjects = [];
+    
     // Clear canvas
     radarCtx.clearRect(0, 0, radarCanvas.width, radarCanvas.height);
     
@@ -844,6 +882,9 @@ function drawRadar(offsetHours) {
             radarCtx.beginPath();
             radarCtx.arc(x, y, size, 0, 2 * Math.PI);
             radarCtx.fill();
+            
+            // Record plotted coordinates for click events
+            plottedRadarObjects.push({ x: x, y: y, size: size, sn: sn });
             
             // Add tiny label
             radarCtx.shadowBlur = 0;
