@@ -101,7 +101,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("searchTime").addEventListener("input", updateNavToRadar);
     updateNavToRadar();
 
-    // Populate initial visualizer
+    // Populate initial banner info and visualizer
+    updateBannerFromForm();
     drawTargetVisualizer([], []);
 });
 
@@ -137,7 +138,8 @@ function handleRadiusInput(e) {
     if (!isNaN(val)) {
         document.getElementById("fovRadiusLabel").innerText = val.toFixed(1);
         searchRadius = val;
-        drawTargetVisualizer([], []); // redraw background circle
+        updateBannerFromForm();
+        drawTargetVisualizer(lastMatchedSNe, lastMatchedAsteroids);
     }
 }
 
@@ -256,8 +258,22 @@ function triggerCoordinatesUpdate() {
     const parsed = getFormCoordinates();
     if (parsed) {
         targetCoords = parsed;
+        updateBannerFromForm();
         drawTargetVisualizer([], []);
     }
+}
+
+function updateBannerFromForm() {
+    const parsed = getFormCoordinates();
+    if (!parsed) return;
+    
+    const dateVal = document.getElementById("searchDate").value;
+    const timeVal = document.getElementById("searchTime").value;
+    const [y, mo, d] = dateVal.split("-").map(Number);
+    const [h, mi] = timeVal.split(":").map(Number);
+    const dateObj = new Date(Date.UTC(y, mo - 1, d, h, mi));
+    
+    updateBannerInfo(parsed, searchRadius, dateObj);
 }
 
 // --- COORDINATE PARSING UTILITIES ---
