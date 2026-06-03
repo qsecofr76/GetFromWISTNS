@@ -30,16 +30,16 @@
                     <h1>SUPERNOVA HUNTER</h1>
                 </div>
             </div>
-            <p class="header-subtitle">Rilevatore in tempo reale di Supernove visibili nel cielo notturno (Dati ufficiali WIS-TNS)</p>
-            <div class="header-dedication">
+            <p class="header-subtitle" data-i18n="header-subtitle-radar">Rilevatore in tempo reale di Supernove visibili nel cielo notturno (Dati ufficiali WIS-TNS)</p>
+            <div class="header-dedication" data-i18n="header-dedication">
                 Dedicato alla memoria di <strong class="dedication-highlight">Paolo Campaner</strong>, amico indimenticato, appassionato scopritore di supernove e fondatore del gruppo <a href="https://www.astrofilipontedipiave.it" target="_blank" class="dedication-link">"Astrofili Ponte di Piave"</a>
             </div>
             <!-- Navigation Menu -->
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item active">
+                <a href="index.html" class="nav-item active" data-i18n="menu-radar">
                     <span>📡</span> Radar Tracker
                 </a>
-                <a href="search.html" class="nav-item" id="navToSearch">
+                <a href="search.html" class="nav-item" id="navToSearch" data-i18n="menu-search">
                     <span>🔍</span> Ricerca Area Celeste
                 </a>
             </nav>
@@ -54,49 +54,49 @@
                 <!-- Configuration Palette (Pannello Configurazione) -->
                 <div class="card glass-card config-panel" id="configPanel">
                     <div class="card-header">
-                        <h2>⚙️ Configurazione Osservatore</h2>
-                        <span class="badge badge-info" id="gpsStatus">GPS Pronto</span>
+                        <h2 data-i18n="config-title">⚙️ Configurazione Osservatore</h2>
+                        <span class="badge badge-info" id="gpsStatus" data-i18n="gps-status-ready">GPS Pronto</span>
                     </div>
                     <form id="configForm" class="config-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="lat">Latitudine (°)</label>
+                                <label for="lat" data-i18n="label-lat">Latitudine (°)</label>
                                 <input type="number" id="lat" step="0.0001" min="-90" max="90" required placeholder="es. 45.464">
                             </div>
                             <div class="form-group">
-                                <label for="lon">Longitudine (°)</label>
+                                <label for="lon" data-i18n="label-lon">Longitudine (°)</label>
                                 <input type="number" id="lon" step="0.0001" min="-180" max="180" required placeholder="es. 9.189">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="obsDate">Data di Osservazione</label>
+                                <label for="obsDate" data-i18n="label-date">Data di Osservazione</label>
                                 <input type="date" id="obsDate" required>
                             </div>
                             <div class="form-group">
-                                <label for="obsTime">Ora Inizio</label>
+                                <label for="obsTime" data-i18n="label-time">Ora Inizio</label>
                                 <input type="time" id="obsTime" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="maxMag">Magnitudine Limite (Mag <)</label>
+                                <label for="maxMag" data-i18n="label-mag">Magnitudine Limite (Mag <)</label>
                                 <input type="number" id="maxMag" step="0.1" min="1" max="25" value="19.0" required>
                             </div>
                             <div class="form-group">
-                                <label for="minAlt">Altezza Minima Orizzonte (°)</label>
+                                <label for="minAlt" data-i18n="label-alt">Altezza Minima Orizzonte (°)</label>
                                 <input type="number" id="minAlt" step="1" min="0" max="90" value="10" required>
                             </div>
                         </div>
                         <div class="form-buttons">
-                            <button type="button" id="btnGps" class="btn btn-secondary">
-                                <span class="icon">📍</span> Rileva GPS
+                            <button type="button" id="btnGps" class="btn btn-secondary" data-i18n="btn-gps">
+                                📍 Rileva GPS
                             </button>
-                            <button type="button" id="btnTonight" class="btn btn-secondary">
-                                <span class="icon">🌃</span> Stasera (Buio)
+                            <button type="button" id="btnTonight" class="btn btn-secondary" data-i18n="btn-tonight">
+                                🌃 Stasera (Buio)
                             </button>
-                            <button type="submit" id="btnApply" class="btn btn-primary">
-                                <span class="icon">🔭</span> Applica e Calcola
+                            <button type="submit" id="btnApply" class="btn btn-primary" data-i18n="btn-apply">
+                                🔭 Applica e Calcola
                             </button>
                         </div>
                     </form>
@@ -105,7 +105,7 @@
                 <!-- Celestial Sky Map (Radar Celeste) -->
                 <div class="card glass-card radar-card">
                     <div class="card-header">
-                        <h2>🌌 Mappa Celeste (Radar, Mag &lt; 17.5)</h2>
+                        <h2 data-i18n="radar-title">🌌 Mappa Celeste (Radar, Mag &lt; 17.5)</h2>
                         <span class="badge badge-purple" id="radarTimeLabel">T + 0h (Inizio)</span>
                     </div>
                     <div class="radar-container">
@@ -128,7 +128,7 @@
                     <!-- Time Scrubbing Slider -->
                     <div class="time-scrubber">
                         <div class="slider-header">
-                            <label for="timeSlider">Scorri il tempo nella finestra di 6 ore:</label>
+                            <label for="timeSlider" data-i18n="scrubber-label">Scorri il tempo nella finestra di 6 ore:</label>
                             <span id="sliderValue" class="slider-val">Ora Inizio (T + 0h)</span>
                         </div>
                         <input type="range" id="timeSlider" min="0" max="6" step="0.25" value="0">
@@ -153,7 +153,7 @@
                     <div class="banner-content">
                         <div class="banner-title-group">
                             <span class="pulse-icon">📡</span>
-                            <h3>Stato Osservativo Notturno</h3>
+                            <h3 data-i18n="banner-title">Stato Osservativo Notturno</h3>
                         </div>
                         <p id="obsSummaryText">Caricamento delle coordinate dell'osservatore in corso...</p>
                     </div>
@@ -163,11 +163,11 @@
                 <div class="card glass-card results-card">
                     <div class="card-header">
                         <div class="header-title-wrapper">
-                            <h2>☄️ Supernove Visibili nelle prossime 6 Ore</h2>
+                            <h2 data-i18n="results-title">☄️ Supernove Visibili nelle prossime 6 Ore</h2>
                             <span class="count-badge" id="resultsCount">0 trovate</span>
                         </div>
                         <div class="search-box">
-                            <input type="text" id="tableSearch" placeholder="Cerca per SN, costellazione, tipo...">
+                            <input type="text" id="tableSearch" placeholder="Cerca per SN, costellazione, tipo..." data-i18n-placeholder="placeholder-table-search">
                         </div>
                     </div>
                     
@@ -176,16 +176,16 @@
                         <table class="supernovae-table" id="snTable">
                             <thead>
                                 <tr>
-                                    <th>SN</th>
-                                    <th>Tipo</th>
-                                    <th>Brillantezza (Mag)</th>
-                                    <th>Costellazione</th>
-                                    <th>Galassia</th>
-                                    <th>Altezza Attuale / Peak</th>
-                                    <th>Direzione (Azimut)</th>
-                                    <th>Dati Fisici (RA/Dec)</th>
-                                    <th>Scopritore</th>
-                                    <th>Scoperta</th>
+                                    <th data-i18n="th-sn">SN</th>
+                                    <th data-i18n="th-type">Tipo</th>
+                                    <th data-i18n="th-mag">Brillantezza (Mag)</th>
+                                    <th data-i18n="th-constellation">Costellazione</th>
+                                    <th data-i18n="th-galaxy">Galassia</th>
+                                    <th data-i18n="th-altitude">Altezza Attuale / Peak</th>
+                                    <th data-i18n="th-direction">Direzione (Azimut)</th>
+                                    <th data-i18n="th-phys-data">Dati Fisici (RA/Dec)</th>
+                                    <th data-i18n="th-group">Scopritore</th>
+                                    <th data-i18n="th-discovery">Scoperta</th>
                                 </tr>
                             </thead>
                             <tbody id="snTableBody">
@@ -193,7 +193,7 @@
                                 <tr>
                                     <td colspan="10" class="table-placeholder">
                                         <div class="loader"></div>
-                                        <p>Caricamento del catalogo in corso...</p>
+                                        <p data-i18n="placeholder-loading-catalog">Caricamento del catalogo in corso...</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -212,8 +212,8 @@
                     <img src="LogoAstrofili.png" alt="Logo Astrofili Ponte di Piave" class="footer-logo-img">
                 </a>
                 <div class="footer-text">
-                    <p>Database aggiornato via GitHub Actions | <span id="lastUpdateText">Ultimo aggiornamento: in caricamento...</span></p>
-                    <p class="footer-dedication-text">Dedicato alla memoria di <span class="dedication-highlight">Paolo Campaner</span></p>
+                    <p><span data-i18n="footer-updated">Database aggiornato via GitHub Actions | </span><span id="lastUpdateText">Ultimo aggiornamento: in caricamento...</span></p>
+                    <p class="footer-dedication-text" data-i18n="footer-dedication">Dedicato alla memoria di <span class="dedication-highlight">Paolo Campaner</span></p>
                 </div>
             </div>
         </footer>
@@ -230,42 +230,42 @@
             <div class="modal-body">
                 <div class="modal-info-grid">
                     <div class="info-block">
-                        <span class="label">Costellazione</span>
+                        <span class="label" data-i18n="th-constellation">Costellazione</span>
                         <span class="value" id="modalConstellation">Ursa Major</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Magnitudine Scoperta</span>
+                        <span class="label" data-i18n="th-mag-search">Magnitudine Scoperta</span>
                         <span class="value" id="modalMag">16.5</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Filtro Rilevazione</span>
+                        <span class="label" data-i18n="modal-filter">Filtro Rilevazione</span>
                         <span class="value" id="modalFilter">Clear (g-ZTF)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Redshift (z)</span>
+                        <span class="label" data-i18n="modal-redshift">Redshift (z)</span>
                         <span class="value" id="modalRedshift">0.015</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Ascensione Retta</span>
+                        <span class="label" data-i18n="modal-ra">Ascensione Retta</span>
                         <span class="value" id="modalRa">12h 34m 56s (188.74°)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Declinazione</span>
+                        <span class="label" data-i18n="modal-dec">Declinazione</span>
                         <span class="value" id="modalDec">+16° 28' 14" (16.47°)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Gruppo Scopritore</span>
+                        <span class="label" data-i18n="modal-group">Gruppo Scopritore</span>
                         <span class="value" id="modalGroup">ATLAS collaboration</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Data di Rilevazione</span>
+                        <span class="label" data-i18n="modal-date">Data di Rilevazione</span>
                         <span class="value" id="modalDate">2026-05-18 09:31:51</span>
                     </div>
                 </div>
                 
                 <!-- Visibility Timeline inside Modal -->
                 <div class="modal-visibility-tracker">
-                    <h3>📈 Finestra Visibilità (Prossime 6 Ore)</h3>
+                    <h3 data-i18n="modal-vis-window">📈 Finestra Visibilità (Prossime 6 Ore)</h3>
                     <div class="visibility-timeline" id="modalTimeline">
                         <!-- Populated by JS -->
                     </div>
@@ -273,14 +273,15 @@
             </div>
 
             <div class="modal-footer">
-                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary">Apri scheda su WIS-TNS</a>
+                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary" data-i18n="btn-tns">Apri scheda su WIS-TNS</a>
                 <a href="#" target="_blank" id="btnAladinLink" class="btn btn-secondary" style="background: rgba(34, 211, 238, 0.2); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); text-shadow: 0 0 5px var(--neon-cyan); font-weight: 600;">🌌 Aladin Lite</a>
-                <button type="button" class="btn btn-secondary" id="btnModalClose">Chiudi</button>
+                <button type="button" class="btn btn-secondary" id="btnModalClose" data-i18n="modal-btn-close">Chiudi</button>
             </div>
         </div>
     </div>
 
     <!-- Scripts -->
+    <script src="i18n.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

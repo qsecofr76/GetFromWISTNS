@@ -30,17 +30,17 @@
                     <h1>SUPERNOVA HUNTER</h1>
                 </div>
             </div>
-            <p class="header-subtitle">Rilevatore e motore di ricerca celeste per Transienti ed Asteroidi</p>
-            <div class="header-dedication">
+            <p class="header-subtitle" data-i18n="header-subtitle-search">Rilevatore e motore di ricerca celeste per Transienti ed Asteroidi</p>
+            <div class="header-dedication" data-i18n="header-dedication">
                 Dedicato alla memoria di <strong class="dedication-highlight">Paolo Campaner</strong>, amico indimenticato, appassionato scopritore di supernove e fondatore del gruppo <a href="https://www.astrofilipontedipiave.it" target="_blank" class="dedication-link">"Astrofili Ponte di Piave"</a>
             </div>
             
             <!-- Navigation Menu -->
             <nav class="nav-menu">
-                <a href="index.html" class="nav-item" id="navToRadar">
+                <a href="index.html" class="nav-item" id="navToRadar" data-i18n="menu-radar">
                     <span>📡</span> Radar Tracker
                 </a>
-                <a href="search.html" class="nav-item active">
+                <a href="search.html" class="nav-item active" data-i18n="menu-search">
                     <span>🔍</span> Ricerca Area Celeste
                 </a>
             </nav>
@@ -55,49 +55,49 @@
                 <!-- Target Configuration Card -->
                 <div class="card glass-card">
                     <div class="card-header">
-                        <h2>🔍 Parametri di Ricerca</h2>
+                        <h2 data-i18n="search-params-title">🔍 Parametri di Ricerca</h2>
                     </div>
                     
                     <form id="searchForm" class="config-form">
                         <!-- DSO Text Search -->
                         <div class="form-group">
-                            <label for="dsoSearch">Cerca Oggetto (Messier, NGC, IC, Stelle...)</label>
+                            <label for="dsoSearch" data-i18n="label-dso">Cerca Oggetto (Messier, NGC, IC, Stelle...)</label>
                             <div class="search-container">
-                                <input type="text" id="dsoSearch" placeholder="es. M31, NGC 7000, Vega..." autocomplete="off">
+                                <input type="text" id="dsoSearch" placeholder="es. M31, NGC 7000, Vega..." data-i18n-placeholder="placeholder-dso-search" autocomplete="off">
                                 <div id="searchSuggestions" class="suggestions-list" style="display: none;"></div>
                             </div>
                         </div>
                         
                         <!-- Epoch Coordinate System Toggle -->
                         <div class="form-group">
-                            <label>Sistema di Coordinate (Epoca)</label>
+                            <label data-i18n="label-epoch">Sistema di Coordinate (Epoca)</label>
                             <div class="radio-group-container">
                                 <input type="radio" name="coordEpoch" id="epochJ2000" value="J2000" checked>
-                                <label for="epochJ2000" class="radio-btn-label">J2000 (Standard)</label>
+                                <label for="epochJ2000" class="radio-btn-label" data-i18n="label-epoch-j2000">J2000 (Standard)</label>
                                 
                                 <input type="radio" name="coordEpoch" id="epochJNow" value="JNow">
-                                <label for="epochJNow" class="radio-btn-label">JNow (Data di Ricerca)</label>
+                                <label for="epochJNow" class="radio-btn-label" data-i18n="label-epoch-jnow">JNow (Data di Ricerca)</label>
                             </div>
                         </div>
 
                         <!-- RA and Dec Inputs -->
                         <div class="form-group">
-                            <label for="inputRA">Ascensione Retta (RA) — [es. 21h 01m 07s o 315.28]</label>
+                            <label for="inputRA" data-i18n="label-ra-search">Ascensione Retta (RA) — [es. 21h 01m 07s o 315.28]</label>
                             <input type="text" id="inputRA" required placeholder="es. 21h 01m 07s o 315.28">
                         </div>
                         <div class="form-group" style="margin-top: 12px;">
-                            <label for="inputDec">Declinazione (Dec) — [es. +41° 16' 07&quot; o 41.269]</label>
+                            <label for="inputDec" data-i18n="label-dec-search">Declinazione (Dec) — [es. +41° 16' 07&quot; o 41.269]</label>
                             <input type="text" id="inputDec" required placeholder="es. +41° 16' 07&quot; o 41.269">
                         </div>
 
                         <!-- Date and Time of Observation (for Precession & MPC calculations) -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="searchDate">Data Osservazione (UT)</label>
+                                <label for="searchDate" data-i18n="label-search-date">Data Osservazione (UT)</label>
                                 <input type="date" id="searchDate" required>
                             </div>
                             <div class="form-group">
-                                <label for="searchTime">Ora Osservazione (UT)</label>
+                                <label for="searchTime" data-i18n="label-search-time">Ora Osservazione (UT)</label>
                                 <input type="time" id="searchTime" required>
                             </div>
                         </div>
@@ -105,18 +105,18 @@
                         <!-- Radius and Limiting Mag -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="searchRadius">Raggio di Ricerca (degr.)</label>
+                                <label for="searchRadius" data-i18n="label-search-radius">Raggio di Ricerca (degr.)</label>
                                 <input type="number" id="searchRadius" step="0.1" min="0.1" max="5.0" value="1.5" required>
                             </div>
                             <div class="form-group">
-                                <label for="limitMag">Mag. Asteroidi Limite</label>
+                                <label for="limitMag" data-i18n="label-limit-mag">Mag. Asteroidi Limite</label>
                                 <input type="number" id="limitMag" step="0.5" min="10" max="25" value="20.0" required>
                             </div>
                         </div>
 
                         <div class="form-buttons">
-                            <button type="submit" class="btn btn-search">
-                                <span>🔭</span> Avvia Ricerca Area
+                            <button type="submit" class="btn btn-search" data-i18n="btn-search-area">
+                                🔭 Avvia Ricerca Area
                             </button>
                         </div>
                     </form>
@@ -125,19 +125,19 @@
                 <!-- Coordinates Target Mini-Map Visualizer -->
                 <div class="card glass-card coord-viz-card">
                     <div class="card-header" style="width: 100%;">
-                        <h2>🎯 Campo di Vista (FOV)</h2>
+                        <h2 data-i18n="fov-title">🎯 Campo di Vista (FOV)</h2>
                     </div>
                     <div class="coord-canvas-container">
                         <canvas id="coordVisualizer" width="300" height="300"></canvas>
                     </div>
-                    <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 8px;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 8px;" data-i18n="fov-desc">
                         Il mirino mostra l'area di ricerca selezionata (Raggio: <span id="fovRadiusLabel">1.5</span>°).
                     </div>
                     <div class="mirror-controls" style="display: flex; justify-content: center; gap: 8px; margin-top: 10px; margin-bottom: 5px;">
-                        <button type="button" id="btnFlipH" class="btn btn-secondary btn-sm" style="padding: 6px 12px; font-size: 0.7rem; border-color: rgba(255,255,255,0.15);">
+                        <button type="button" id="btnFlipH" class="btn btn-secondary btn-sm" style="padding: 6px 12px; font-size: 0.7rem; border-color: rgba(255,255,255,0.15);" data-i18n="btn-flip-h">
                             ⇄ Specchia Orizzontale (RA)
                         </button>
-                        <button type="button" id="btnFlipV" class="btn btn-secondary btn-sm" style="padding: 6px 12px; font-size: 0.7rem; border-color: rgba(255,255,255,0.15);">
+                        <button type="button" id="btnFlipV" class="btn btn-secondary btn-sm" style="padding: 6px 12px; font-size: 0.7rem; border-color: rgba(255,255,255,0.15);" data-i18n="btn-flip-v">
                             ⇅ Specchia Verticale (Dec)
                         </button>
                     </div>
@@ -154,9 +154,9 @@
                     <div class="banner-content">
                         <div class="banner-title-group">
                             <span class="pulse-icon">🔍</span>
-                            <h3>Stato Ricerca Celeste</h3>
+                            <h3 data-i18n="search-status-title">Stato Ricerca Celeste</h3>
                         </div>
-                        <p id="searchSummaryText">Inserisci le coordinate o cerca un oggetto celeste per iniziare.</p>
+                        <p id="searchSummaryText" data-i18n="search-status-default">Inserisci le coordinate o cerca un oggetto celeste per iniziare.</p>
                     </div>
                 </div>
 
@@ -164,7 +164,7 @@
                 <div class="card glass-card results-card">
                     <div class="card-header">
                         <div class="header-title-wrapper">
-                            <h2>🌌 Supernove Rilevate nell'Area</h2>
+                            <h2 data-i18n="sn-area-title">🌌 Supernove Rilevate nell'Area</h2>
                             <span class="count-badge" id="snCountBadge">0 trovate</span>
                         </div>
                     </div>
@@ -173,19 +173,19 @@
                         <table class="supernovae-table">
                             <thead>
                                 <tr>
-                                    <th>Supernova</th>
-                                    <th>Tipo</th>
-                                    <th>Mag. Scoperta</th>
-                                    <th>Costellazione</th>
-                                    <th>Galassia Ospite</th>
-                                    <th>Distanza Centro</th>
-                                    <th>Dati Fisici (RA/Dec)</th>
-                                    <th>Data Scoperta</th>
+                                    <th data-i18n="th-sn-search">Supernova</th>
+                                    <th data-i18n="th-type-search">Tipo</th>
+                                    <th data-i18n="th-mag-search">Mag. Scoperta</th>
+                                    <th data-i18n="th-constellation-search">Costellazione</th>
+                                    <th data-i18n="th-galaxy-search">Galassia Ospite</th>
+                                    <th data-i18n="th-dist-search">Distanza Centro</th>
+                                    <th data-i18n="th-phys-search">Dati Fisici (RA/Dec)</th>
+                                    <th data-i18n="th-date-search">Data Scoperta</th>
                                 </tr>
                             </thead>
                             <tbody id="snResultsBody">
                                 <tr>
-                                    <td colspan="8" class="table-placeholder">
+                                    <td colspan="8" class="table-placeholder" data-i18n="placeholder-no-search">
                                         Nessuna ricerca effettuata. Inserisci i parametri a sinistra.
                                     </td>
                                 </tr>
@@ -198,7 +198,7 @@
                 <div class="card glass-card results-card" style="margin-top: 10px;">
                     <div class="card-header">
                         <div class="header-title-wrapper">
-                            <h2>☄️ Asteroidi Rilevati nell'Area (MPC)</h2>
+                            <h2 data-i18n="ast-area-title">☄️ Asteroidi Rilevati nell'Area (MPC)</h2>
                             <span class="count-badge badge-asteroid" id="asteroidCountBadge">0 trovati</span>
                         </div>
                     </div>
@@ -207,16 +207,16 @@
                         <table class="supernovae-table">
                             <thead>
                                 <tr>
-                                    <th>Asteroide / Designazione</th>
-                                    <th>Magnitudine (V)</th>
-                                    <th>Distanza Centro</th>
-                                    <th>Ascensione Retta (RA)</th>
-                                    <th>Declinazione (Dec)</th>
+                                    <th data-i18n="th-ast-name">Asteroide / Designazione</th>
+                                    <th data-i18n="th-ast-mag">Magnitudine (V)</th>
+                                    <th data-i18n="th-ast-dist">Distanza Centro</th>
+                                    <th data-i18n="th-ast-ra">Ascensione Retta (RA)</th>
+                                    <th data-i18n="th-ast-dec">Declinazione (Dec)</th>
                                 </tr>
                             </thead>
                             <tbody id="asteroidResultsBody">
                                 <tr>
-                                    <td colspan="8" class="table-placeholder">
+                                    <td colspan="8" class="table-placeholder" data-i18n="placeholder-no-search">
                                         Nessuna ricerca effettuata. Inserisci i parametri a sinistra.
                                     </td>
                                 </tr>
@@ -230,8 +230,8 @@
                     <div style="display: flex; gap: 12px; align-items: flex-start;">
                         <span style="font-size: 1.5rem;">⚠️</span>
                         <div>
-                            <h4 style="color: var(--neon-gold); font-family: var(--font-display); margin-bottom: 4px;">Problema con l'interrogazione diretta dell'MPC</h4>
-                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px;">
+                            <h4 style="color: var(--neon-gold); font-family: var(--font-display); margin-bottom: 4px;" data-i18n="fallback-title">Problema con l'interrogazione diretta dell'MPC</h4>
+                            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px;" data-i18n="fallback-desc">
                                 La richiesta diretta ai server del Minor Planet Center è stata bloccata (CORS o timeout). Puoi comunque produrre la lista ufficiale compilando la richiesta ufficiale in una nuova finestra.
                             </p>
                             
@@ -253,7 +253,7 @@
                                 <input type="hidden" name="needed" value="f">
                                 <input type="hidden" name="type" value="p">
                                 
-                                <button type="submit" class="btn btn-secondary" style="border-color: var(--neon-gold); color: var(--neon-gold); background: rgba(245, 158, 11, 0.1);">
+                                <button type="submit" class="btn btn-secondary" style="border-color: var(--neon-gold); color: var(--neon-gold); background: rgba(245, 158, 11, 0.1);" data-i18n="btn-fallback">
                                     🔗 Apri Ricerca su Minor Planet Center (Nuova Scheda)
                                 </button>
                             </form>
@@ -271,7 +271,7 @@
                     <img src="LogoAstrofili.png" alt="Logo Astrofili Ponte di Piave" class="footer-logo-img">
                 </a>
                 <div class="footer-text">
-                    <p class="footer-dedication-text">Dedicato alla memoria di <span class="dedication-highlight">Paolo Campaner</span></p>
+                    <p class="footer-dedication-text" data-i18n="footer-dedication">Dedicato alla memoria di <span class="dedication-highlight">Paolo Campaner</span></p>
                 </div>
             </div>
         </footer>
@@ -288,42 +288,42 @@
             <div class="modal-body">
                 <div class="modal-info-grid">
                     <div class="info-block">
-                        <span class="label">Costellazione</span>
+                        <span class="label" data-i18n="th-constellation">Costellazione</span>
                         <span class="value" id="modalConstellation">Ursa Major</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Magnitudine Scoperta</span>
+                        <span class="label" data-i18n="th-mag-search">Magnitudine Scoperta</span>
                         <span class="value" id="modalMag">16.5</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Filtro Rilevazione</span>
+                        <span class="label" data-i18n="modal-filter">Filtro Rilevazione</span>
                         <span class="value" id="modalFilter">Clear (g-ZTF)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Redshift (z)</span>
+                        <span class="label" data-i18n="modal-redshift">Redshift (z)</span>
                         <span class="value" id="modalRedshift">0.015</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Ascensione Retta</span>
+                        <span class="label" data-i18n="modal-ra">Ascensione Retta</span>
                         <span class="value" id="modalRa">12h 34m 56s (188.74°)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Declinazione</span>
+                        <span class="label" data-i18n="modal-dec">Declinazione</span>
                         <span class="value" id="modalDec">+16° 28' 14" (16.47°)</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Gruppo Scopritore</span>
+                        <span class="label" data-i18n="modal-group">Gruppo Scopritore</span>
                         <span class="value" id="modalGroup">ATLAS collaboration</span>
                     </div>
                     <div class="info-block">
-                        <span class="label">Data di Rilevazione</span>
+                        <span class="label" data-i18n="modal-date">Data di Rilevazione</span>
                         <span class="value" id="modalDate">2026-05-18 09:31:51</span>
                     </div>
                 </div>
                 
                 <!-- Visibility Timeline inside Modal (hidden dynamically on search) -->
                 <div class="modal-visibility-tracker" style="display: none;">
-                    <h3>📈 Finestra Visibilità (Prossime 6 Ore)</h3>
+                    <h3 data-i18n="modal-vis-window">📈 Finestra Visibilità (Prossime 6 Ore)</h3>
                     <div class="visibility-timeline" id="modalTimeline">
                         <!-- Populated by JS -->
                     </div>
@@ -331,14 +331,15 @@
             </div>
 
             <div class="modal-footer">
-                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary">Apri scheda su WIS-TNS</a>
+                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary" data-i18n="btn-tns">Apri scheda su WIS-TNS</a>
                 <a href="#" target="_blank" id="btnAladinLink" class="btn btn-secondary" style="background: rgba(34, 211, 238, 0.2); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); text-shadow: 0 0 5px var(--neon-cyan); font-weight: 600;">🌌 Aladin Lite</a>
-                <button type="button" class="btn btn-secondary" id="btnModalClose">Chiudi</button>
+                <button type="button" class="btn btn-secondary" id="btnModalClose" data-i18n="modal-btn-close">Chiudi</button>
             </div>
         </div>
     </div>
 
     <!-- Scripts -->
+    <script src="i18n.js"></script>
     <script src="search.js"></script>
 </body>
 </html>

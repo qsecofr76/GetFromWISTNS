@@ -301,7 +301,7 @@ async function loadCatalog() {
         
         // Show update timestamp in footer
         if (data.metadata && data.metadata.generated_at) {
-            document.getElementById("lastUpdateText").innerText = `Ultimo aggiornamento: ${data.metadata.generated_at}`;
+            document.getElementById("lastUpdateText").innerText = `${t("last-update-prefix")}: ${data.metadata.generated_at}`;
         }
         
         console.log(`[+] Caricate ${allSupernovae.length} supernove dal catalogo.`);
@@ -349,13 +349,13 @@ async function loadCatalog() {
 // Detect browser Geolocation and auto-set time to its dark night start
 function detectGpsLocation() {
     const gpsStatus = document.getElementById("gpsStatus");
-    gpsStatus.innerText = "Rilevamento...";
+    gpsStatus.innerText = t("gps-status-detecting");
     gpsStatus.className = "badge badge-purple";
     
     if (!navigator.geolocation) {
-        gpsStatus.innerText = "Non supportato";
+        gpsStatus.innerText = t("gps-status-unsupported");
         gpsStatus.className = "badge badge-pink";
-        alert("Geolocalizzazione non supportata dal tuo browser.");
+        alert(t("gps-unsupported"));
         return;
     }
     
@@ -365,7 +365,7 @@ function detectGpsLocation() {
             const lon = position.coords.longitude;
             document.getElementById("lat").value = lat.toFixed(4);
             document.getElementById("lon").value = lon.toFixed(4);
-            gpsStatus.innerText = "📍 GPS Rilevato";
+            gpsStatus.innerText = t("gps-status-detected");
             gpsStatus.className = "badge badge-green";
             
             // Auto-calculate dark night start time for their coordinates
@@ -387,9 +387,9 @@ function detectGpsLocation() {
             applyCalculation();
         },
         (error) => {
-            gpsStatus.innerText = "Rilevamento fallito";
+            gpsStatus.innerText = t("gps-status-failed");
             gpsStatus.className = "badge badge-pink";
-            alert("Impossibile rilevare la posizione. Inserisci le coordinate manualmente.");
+            alert(t("gps-failed-alert"));
         },
         { enableHighAccuracy: true, timeout: 5000 }
     );
@@ -524,9 +524,10 @@ function applyCalculation() {
     document.getElementById("timeSlider").value = 0;
     
     const tz = getTimezoneAbbreviation(startDate);
-    const startStr = startDate.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
-    document.getElementById("sliderValue").innerText = `Ora Inizio (${startStr} ${tz})`;
-    document.getElementById("radarTimeLabel").innerText = "T + 0h (Inizio)";
+    const currentLocale = getLang() === 'it' ? 'it-IT' : 'en-US';
+    const startStr = startDate.toLocaleTimeString(currentLocale, { hour: '2-digit', minute: '2-digit' });
+    document.getElementById("sliderValue").innerText = `${t("slider-start-time")} (${startStr} ${tz})`;
+    document.getElementById("radarTimeLabel").innerText = t("slider-radar-start");
     
     // 5. Draw Celestial Radar at T+0h
     drawRadar(0);
@@ -547,16 +548,30 @@ function updateSummaryBanner(startDate, lat, lon) {
     const isDark = sunAlt < -12;
     
     const tz = getTimezoneAbbreviation(startDate);
-    const formattedDate = startDate.toLocaleDateString('it-IT', { day: '2-digit', month: 'short', year: 'numeric' });
-    const formattedTime = startDate.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+    const currentLocale = getLang() === 'it' ? 'it-IT' : 'en-US';
+    const formattedDate = startDate.toLocaleDateString(currentLocale, { day: '2-digit', month: 'short', year: 'numeric' });
+    const formattedTime = startDate.toLocaleTimeString(currentLocale, { hour: '2-digit', minute: '2-digit' });
     const endDate = new Date(startDate.getTime() + 6 * 3600000);
-    const formattedEndTime = endDate.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+    const formattedEndTime = endDate.toLocaleTimeString(currentLocale, { hour: '2-digit', minute: '2-digit' });
     
-    summaryText.innerHTML = `Osservatore: <strong>${lat.toFixed(3)}° ${lat >= 0 ? 'N' : 'S'}</strong>, <strong>${lon.toFixed(3)}° ${lon >= 0 ? 'E' : 'W'}</strong> | Finestra: <strong>${formattedDate} ${formattedTime} - ${formattedEndTime} ${tz}</strong>`;
+    summaryText.innerHTML = t("summary-observer", {
+        lat: Math.abs(lat).toFixed(3),
+        latDir: lat >= 0 ? (getLang() === 'it' ? 'N' : 'N') : (getLang() === 'it' ? 'S' : 'S'),
+        lon: Math.abs(lon).toFixed(3),
+        lonDir: lon >= 0 ? (getLang() === 'it' ? 'E' : 'E') : (getLang() === 'it' ? 'W' : 'W'),
+        date: formattedDate,
+        time: formattedTime,
+        endTime: formattedEndTime,
+        tz: tz
+    });
     
     if (!isDark) {
         banner.className = "info-banner banner-warning";
-        summaryText.innerHTML += `<br><span style="color: var(--neon-red); font-weight: 600;">⚠️ Attenzione: Alle ${formattedTime} ${tz} il sole è ancora alto (Alt: ${sunAlt.toFixed(1)}°). Imposta un orario notturno per rilevare supernove visibili nel buio!</span>`;
+        summaryText.innerHTML += `<br><span style="color: var(--neon-red); font-weight: 600;">` + t("sun-warning-text", {
+            time: formattedTime,
+            tz: tz,
+            alt: sunAlt.toFixed(1)
+        }) + `</span>`;
     } else {
         banner.className = "info-banner";
     }
@@ -581,13 +596,13 @@ function renderTable(filterQuery = "") {
         );
     }
     
-    countBadge.innerText = `${filteredSNe.length} trovate`;
+    countBadge.innerText = t("results-count", {count: filteredSNe.length});
     
     if (filteredSNe.length === 0) {
         tbody.innerHTML = `
             <tr>
                 <td colspan="10" class="table-placeholder">
-                    <p>Nessun transiente visibile trovato con i criteri attuali. Prova a incrementare la Magnitudine limite o a selezionare una data diversa.</p>
+                    <p>${t("sn-table-empty")}</p>
                 </td>
             </tr>
         `;
@@ -633,7 +648,7 @@ function renderTable(filterQuery = "") {
             return `
                 <tr>
                     <td colspan="10" style="text-align: center; color: var(--text-muted); padding: 16px 0; font-style: italic;">
-                        Nessuna supernova visibile in questa fascia in queste 6 ore.
+                        ${t("sn-group-empty-msg")}
                     </td>
                 </tr>
             `;
@@ -654,7 +669,7 @@ function renderTable(filterQuery = "") {
             const progressWidth = Math.max(0, Math.min(100, (sn.peakAlt / 90) * 100));
             
             // Companion filter / group
-            const group = sn.reporting_group ? sn.reporting_group : (sn.source_group ? sn.source_group : "Sconosciuto");
+            const group = sn.reporting_group ? sn.reporting_group : (sn.source_group ? sn.source_group : (getLang() === 'it' ? 'Sconosciuto' : 'Unknown'));
             let groupClass = "badge-info";
             if (group.toUpperCase().includes("ATLAS")) groupClass = "badge-gold"; // Highlight ATLAS
             else if (group.toUpperCase().includes("ZTF")) groupClass = "badge-purple";
@@ -666,7 +681,7 @@ function renderTable(filterQuery = "") {
             const discDate = sn.discoverydate ? sn.discoverydate.substring(0, 10) : "N/D";
             
             // Host Galaxy formatting
-            const hostGal = sn.host_galaxy && sn.host_galaxy !== "N/A" ? sn.host_galaxy : "<span class='text-muted'>Isolata / Ignota</span>";
+            const hostGal = sn.host_galaxy && sn.host_galaxy !== "N/A" ? sn.host_galaxy : `<span class='text-muted'>${t("host-galaxy-isolated-label")}</span>`;
             
             return `
                 <tr onclick="openModal(${sn.objid})">
@@ -709,17 +724,17 @@ function renderTable(filterQuery = "") {
     // Assemble table content with separators
     let html = "";
     
-    html += `<tr class="table-group-header group-brightest-header"><td colspan="10">🌌 Brillantissime (Magnitudine 10 - 13) — [${groupBrightest.length} visibili, in ordine di scoperta]</td></tr>`;
+    html += `<tr class="table-group-header group-brightest-header"><td colspan="10">${t("sn-group-1", {count: groupBrightest.length})}</td></tr>`;
     html += renderGroupRows(groupBrightest);
     
-    html += `<tr class="table-group-header group-bright-header"><td colspan="10">🔭 Brillanti (Magnitudine 13 - 15) — [${groupBright.length} visibili, in ordine di scoperta]</td></tr>`;
+    html += `<tr class="table-group-header group-bright-header"><td colspan="10">${t("sn-group-2", {count: groupBright.length})}</td></tr>`;
     html += renderGroupRows(groupBright);
     
-    html += `<tr class="table-group-header group-observable-header"><td colspan="10">☄️ Osservabili (Magnitudine 15 - 19) — [${groupObservable.length} visibili, in ordine di scoperta]</td></tr>`;
+    html += `<tr class="table-group-header group-observable-header"><td colspan="10">${t("sn-group-3", {count: groupObservable.length})}</td></tr>`;
     html += renderGroupRows(groupObservable);
     
     if (groupOther.length > 0) {
-        html += `<tr class="table-group-header" style="border-left: 4px solid var(--text-muted); background: rgba(20,20,20,0.5);"><td colspan="10" style="color: var(--text-secondary) !important;">Altre supernove (Mag > 19 o N/D) — [${groupOther.length} visibili]</td></tr>`;
+        html += `<tr class="table-group-header" style="border-left: 4px solid var(--text-muted); background: rgba(20,20,20,0.5);"><td colspan="10" style="color: var(--text-secondary) !important;">${t("sn-group-4", {count: groupOther.length})}</td></tr>`;
         html += renderGroupRows(groupOther);
     }
     
@@ -850,13 +865,18 @@ function handleTimeSliderInput(e) {
     
     const targetDate = new Date(observerSettings.date.getTime() + offsetHours * 3600000);
     const tz = getTimezoneAbbreviation(targetDate);
-    const targetTimeStr = targetDate.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+    const currentLocale = getLang() === 'it' ? 'it-IT' : 'en-US';
+    const targetTimeStr = targetDate.toLocaleTimeString(currentLocale, { hour: '2-digit', minute: '2-digit' });
     
     if (offsetHours === 0) {
-        label.innerText = `Ora Inizio (${targetTimeStr} ${tz})`;
-        radarTimeLabel.innerText = "T + 0h (Inizio)";
+        label.innerText = `${t("slider-start-time")} (${targetTimeStr} ${tz})`;
+        radarTimeLabel.innerText = t("slider-radar-start");
     } else {
-        label.innerText = `T + ${offsetHours.toFixed(1)} ore (${targetTimeStr} ${tz})`;
+        label.innerText = t("slider-offset-hours", {
+            hours: offsetHours.toFixed(1),
+            time: targetTimeStr,
+            tz: tz
+        });
         radarTimeLabel.innerText = `T + ${offsetHours.toFixed(1)}h`;
     }
     
@@ -989,7 +1009,9 @@ function formatDec(decDegrees) {
 
 // Get cardinal direction abbreviation from Azimuth degrees
 function getCardinalDirection(az) {
-    const sectors = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
+    const sectors = getLang() === 'it' 
+        ? ["N", "NE", "E", "SE", "S", "SO", "O", "NO"]
+        : ["N", "NE", "E", "SE", "S", "SW", "W", "NW"];
     const index = Math.round(az / 45) % 8;
     return sectors[index];
 }

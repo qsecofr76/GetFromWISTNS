@@ -198,12 +198,12 @@ function selectLocalDSO(name) {
 
 async function resolveOnlineDSO(objectName) {
     const list = document.getElementById("searchSuggestions");
-    list.innerHTML = `<div class="suggestion-item" style="cursor: default;"><span>⏳ Interrogazione CDS Sesame...</span></div>`;
+    list.innerHTML = `<div class="suggestion-item" style="cursor: default;"><span>${t("sesame-suggest-querying")}</span></div>`;
     
     // Update banner with resolution status
     const banner = document.getElementById("searchInfoBanner");
     const summary = document.getElementById("searchSummaryText");
-    summary.innerHTML = `⏳ <strong>SIMBAD Lookup</strong>: Risoluzione coordinate per <strong>"${objectName}"</strong> in corso tramite CDS Sesame...`;
+    summary.innerHTML = t("sesame-resolving", { name: objectName });
     banner.className = "info-banner";
 
     try {
@@ -236,19 +236,23 @@ async function resolveOnlineDSO(objectName) {
             dsoInput.classList.add("dso-resolved-badge");
             setTimeout(() => dsoInput.classList.remove("dso-resolved-badge"), 2000);
             
-            summary.innerHTML = `✅ <strong>SIMBAD</strong>: Oggetto <strong>"${resolvedName}"</strong> identificato! Coordinate caricate (RA: ${formatRA(ra)}, Dec: ${formatDec(dec)}).`;
+            summary.innerHTML = t("sesame-success", {
+                name: resolvedName,
+                ra: formatRA(ra),
+                dec: formatDec(dec)
+            });
             
             list.style.display = "none";
             triggerCoordinatesUpdate();
         } else {
-            list.innerHTML = `<div class="suggestion-item" style="color: var(--neon-red); cursor: default;"><span>❌ Oggetto non trovato. Riprova con una sigla standard.</span></div>`;
-            summary.innerHTML = `❌ <strong>SIMBAD</strong>: Risoluzione fallita per <strong>"${objectName}"</strong> (oggetto non trovato nei cataloghi).`;
+            list.innerHTML = `<div class="suggestion-item" style="color: var(--neon-red); cursor: default;"><span>${t("sesame-suggest-failed")}</span></div>`;
+            summary.innerHTML = t("sesame-failed", { name: objectName });
             banner.className = "info-banner banner-warning";
         }
     } catch (error) {
         console.error(error);
-        list.innerHTML = `<div class="suggestion-item" style="color: var(--neon-red); cursor: default;"><span>❌ Errore di rete o blocco CORS. Inserisci coordinate manualmente.</span></div>`;
-        summary.innerHTML = `❌ <strong>SIMBAD</strong>: Errore di connessione o proxy durante la ricerca di <strong>"${objectName}"</strong>.`;
+        list.innerHTML = `<div class="suggestion-item" style="color: var(--neon-red); cursor: default;"><span>${t("sesame-suggest-error")}</span></div>`;
+        summary.innerHTML = t("sesame-error", { name: objectName });
         banner.className = "info-banner banner-warning";
     }
 }
@@ -491,12 +495,15 @@ function updateBannerInfo(coords, radius, date) {
     const aladinTarget = `${coords.ra} ${coords.dec}`;
     const aladinUrl = `https://aladin.cds.unistra.fr/AladinLite/?target=${encodeURIComponent(aladinTarget)}&fov=${radius}&survey=P%2FDSS2%2Fcolor`;
     
-    summary.innerHTML = `
-        Target J2000: <strong>RA: ${formatRA(coords.ra)} (${coords.ra.toFixed(3)}°)</strong> | 
-        <strong>Dec: ${formatDec(coords.dec)} (${coords.dec.toFixed(3)}°)</strong>
-        <a href="${aladinUrl}" target="_blank" class="btn-aladin-inline">🌌 Aladin Lite</a><br>
-        Raggio: <strong>${radius}°</strong> | Data Ricerca: <strong>${formattedDate}</strong>
-    `;
+    summary.innerHTML = t("search-summary-coords", {
+        raStr: formatRA(coords.ra),
+        raDeg: coords.ra.toFixed(3),
+        decStr: formatDec(coords.dec),
+        decDeg: coords.dec.toFixed(3),
+        aladinUrl: aladinUrl,
+        radius: radius,
+        date: formattedDate
+    });
     banner.className = "info-banner";
 }
 
@@ -519,14 +526,13 @@ function searchSupernovae(center, radius) {
 function renderSupernovaeTable(list) {
     const tbody = document.getElementById("snResultsBody");
     const countBadge = document.getElementById("snCountBadge");
-    
-    countBadge.innerText = `${list.length} trovate`;
+    countBadge.innerText = t("results-count", {count: list.length});
     
     if (list.length === 0) {
         tbody.innerHTML = `
             <tr>
                 <td colspan="8" class="table-placeholder">
-                    Nessuna supernova scoperta negli ultimi 6 mesi rilevata in questo raggio di visualizzazione.
+                    ${t("search-sn-empty")}
                 </td>
             </tr>
         `;
@@ -594,7 +600,7 @@ function renderAsteroidsLoading() {
         <tr>
             <td colspan="8" class="table-placeholder">
                 <div class="loader"></div>
-                <p>Interrogazione in corso del Minor Planet Center (MPC)...</p>
+                <p>${t("mpc-loading-label")}</p>
             </td>
         </tr>
     `;
@@ -620,7 +626,7 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
 
     const summary = document.getElementById("searchSummaryText");
     const originalText = summary.innerHTML;
-    summary.innerHTML = originalText + `<br>⏳ <strong>MPC Lookup</strong>: Interrogazione del Minor Planet Center in corso per asteroidi...`;
+    summary.innerHTML = originalText + `<br>` + t("mpc-resolving");
 
     const mpcUrl = `https://minorplanetcenter.net/cgi-bin/mpcheck.cgi?year=${year}&month=${month}&day=${dayStr}&which=pos&ra=${encodeURIComponent(raStr)}&decl=${encodeURIComponent(decStr)}&TextArea=&radius=${radiusArcmin}&limit=${limitMag}&oc=500&sort=d&mot=h&tmot=s&pdes=u&needed=f&ps=n&type=p`;
     
@@ -648,7 +654,11 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
         const parsedAsteroids = parseMPCHtml(html);
         
         renderAsteroidsTable(parsedAsteroids);
-        summary.innerHTML = originalText + `<br>✅ <strong>MPC Lookup</strong>: Trovati <strong>${parsedAsteroids.length}</strong> asteroidi nel raggio di ${radiusDeg}° (Mag < ${limitMag}).`;
+        summary.innerHTML = originalText + `<br>` + t("mpc-success", {
+            count: parsedAsteroids.length,
+            radius: radiusDeg,
+            limitMag: limitMag
+        });
         return parsedAsteroids;
     } catch (e) {
         console.error("CORS MPC fetch failed, showing fallback redirection options.", e);
@@ -664,13 +674,12 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
         document.getElementById("asteroidResultsBody").innerHTML = `
             <tr>
                 <td colspan="8" class="table-placeholder" style="color: var(--neon-red);">
-                     ❌ Impossibile caricare direttamente i dati MPC dal browser (blocco CORS, timeout o errore di validazione).<br>
-                     Usa il modulo arancione visualizzato qui sotto per consultare MPC in una nuova scheda.<br>
-                     <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace; display: inline-block; margin-top: 8px;">Dettaglio Errore: ${e.message || e.toString()}</span>
+                     ${t("mpc-error-msg")}<br>
+                     <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace; display: inline-block; margin-top: 8px;">${getLang() === 'it' ? 'Dettaglio Errore' : 'Error Details'}: ${e.message || e.toString()}</span>
                 </td>
             </tr>
         `;
-        summary.innerHTML = originalText + `<br>❌ <strong>MPC Lookup</strong>: Query fallita o bloccata. Compilazione manuale disponibile sotto.`;
+        summary.innerHTML = originalText + `<br>` + t("mpc-failed");
         return [];
     }
 }
@@ -737,13 +746,13 @@ function renderAsteroidsTable(asteroids) {
     const tbody = document.getElementById("asteroidResultsBody");
     const countBadge = document.getElementById("asteroidCountBadge");
     
-    countBadge.innerText = `${asteroids.length} trovati`;
+    countBadge.innerText = t("results-count-asteroids", {count: asteroids.length});
     
     if (asteroids.length === 0) {
         tbody.innerHTML = `
             <tr>
                 <td colspan="5" class="table-placeholder">
-                    Nessun asteroide di magnitudine limitante impostata rilevato in questa area.
+                    ${t("asteroid-empty-msg")}
                 </td>
             </tr>
         `;
@@ -809,7 +818,7 @@ function drawTargetVisualizer(supernovae, asteroids) {
     // Label for search radius limit
     visualizerCtx.fillStyle = "rgba(148, 163, 184, 0.4)";
     visualizerCtx.font = "9px Inter";
-    visualizerCtx.fillText(`${searchRadius.toFixed(1)}° Limit`, cx + 4, cy - maxFovRadiusPx + 12);
+    visualizerCtx.fillText(`${searchRadius.toFixed(1)}° ${t("limit-label")}`, cx + 4, cy - maxFovRadiusPx + 12);
     
     // Draw center crosshair (Target Pin)
     visualizerCtx.strokeStyle = "var(--neon-pink)";
