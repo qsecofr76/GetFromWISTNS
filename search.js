@@ -625,11 +625,9 @@ function parseMPCHtml(html) {
     const asteroids = [];
     
     // Example of MPC data lines inside <pre>:
-    // (1015) Christa          00 42 12.1 +41 12 34  14.5  e   orbit    2.3w  4.5s  ...
-    // Match line: name/designation (can contain spaces), coordinates, magnitude
-    // Standard format matches:
-    // Name (1-20 chars) | RA (00 00 00.0) | Dec (+00 00 00) | V (mag) | Orbit type
-    const regex = /^\s*([\w\s()-]+?)\s+(\d{2}\s\d{2}\s\d{2}(?:\.\d+)?)\s+([+-]\d{2}\s\d{2}\s\d{2}(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s+(\w+)\s+(?:(\w+)\s+)?([\d.-]+[nesw])\s+([\d.-]+[nesw])\s+([\d.-]+)\s+([\d.-]+)/i;
+    // (36680) 2000 RK1        18 19 22.4 -14 04 24  17.8   8.4E  17.0S    24-     8+   23o
+    // Match line: name/designation, coordinates, magnitude, optional columns, offsets, motion, orbit
+    const regex = /^\s*(.+?)\s+(\d{2}\s\d{2}\s\d{2}(?:\.\d+)?)\s+([+-]?\d{2}\s\d{2}\s\d{2}(?:\.\d+)?)\s+(\d+(?:\.\d+)?)\s+(?:(\w+)\s+(?:(\w+)\s+)?)?([\d.]+[EWew])\s+([\d.]+[NSns])\s+([\d.+-]+[+-]?)\s+([\d.+-]+[+-]?)\s+(\w+)/i;
     
     lines.forEach(line => {
         const match = line.match(regex);
@@ -638,11 +636,11 @@ function parseMPCHtml(html) {
             const raRaw = match[2].trim();
             const decRaw = match[3].trim();
             const vMag = parseFloat(match[4]);
-            const orbit = match[5];
             const offsetRa = match[7];
             const offsetDec = match[8];
             const motRa = match[9];
             const motDec = match[10];
+            const orbit = match[11];
             
             // Convert RA/Dec sexagesimal back to decimal degrees for visualizer plotting
             const raParts = raRaw.split(" ").map(Number);
