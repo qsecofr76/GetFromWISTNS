@@ -96,18 +96,31 @@ document.addEventListener("DOMContentLoaded", () => {
         drawTargetVisualizer(lastMatchedSNe, lastMatchedAsteroids);
     });
 
+    // Listen to changes to dynamically update nav link back to Radar
+    document.getElementById("searchDate").addEventListener("input", updateNavToRadar);
+    document.getElementById("searchTime").addEventListener("input", updateNavToRadar);
+    updateNavToRadar();
+
     // Populate initial visualizer
     drawTargetVisualizer([], []);
 });
 
 function initElements() {
+    const params = new URLSearchParams(window.location.search);
     const today = new Date();
-    document.getElementById("searchDate").value = today.toISOString().split('T')[0];
     
-    // Format UT hour and minute
-    const hours = String(today.getUTCHours()).padStart(2, '0');
-    const minutes = String(today.getUTCMinutes()).padStart(2, '0');
-    document.getElementById("searchTime").value = `${hours}:${minutes}`;
+    let dateStr = today.toISOString().split('T')[0];
+    let timeStr = `${String(today.getUTCHours()).padStart(2, '0')}:${String(today.getUTCMinutes()).padStart(2, '0')}`;
+    
+    if (params.has("date")) {
+        dateStr = params.get("date");
+    }
+    if (params.has("time")) {
+        timeStr = params.get("time");
+    }
+    
+    document.getElementById("searchDate").value = dateStr;
+    document.getElementById("searchTime").value = timeStr;
     
     // Default RA/Dec inputs to M31
     document.getElementById("inputRA").value = "00h 42m 44.3s";
@@ -916,4 +929,13 @@ function openModal(objid) {
 
 function closeModal() {
     document.getElementById("detailModal").classList.remove("active");
+}
+
+function updateNavToRadar() {
+    const dateEl = document.getElementById("searchDate");
+    const timeEl = document.getElementById("searchTime");
+    const navToRadar = document.getElementById("navToRadar");
+    if (dateEl && timeEl && navToRadar) {
+        navToRadar.href = `index.html?date=${encodeURIComponent(dateEl.value)}&time=${encodeURIComponent(timeEl.value)}`;
+    }
 }

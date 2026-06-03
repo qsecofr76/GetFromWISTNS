@@ -189,6 +189,11 @@ document.addEventListener("DOMContentLoaded", () => {
             closeModal();
         }
     });
+
+    // Listen to changes to dynamically update nav link
+    document.getElementById("obsDate").addEventListener("input", updateNavToSearch);
+    document.getElementById("obsTime").addEventListener("input", updateNavToSearch);
+    updateNavToSearch();
 });
 
 function initElements() {
@@ -528,6 +533,9 @@ function applyCalculation() {
     
     // 6. Build the table results
     renderTable();
+
+    // 7. Update Navigation link
+    updateNavToSearch();
 }
 
 function updateSummaryBanner(startDate, lat, lon) {
@@ -1000,4 +1008,13 @@ function getAltColor(alt) {
     if (alt > 45) return "var(--neon-cyan)";
     if (alt > 20) return "var(--neon-green)";
     return "var(--neon-gold)";
+}
+
+function updateNavToSearch() {
+    const dateEl = document.getElementById("obsDate");
+    const timeEl = document.getElementById("obsTime");
+    const navToSearch = document.getElementById("navToSearch");
+    if (dateEl && timeEl && navToSearch) {
+        navToSearch.href = `search.html?date=${encodeURIComponent(dateEl.value)}&time=${encodeURIComponent(timeEl.value)}`;
+    }
 }
