@@ -50,6 +50,10 @@ let targetCoords = { ra: 10.6847, dec: 41.2687 }; // Default: M31 coordinates
 let searchRadius = 1.5; // default in degrees
 let visualizerCanvas;
 let visualizerCtx;
+let lastMatchedSNe = [];
+let lastMatchedAsteroids = [];
+let flipHorizontal = false;
+let flipVertical = false;
 
 // --- INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
@@ -78,6 +82,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.target === document.getElementById("detailModal")) {
             closeModal();
         }
+    });
+
+    // Flip view events
+    document.getElementById("btnFlipH").addEventListener("click", () => {
+        flipHorizontal = !flipHorizontal;
+        document.getElementById("btnFlipH").classList.toggle("btn-flip-active", flipHorizontal);
+        drawTargetVisualizer(lastMatchedSNe, lastMatchedAsteroids);
+    });
+    document.getElementById("btnFlipV").addEventListener("click", () => {
+        flipVertical = !flipVertical;
+        document.getElementById("btnFlipV").classList.toggle("btn-flip-active", flipVertical);
+        drawTargetVisualizer(lastMatchedSNe, lastMatchedAsteroids);
     });
 
     // Populate initial visualizer
@@ -426,11 +442,13 @@ async function handleSearchSubmit(e) {
     
     // 1. Search Supernovae locally
     const matchedSNe = searchSupernovae(j2000Coords, searchRadius);
+    lastMatchedSNe = matchedSNe;
     renderSupernovaeTable(matchedSNe);
     
     // 2. Query Asteroids from MPC
     renderAsteroidsLoading();
     const matchedAsteroids = await queryMPCAsteroids(j2000Coords, searchRadius, limitMag, searchDateObj);
+    lastMatchedAsteroids = matchedAsteroids;
     
     // Redraw visualizer with new coordinates
     drawTargetVisualizer(matchedSNe, matchedAsteroids);
@@ -747,6 +765,14 @@ function drawTargetVisualizer(supernovae, asteroids) {
         visualizerCtx.stroke();
     });
     
+    // Draw Axis Labels "RA" and "DEC"
+    visualizerCtx.fillStyle = "rgba(6, 182, 212, 0.6)";
+    visualizerCtx.font = "bold 9px Outfit";
+    // Horizontal axis (Right Ascension)
+    visualizerCtx.fillText("RA", w - 20, cy - 4);
+    // Vertical axis (Declination)
+    visualizerCtx.fillText("DEC", cx + 4, 15);
+    
     // Label for search radius limit
     visualizerCtx.fillStyle = "rgba(148, 163, 184, 0.4)";
     visualizerCtx.font = "9px Inter";
@@ -760,7 +786,6 @@ function drawTargetVisualizer(supernovae, asteroids) {
     visualizerCtx.stroke();
     
     // Scale coordinate offsets relative to searchRadius
-    // 1px = searchRadius / maxFovRadiusPx degrees
     const scale = maxFovRadiusPx / searchRadius;
     
     // Plot Supernovae (Cyan neon dots)
@@ -769,9 +794,9 @@ function drawTargetVisualizer(supernovae, asteroids) {
         const dDec = sn.dec - targetCoords.dec;
         const dRa = (sn.ra - targetCoords.ra) * Math.cos(targetCoords.dec * Math.PI / 180);
         
-        // Convert to canvas coordinates (flip Y because declination increases upwards)
-        const px = cx + dRa * scale;
-        const py = cy - dDec * scale;
+        // Convert to canvas coordinates (apply mirror flips)
+        const px = cx + (flipHorizontal ? -1 : 1) * dRa * scale;
+        const py = cy - (flipVertical ? -1 : 1) * dDec * scale;
         
         // Draw glow dot
         visualizerCtx.shadowBlur = 10;
@@ -794,8 +819,8 @@ function drawTargetVisualizer(supernovae, asteroids) {
         const dDec = ast.dec - targetCoords.dec;
         const dRa = (ast.ra - targetCoords.ra) * Math.cos(targetCoords.dec * Math.PI / 180);
         
-        const px = cx + dRa * scale;
-        const py = cy - dDec * scale;
+        const px = cx + (flipHorizontal ? -1 : 1) * dRa * scale;
+        const py = cy - (flipVertical ? -1 : 1) * dDec * scale;
         
         // Draw asteroid dot
         visualizerCtx.shadowBlur = 8;
