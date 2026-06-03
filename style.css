@@ -926,7 +926,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
 }
 
 .footer-logo-img {
-    height: 45px;
+    height: 32px;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.06);
     background: rgba(12, 8, 24, 0.4);
