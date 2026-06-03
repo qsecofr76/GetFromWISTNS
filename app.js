@@ -1014,7 +1014,22 @@ function updateNavToSearch() {
     const dateEl = document.getElementById("obsDate");
     const timeEl = document.getElementById("obsTime");
     const navToSearch = document.getElementById("navToSearch");
-    if (dateEl && timeEl && navToSearch) {
-        navToSearch.href = `search.html?date=${encodeURIComponent(dateEl.value)}&time=${encodeURIComponent(timeEl.value)}`;
+    if (dateEl && dateEl.value && timeEl && timeEl.value && navToSearch) {
+        // Parse the local date/time
+        const [y, mo, d] = dateEl.value.split("-").map(Number);
+        const [h, mi] = timeEl.value.split(":").map(Number);
+        const localDate = new Date(y, mo - 1, d, h, mi);
+        
+        // Format to UT date/time strings
+        const utYear = localDate.getUTCFullYear();
+        const utMonth = String(localDate.getUTCMonth() + 1).padStart(2, '0');
+        const utDay = String(localDate.getUTCDate()).padStart(2, '0');
+        const utHours = String(localDate.getUTCHours()).padStart(2, '0');
+        const utMinutes = String(localDate.getUTCMinutes()).padStart(2, '0');
+        
+        const utDateStr = `${utYear}-${utMonth}-${utDay}`;
+        const utTimeStr = `${utHours}:${utMinutes}`;
+        
+        navToSearch.href = `search.html?date=${encodeURIComponent(utDateStr)}&time=${encodeURIComponent(utTimeStr)}`;
     }
 }

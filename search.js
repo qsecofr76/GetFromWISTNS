@@ -935,7 +935,22 @@ function updateNavToRadar() {
     const dateEl = document.getElementById("searchDate");
     const timeEl = document.getElementById("searchTime");
     const navToRadar = document.getElementById("navToRadar");
-    if (dateEl && timeEl && navToRadar) {
-        navToRadar.href = `index.html?date=${encodeURIComponent(dateEl.value)}&time=${encodeURIComponent(timeEl.value)}`;
+    if (dateEl && dateEl.value && timeEl && timeEl.value && navToRadar) {
+        const [y, mo, d] = dateEl.value.split("-").map(Number);
+        const [h, mi] = timeEl.value.split(":").map(Number);
+        // Create date using Date.UTC to treat the input as UT
+        const utDate = new Date(Date.UTC(y, mo - 1, d, h, mi));
+        
+        // Extract local timezone strings
+        const localYear = utDate.getFullYear();
+        const localMonth = String(utDate.getMonth() + 1).padStart(2, '0');
+        const localDay = String(utDate.getDate()).padStart(2, '0');
+        const localHours = String(utDate.getHours()).padStart(2, '0');
+        const localMinutes = String(utDate.getMinutes()).padStart(2, '0');
+        
+        const localDateStr = `${localYear}-${localMonth}-${localDay}`;
+        const localTimeStr = `${localHours}:${localMinutes}`;
+        
+        navToRadar.href = `index.html?date=${encodeURIComponent(localDateStr)}&time=${encodeURIComponent(localTimeStr)}`;
     }
 }
