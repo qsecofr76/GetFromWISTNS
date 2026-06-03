@@ -199,14 +199,11 @@
                         <table class="supernovae-table">
                             <thead>
                                 <tr>
-                                    <th>Asterode / Designazione</th>
+                                    <th>Asteroide / Designazione</th>
                                     <th>Magnitudine (V)</th>
                                     <th>Distanza Centro</th>
-                                    <th>Offset RA</th>
-                                    <th>Offset Dec</th>
-                                    <th>Movimento RA</th>
-                                    <th>Movimento Dec</th>
-                                    <th>Dettagli / Orbita</th>
+                                    <th>Ascensione Retta (RA)</th>
+                                    <th>Declinazione (Dec)</th>
                                 </tr>
                             </thead>
                             <tbody id="asteroidResultsBody">
@@ -288,6 +285,67 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- Detailed Overlay Modal -->
+    <div class="modal-overlay" id="detailModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="modalClose">×</button>
+            <div class="modal-header">
+                <h2 id="modalSnName">SN 2026xyz</h2>
+                <span class="badge" id="modalSnType">SN Ia</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-grid">
+                    <div class="info-block">
+                        <span class="label">Costellazione</span>
+                        <span class="value" id="modalConstellation">Ursa Major</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Magnitudine Scoperta</span>
+                        <span class="value" id="modalMag">16.5</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Filtro Rilevazione</span>
+                        <span class="value" id="modalFilter">Clear (g-ZTF)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Redshift (z)</span>
+                        <span class="value" id="modalRedshift">0.015</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Ascensione Retta</span>
+                        <span class="value" id="modalRa">12h 34m 56s (188.74°)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Declinazione</span>
+                        <span class="value" id="modalDec">+16° 28' 14" (16.47°)</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Gruppo Scopritore</span>
+                        <span class="value" id="modalGroup">ATLAS collaboration</span>
+                    </div>
+                    <div class="info-block">
+                        <span class="label">Data di Rilevazione</span>
+                        <span class="value" id="modalDate">2026-05-18 09:31:51</span>
+                    </div>
+                </div>
+                
+                <!-- Visibility Timeline inside Modal (hidden dynamically on search) -->
+                <div class="modal-visibility-tracker" style="display: none;">
+                    <h3>📈 Finestra Visibilità (Prossime 6 Ore)</h3>
+                    <div class="visibility-timeline" id="modalTimeline">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="#" target="_blank" id="btnTnsLink" class="btn btn-primary">Apri scheda su WIS-TNS</a>
+                <a href="#" target="_blank" id="btnAladinLink" class="btn btn-secondary" style="background: rgba(34, 211, 238, 0.2); border: 1px solid var(--neon-cyan); color: var(--neon-cyan); text-shadow: 0 0 5px var(--neon-cyan); font-weight: 600;">🌌 Aladin Lite</a>
+                <button type="button" class="btn btn-secondary" id="btnModalClose">Chiudi</button>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->

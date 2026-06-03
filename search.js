@@ -69,6 +69,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Close modal events
+    const modalClose = document.getElementById("modalClose");
+    if (modalClose) modalClose.addEventListener("click", closeModal);
+    const btnModalClose = document.getElementById("btnModalClose");
+    if (btnModalClose) btnModalClose.addEventListener("click", closeModal);
+    window.addEventListener("click", (e) => {
+        if (e.target === document.getElementById("detailModal")) {
+            closeModal();
+        }
+    });
+
     // Populate initial visualizer
     drawTargetVisualizer([], []);
 });
@@ -480,7 +491,7 @@ function renderSupernovaeTable(list) {
         const hostGal = sn.host_galaxy && sn.host_galaxy !== "N/A" ? sn.host_galaxy : "<span class='text-muted'>Isolata</span>";
         
         return `
-            <tr>
+            <tr onclick="openModal(${sn.objid})">
                 <td><span style="color: var(--neon-cyan); font-weight: 700;">${sn.prefix} ${sn.name}</span></td>
                 <td><span class="badge ${typeClass}">${sn.type}</span></td>
                 <td class="sn-mag-cell" style="color: var(--neon-gold); font-weight: 600;">${sn.discoverymag ? sn.discoverymag.toFixed(1) : "N/D"}</td>
@@ -643,12 +654,12 @@ function parseMPCHtml(html) {
             const orbit = match[11];
             
             // Convert RA/Dec sexagesimal back to decimal degrees for visualizer plotting
-            const raParts = raRaw.split(" ").map(Number);
-            const decParts = decRaw.replace("+", "").split(" ").map(Number);
-            const decSign = decRaw.startsWith("-") ? -1 : 1;
+            const raParts = raRaw.split(/\s+/).map(Number);
+            const decParts = decRaw.replace(/[+-]/, "").trim().split(/\s+/).map(Number);
+            const decSign = decRaw.includes("-") ? -1 : 1;
             
-            const raDeg = (raParts[0] + raParts[1] / 60 + raParts[2] / 3600) * 15;
-            const decDeg = decSign * (decParts[0] + decParts[1] / 60 + decParts[2] / 3600);
+            const raDeg = (raParts[0] + (raParts[1] || 0) / 60 + (raParts[2] || 0) / 3600) * 15;
+            const decDeg = decSign * (decParts[0] + (decParts[1] || 0) / 60 + (decParts[2] || 0) / 3600);
             
             // Calculate actual angular distance from center
             const distance = getAngularDistance(targetCoords.ra, targetCoords.dec, raDeg, decDeg);
@@ -680,7 +691,7 @@ function renderAsteroidsTable(asteroids) {
     if (asteroids.length === 0) {
         tbody.innerHTML = `
             <tr>
-                <td colspan="8" class="table-placeholder">
+                <td colspan="5" class="table-placeholder">
                     Nessun asteroide di magnitudine limitante impostata rilevato in questa area.
                 </td>
             </tr>
@@ -688,18 +699,23 @@ function renderAsteroidsTable(asteroids) {
         return;
     }
     
-    tbody.innerHTML = asteroids.map(ast => `
-        <tr class="asteroids-table-header">
-            <td><strong style="color: var(--neon-gold);">${ast.name}</strong></td>
-            <td style="color: var(--neon-gold); font-weight: 700;">${ast.vMag.toFixed(1)}</td>
-            <td><strong>${ast.distance.toFixed(3)}°</strong></td>
-            <td>${ast.offsetRa}</td>
-            <td>${ast.offsetDec}</td>
-            <td>${ast.motRa} "/h</td>
-            <td>${ast.motDec} "/h</td>
-            <td><span class="badge badge-gold" style="text-transform: uppercase;">${ast.orbit}</span></td>
-        </tr>
-    `).join("");
+    // Sort by magnitude (V) ascending (lowest/brightest first)
+    const sortedAsteroids = asteroids.slice().sort((a, b) => a.vMag - b.vMag);
+    
+    tbody.innerHTML = sortedAsteroids.map(ast => {
+        // Clean name (remove parenthesis) to pass to JPL search
+        const jplName = ast.name.replace(/[\(\)]/g, "").trim();
+        const jplUrl = `https://ssd.jpl.nasa.gov/tools/sbdb_lookup.html#/?sstr=${encodeURIComponent(jplName)}`;
+        return `
+            <tr class="asteroids-table-header">
+                <td><a href="${jplUrl}" target="_blank" style="color: var(--neon-gold); font-weight: 700; text-decoration: none; border-bottom: 1px dashed rgba(245, 158, 11, 0.4);">${ast.name}</a></td>
+                <td style="color: var(--neon-gold); font-weight: 700;">${ast.vMag.toFixed(1)}</td>
+                <td><strong>${ast.distance.toFixed(3)}°</strong></td>
+                <td>${formatRA(ast.ra)}</td>
+                <td>${formatDec(ast.dec)}</td>
+            </tr>
+        `;
+    }).join("");
 }
 
 // --- MINI TARGET VISUALIZER CANVAS DRAWING ---
@@ -772,8 +788,9 @@ function drawTargetVisualizer(supernovae, asteroids) {
         visualizerCtx.fillText(sn.name, px + 8, py + 3);
     });
     
-    // Plot Asteroids (Gold neon dots)
-    asteroids.forEach(ast => {
+    // Plot Asteroids (Gold neon dots) - Limit to 6 brightest
+    const brightestAsteroids = asteroids.slice().sort((a, b) => a.vMag - b.vMag).slice(0, 6);
+    brightestAsteroids.forEach(ast => {
         const dDec = ast.dec - targetCoords.dec;
         const dRa = (ast.ra - targetCoords.ra) * Math.cos(targetCoords.dec * Math.PI / 180);
         
@@ -794,4 +811,80 @@ function drawTargetVisualizer(supernovae, asteroids) {
         visualizerCtx.font = "8px Inter";
         visualizerCtx.fillText(ast.name, px + 7, py + 2);
     });
+}
+
+// --- DETAIL MODAL SYSTEM ---
+
+function openModal(objid) {
+    const sn = allSupernovae.find(s => s.objid === objid);
+    if (!sn) return;
+    
+    // Populate simple info
+    document.getElementById("modalSnName").innerText = `${sn.prefix} ${sn.name}`;
+    
+    const modalType = document.getElementById("modalSnType");
+    modalType.innerText = sn.type;
+    modalType.className = "badge " + (sn.type.includes("Ia") ? "badge-purple" : (sn.type.includes("II") ? "badge-pink" : "badge-green"));
+    
+    // Constellation and Host Galaxy
+    const hostGal = sn.host_galaxy && sn.host_galaxy !== "N/A" ? sn.host_galaxy : "Non rilevata / Isolata";
+    document.getElementById("modalConstellation").innerHTML = `${sn.constellation} <br><span style="font-size:0.75rem; color:var(--text-muted)">Galassia Ospitante: <strong style="color:var(--neon-cyan)">${hostGal}</strong></span>`;
+    
+    document.getElementById("modalMag").innerText = sn.discoverymag !== null ? sn.discoverymag.toFixed(2) : "N/D";
+    document.getElementById("modalFilter").innerText = sn.filter ? `${sn.filter} (${sn.discmagfilter})` : sn.discmagfilter;
+    
+    // Redshift and presunta/stima distance in Light Years
+    let redshiftText = "N/D";
+    if (sn.redshift !== null) {
+        if (sn.redshift > 0) {
+            const distLy = sn.redshift * 13.9686 * 1000000000;
+            let formattedDist = "";
+            if (distLy >= 1000000000) {
+                formattedDist = ` (~${(distLy / 1000000000).toFixed(2)} miliardi di a.l.)`;
+            } else {
+                formattedDist = ` (~${(distLy / 1000000).toFixed(1)} milioni di a.l.)`;
+            }
+            redshiftText = `${sn.redshift.toFixed(5)}${formattedDist}`;
+        } else {
+            redshiftText = `${sn.redshift.toFixed(5)}`;
+        }
+    } else if (sn.host_galaxy_distance_ly) {
+        const distLy = sn.host_galaxy_distance_ly;
+        let formattedDist = "";
+        if (distLy >= 1000000000) {
+            formattedDist = `~${(distLy / 1000000000).toFixed(2)} mld a.l.`;
+        } else {
+            formattedDist = `~${(distLy / 1000000).toFixed(1)} mln a.l.`;
+        }
+        redshiftText = `N/D <span style="color:var(--text-muted); font-size:0.8rem">(Stima galassia: <strong style="color:var(--neon-green)">${formattedDist}</strong>)</span>`;
+    }
+    document.getElementById("modalRedshift").innerHTML = redshiftText;
+    
+    // Coordinates
+    document.getElementById("modalRa").innerText = `${formatRA(sn.ra)} (${sn.ra.toFixed(4)}°)`;
+    document.getElementById("modalDec").innerText = `${formatDec(sn.dec)} (${sn.dec.toFixed(4)}°)`;
+    
+    // Group and Date
+    document.getElementById("modalGroup").innerText = sn.reporting_group ? sn.reporting_group : (sn.source_group ? sn.source_group : "Sconosciuto");
+    document.getElementById("modalDate").innerText = sn.discoverydate;
+    
+    // Direct link to the object page on WIS-TNS
+    document.getElementById("btnTnsLink").href = `https://www.wis-tns.org/object/${sn.name}`;
+    
+    // Direct link to the sky view on Aladin Lite (DSS2 Color, 0.5 degrees FOV)
+    const aladinTarget = `${sn.ra} ${sn.dec}`;
+    document.getElementById("btnAladinLink").href = `https://aladin.cds.unistra.fr/AladinLite/?target=${encodeURIComponent(aladinTarget)}&fov=0.5&survey=P%2FDSS2%2Fcolor`;
+    
+    // Hide visibility timeline in search modal (no terrestrial coordinates)
+    const timelineTracker = document.querySelector(".modal-visibility-tracker");
+    if (timelineTracker) {
+        timelineTracker.style.display = "none";
+    }
+    
+    // Display Modal
+    document.getElementById("detailModal").classList.add("active");
+}
+
+function closeModal() {
+    document.getElementById("detailModal").classList.remove("active");
 }
