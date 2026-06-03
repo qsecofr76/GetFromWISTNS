@@ -551,7 +551,8 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
             <tr>
                 <td colspan="8" class="table-placeholder" style="color: var(--neon-red);">
                     ❌ Impossibile caricare direttamente i dati MPC dal browser (blocco CORS, timeout o errore di validazione).<br>
-                    Usa il modulo arancione visualizzato qui sotto per consultare MPC in una nuova scheda.
+                    Usa il modulo arancione visualizzato qui sotto per consultare MPC in una nuova scheda.<br>
+                    <span style="font-size: 0.75rem; color: var(--text-muted); font-family: monospace; display: inline-block; margin-top: 8px;">Dettaglio Errore: ${e.message || e.toString()}</span>
                 </td>
             </tr>
         `;
