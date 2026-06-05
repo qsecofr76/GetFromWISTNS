@@ -298,13 +298,13 @@ def fetch_and_parse():
             prefix = row.get("name_prefix", "").strip()
             obj_type = row.get("type", "").strip()
             
-            is_supernova = (
-                prefix.upper() == "SN" or 
+            is_transient = (
+                prefix.upper() in ["SN", "AT"] or 
                 "SN" in obj_type or 
                 obj_type.lower().startswith("supernova")
             )
             
-            if not is_supernova:
+            if not is_transient:
                 skipped_count += 1
                 continue
 
