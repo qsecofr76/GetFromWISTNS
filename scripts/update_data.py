@@ -182,8 +182,8 @@ def find_closest_ngc_galaxy(ra, dec, max_radius_deg=0.15):
         print(f"[!] Error finding closest NGC/IC galaxy: {e}")
     return "N/A", None, None
 
-# Configurable constants (defaulting to 180 days = 6 months)
-DAYS_LIMIT = int(os.environ.get("DAYS_LIMIT", "180"))
+# Configurable constants (defaulting to 150 days = 5 months)
+DAYS_LIMIT = int(os.environ.get("DAYS_LIMIT", "150"))
 TNS_ZIP_URL = "https://www.wis-tns.org/system/files/tns_public_objects/tns_public_objects.csv.zip"
 OUTPUT_FILENAME = "supernovae.json"
 
@@ -386,20 +386,17 @@ def fetch_and_parse():
                     else:
                         host_galaxy = f"{closest_name} (vicina, a {separation_deg:.2f}°)"
                 else:
-                    # Step B: Search PGC online (radius <= 0.15° = 9 arcminutes) - Only for confirmed SNe to prevent slow runs and rate limits
-                    if prefix.upper() == "SN":
-                        print(f"[*] NGC/IC not found within 0.15°. Querying VizieR PGC for SN {prefix} {name_str}...")
-                        pgc_result = query_closest_pgc(ra, dec, max_radius_deg=0.15)
-                        if pgc_result:
-                            pgc_name = pgc_result["name"]
-                            sep_deg = pgc_result["separation_deg"]
-                            host_galaxy_separation_deg = sep_deg
-                            if sep_deg < 0.05:
-                                host_galaxy = pgc_name
-                            else:
-                                host_galaxy = f"{pgc_name} (vicina, a {sep_deg:.2f}°)"
-                    else:
-                        host_galaxy = "N/A"
+                    # Step B: Search PGC online (radius <= 0.15° = 9 arcminutes)
+                    print(f"[*] NGC/IC not found within 0.15°. Querying VizieR PGC for SN {prefix} {name_str}...")
+                    pgc_result = query_closest_pgc(ra, dec, max_radius_deg=0.15)
+                    if pgc_result:
+                        pgc_name = pgc_result["name"]
+                        sep_deg = pgc_result["separation_deg"]
+                        host_galaxy_separation_deg = sep_deg
+                        if sep_deg < 0.05:
+                            host_galaxy = pgc_name
+                        else:
+                            host_galaxy = f"{pgc_name} (vicina, a {sep_deg:.2f}°)"
                 
                 # 3. Save resolved data to cache and write incrementally to disk
                 hostnames_cache[name_str] = {
