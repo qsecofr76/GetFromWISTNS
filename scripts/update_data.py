@@ -357,10 +357,11 @@ def fetch_and_parse():
             except Exception:
                 constellation = "Unknown"
 
-            # E. Hierarchical Galaxy Proximity Search (Cache -> NGC/IC Offline -> PGC Online)
+            # E. Hierarchical Galaxy Proximity Search (Cache -> NGC/IC Offline -> PGC Online in Phase 2)
             host_galaxy = "N/A"
             host_galaxy_distance_ly = None
             host_galaxy_separation_deg = None
+            needs_online_lookup = False
             
             name_str = row.get("name", "").strip()
             # 1. Try cache
@@ -374,9 +375,8 @@ def fetch_and_parse():
                     # Upgrade old cache format to new cache format
                     host_galaxy = cache_entry
             
-            # 2. If not found in cache or N/A, execute hierarchical search
+            # 2. Search NGC/IC offline (radius <= 0.15° = 9 arcminutes)
             if host_galaxy == "N/A":
-                # Step A: Search NGC/IC offline (radius <= 0.15° = 9 arcminutes)
                 closest_name, separation_deg, closest_dist_ly = find_closest_ngc_galaxy(ra, dec, max_radius_deg=0.15)
                 if closest_name and closest_name != "N/A":
                     host_galaxy_separation_deg = separation_deg
@@ -386,34 +386,13 @@ def fetch_and_parse():
                     else:
                         host_galaxy = f"{closest_name} (vicina, a {separation_deg:.2f}°)"
                 else:
-                    # Step B: Search PGC online (radius <= 0.15° = 9 arcminutes)
-                    print(f"[*] NGC/IC not found within 0.15°. Querying VizieR PGC for SN {prefix} {name_str}...")
-                    pgc_result = query_closest_pgc(ra, dec, max_radius_deg=0.15)
-                    if pgc_result:
-                        pgc_name = pgc_result["name"]
-                        sep_deg = pgc_result["separation_deg"]
-                        host_galaxy_separation_deg = sep_deg
-                        if sep_deg < 0.05:
-                            host_galaxy = pgc_name
-                        else:
-                            host_galaxy = f"{pgc_name} (vicina, a {sep_deg:.2f}°)"
-                
-                # 3. Save resolved data to cache and write incrementally to disk
-                hostnames_cache[name_str] = {
-                    "host_galaxy": host_galaxy,
-                    "host_galaxy_distance_ly": host_galaxy_distance_ly,
-                    "host_galaxy_separation_deg": host_galaxy_separation_deg
-                }
-                try:
-                    with open(cache_path, "w", encoding="utf-8") as f:
-                        json.dump(hostnames_cache, f, indent=2, ensure_ascii=False)
-                except Exception:
-                    pass
-
+                    # Flag for Phase 2 online VizieR lookup
+                    needs_online_lookup = True
+            
             # F. Construct cleaned supernova object
             sn_obj = {
                 "objid": int(row.get("objid", 0)),
-                "name": row.get("name", "").strip(),
+                "name": name_str,
                 "prefix": prefix,
                 "ra": ra,
                 "dec": dec,
@@ -429,7 +408,8 @@ def fetch_and_parse():
                 "reporting_group": row.get("reporting_group", "").strip(),
                 "source_group": row.get("source_group", "").strip(),
                 "redshift": redshift,
-                "reporters": row.get("reporters", "").strip()
+                "reporters": row.get("reporters", "").strip(),
+                "_needs_online_lookup": needs_online_lookup  # temporary internal flag
             }
             
             supernovae.append(sn_obj)
@@ -442,48 +422,114 @@ def fetch_and_parse():
     print(f"[+] Total rows scanned: {idx + 1}")
     print(f"[+] Filtered recent supernovas: {len(supernovae)}")
     print(f"[+] Skipped rows (older/non-SN): {skipped_count}")
-    print(f"[+] TNS API host galaxy queries performed: {api_queries_count}")
     if parse_errors > 0:
         print(f"[!] Skipped rows due to formatting/parsing errors: {parse_errors}")
 
-    # Save hostnames cache
-    try:
-        with open(cache_path, "w", encoding="utf-8") as f:
-            json.dump(hostnames_cache, f, indent=2, ensure_ascii=False)
-        print(f"[+] Saved {len(hostnames_cache)} hostnames to cache.")
-    except Exception as ex:
-        print(f"[!] Error saving cache: {ex}")
+    # Helper function to save supernovae JSON file
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.dirname(script_dir)
+    output_path = os.path.join(root_dir, OUTPUT_FILENAME)
+    
+    def save_supernovae_json():
+        try:
+            # Strip temporary flags before saving
+            cleaned_sne = []
+            for sn in supernovae:
+                cleaned_sn = sn.copy()
+                cleaned_sn.pop("_needs_online_lookup", None)
+                cleaned_sne.append(cleaned_sn)
+                
+            data_to_save = {
+                "metadata": {
+                    "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
+                    "days_limit": DAYS_LIMIT,
+                    "total_count": len(cleaned_sne)
+                },
+                "supernovae": cleaned_sne
+            }
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(data_to_save, f, indent=2, ensure_ascii=False)
+            return True
+        except Exception as e:
+            print(f"[!] Failed to write output JSON file: {e}")
+            return False
+
+    def save_cache_json():
+        try:
+            with open(cache_path, "w", encoding="utf-8") as f:
+                json.dump(hostnames_cache, f, indent=2, ensure_ascii=False)
+        except Exception as ex:
+            print(f"[!] Error saving cache: {ex}")
 
     # 6. Sort by discovery date descending (newest first)
     supernovae.sort(key=lambda x: x["discoverydate"], reverse=True)
 
-    # 7. Write to output file
-    # We want to save it in the root folder so the frontend can read it via fetch('./supernovae.json')
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.dirname(script_dir)
-    output_path = os.path.join(root_dir, OUTPUT_FILENAME)
-
-    print(f"[*] Saving filtered data to {output_path}...")
-    try:
-        # Save both metadata and data
-        data_to_save = {
-            "metadata": {
-                "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC"),
-                "days_limit": DAYS_LIMIT,
-                "total_count": len(supernovae)
-            },
-            "supernovae": supernovae
-        }
-        
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(data_to_save, f, indent=2, ensure_ascii=False)
-            
-        print(f"[+] Success! file '{OUTPUT_FILENAME}' generated successfully.")
-        print(f"[+] Output file size: {os.path.getsize(output_path) / 1024:.2f} KB")
-        return True
-    except Exception as e:
-        print(f"[!] Failed to write output JSON file: {e}")
+    # ==========================================
+    # PHASE 1: Write initial database immediately
+    # ==========================================
+    print(f"[*] PHASE 1: Saving initial data to {output_path}...")
+    save_cache_json()
+    if not save_supernovae_json():
         return False
+    print(f"[+] PHASE 1: Base JSON file generated successfully (Size: {os.path.getsize(output_path) / 1024:.2f} KB).")
+
+    # ==========================================
+    # PHASE 2: Incremental online VizieR lookups
+    # ==========================================
+    online_items = [sn for sn in supernovae if sn.get("_needs_online_lookup")]
+    if online_items:
+        print(f"[*] PHASE 2: Starting incremental online lookups for {len(online_items)} objects...")
+        for count, sn in enumerate(online_items, 1):
+            name_str = sn["name"]
+            prefix = sn["prefix"]
+            ra = sn["ra"]
+            dec = sn["dec"]
+            
+            print(f"    [{count}/{len(online_items)}] Querying VizieR PGC online for {prefix} {name_str}...")
+            try:
+                pgc_result = query_closest_pgc(ra, dec, max_radius_deg=0.15)
+                if pgc_result:
+                    pgc_name = pgc_result["name"]
+                    sep_deg = pgc_result["separation_deg"]
+                    
+                    # Determine formatting
+                    if sep_deg < 0.05:
+                        resolved_galaxy = pgc_name
+                    else:
+                        resolved_galaxy = f"{pgc_name} (vicina, a {sep_deg:.2f}°)"
+                    
+                    # Update local memory
+                    sn["host_galaxy"] = resolved_galaxy
+                    sn["host_galaxy_separation_deg"] = sep_deg
+                    
+                    # Update cache
+                    hostnames_cache[name_str] = {
+                        "host_galaxy": resolved_galaxy,
+                        "host_galaxy_distance_ly": None,
+                        "host_galaxy_separation_deg": sep_deg
+                    }
+                    
+                    # Write immediately to disk
+                    save_cache_json()
+                    save_supernovae_json()
+                    print(f"    [+] Successfully resolved host galaxy for {name_str}: {resolved_galaxy}")
+                else:
+                    # Save N/A to cache to prevent querying again next run
+                    hostnames_cache[name_str] = {
+                        "host_galaxy": "N/A",
+                        "host_galaxy_distance_ly": None,
+                        "host_galaxy_separation_deg": None
+                    }
+                    save_cache_json()
+            except Exception as lookup_err:
+                print(f"    [!] Error during VizieR query for {name_str}: {lookup_err}")
+                # We do not exit, we continue resolving other objects
+                
+        print("[+] PHASE 2: Incremental online PGC lookup completed.")
+    else:
+        print("[*] PHASE 2: No online lookups needed.")
+        
+    return True
 
 if __name__ == "__main__":
     success = fetch_and_parse()
