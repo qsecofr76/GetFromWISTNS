@@ -78,6 +78,10 @@ const TRANSLATIONS = {
         "fallback-title": "Problema con l'interrogazione diretta dell'MPC",
         "fallback-desc": "La richiesta diretta ai server del Minor Planet Center è stata bloccata (CORS o timeout). Puoi comunque produrre la lista ufficiale compilando la richiesta ufficiale in una nuova finestra.",
         "btn-fallback": "🔗 Apri Ricerca su Minor Planet Center (Nuova Scheda)",
+        "debug-title": "🛠️ MPC Debug Console (Scambio Query)",
+        "debug-toggle": "Espandi/Riduci",
+        "debug-url-label": "URL Richiesta (tramite Proxy):",
+        "debug-response-label": "Risposta HTML Ricevuta:",
         
         // Table Headers Search
         "th-sn-search": "Supernova",
@@ -223,6 +227,10 @@ const TRANSLATIONS = {
         "fallback-title": "Issue with direct MPC query",
         "fallback-desc": "Direct request to the Minor Planet Center servers has been blocked (CORS or timeout). You can still obtain the official list by submitting the official form in a new window.",
         "btn-fallback": "🔗 Open Search on Minor Planet Center (New Tab)",
+        "debug-title": "🛠️ MPC Debug Console (Query Exchange)",
+        "debug-toggle": "Expand/Collapse",
+        "debug-url-label": "Request URL (via Proxy):",
+        "debug-response-label": "HTML Response Received:",
         
         // Table Headers Search
         "th-sn-search": "Supernova",
