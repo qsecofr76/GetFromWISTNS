@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-06-04 19:56:42 UTC",
+    "generated_at": "2026-06-05 15:35:46 UTC",
     "days_limit": 180,
-    "total_count": 340
+    "total_count": 339
   },
   "supernovae": [
     {
@@ -6784,26 +6784,6 @@
       "source_group": "CRTS",
       "redshift": 0.02339,
       "reporters": "Michele Mazzucato on behalf of SNHunt"
-    },
-    {
-      "objid": 194650,
-      "name": "2025agik",
-      "prefix": "SN",
-      "ra": 23.6790862964,
-      "dec": 36.9641827863,
-      "type": "SN Ib/c",
-      "constellation": "Andromeda",
-      "host_galaxy": "PGC 2089725 (NPM1G+36.0040)",
-      "host_galaxy_distance_ly": null,
-      "host_galaxy_separation_deg": 0.03760551962151425,
-      "discoverydate": "2025-12-07 02:38:42.999",
-      "discoverymag": 18.8897,
-      "discmagfilter": "110",
-      "filter": "g",
-      "reporting_group": "ZTF",
-      "source_group": "ZTF",
-      "redshift": 0.018,
-      "reporters": "Daniel Perley (LJMU), Christoffer Fremling (Caltech), Theophile du Laz (Caltech) on behalf of ZTF"
     }
   ]
 }
