@@ -689,7 +689,20 @@ function parseMPCHtml(html) {
     const doc = parser.parseFromString(html, "text/html");
     const pre = doc.querySelector("pre");
     
-    if (!pre) return [];
+    // Check if the response explicitly states that no minor planets/comets were found (valid 0-result case)
+    const normalizedHtml = html.toLowerCase();
+    const isZeroResults = normalizedHtml.includes("no known minor planets") || 
+                         normalizedHtml.includes("no known comets") ||
+                         normalizedHtml.includes("were found");
+                         
+    if (!pre) {
+        if (isZeroResults) {
+            return []; // Valid zero results
+        } else {
+            // No pre tag and not a zero result message means it's a query/proxy error
+            throw new Error(getLang() === 'it' ? "Formato della risposta MPC non valido" : "Invalid MPC response format");
+        }
+    }
     
     const text = pre.textContent || pre.innerText;
     const lines = text.split("\n");
