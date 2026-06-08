@@ -226,17 +226,31 @@ def fetch_and_parse():
             "https": "socks5h://127.0.0.1:9050"
         }
         
-    print(f"[*] Downloading TNS public objects catalog from {TNS_ZIP_URL}...")
-    try:
-        response = requests.get(url, headers=headers, proxies=proxies, timeout=120)
-        if response.status_code != 200:
-            print(f"[!] Error: Server responded with status code {response.status_code}")
-            print(f"[!] Headers: {response.headers}")
-            if response.status_code == 403:
-                print("[!] 403 Forbidden: Please check your TNS Bot credentials and API key.")
-            return False
-    except Exception as e:
-        print(f"[!] Connection failed: {e}")
+    import time
+    max_retries = 3
+    timeout_per_attempt = 60
+    response = None
+    
+    for attempt in range(1, max_retries + 1):
+        print(f"[*] Downloading TNS public objects catalog (Attempt {attempt}/{max_retries})...")
+        try:
+            response = requests.get(url, headers=headers, proxies=proxies, timeout=timeout_per_attempt)
+            if response.status_code == 200:
+                break
+            else:
+                print(f"[!] Server responded with status code {response.status_code} on attempt {attempt}")
+                if response.status_code == 403:
+                    print("[!] 403 Forbidden: Please check your TNS Bot credentials and API key.")
+                    return False
+        except Exception as e:
+            print(f"[!] Connection attempt {attempt} failed: {e}")
+        
+        if attempt < max_retries:
+            print("[*] Waiting 15 seconds before retrying...")
+            time.sleep(15)
+            
+    if response is None or response.status_code != 200:
+        print("[!] All attempts to download TNS catalog failed.")
         return False
 
     print(f"[+] Download complete! Zipped file size: {len(response.content) / 1024 / 1024:.2f} MB")
