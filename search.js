@@ -634,23 +634,46 @@ async function queryMPCAsteroids(coords, radiusDeg, limitMag, date) {
     const debugUrlEl = document.getElementById("debugMpcUrl");
     if (debugUrlEl) debugUrlEl.value = mpcUrl;
 
-    const proxyUrl = `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(mpcUrl)}`;
+    const proxyUrls = [
+        `https://api.codetabs.com/v1/proxy/?quest=${encodeURIComponent(mpcUrl)}`,
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(mpcUrl)}`
+    ];
+    
+    let html = null;
+    let success = false;
+    let lastError = null;
+    
+    for (const pUrl of proxyUrls) {
+        try {
+            console.log(`[i] Querying MPC via proxy: ${pUrl}`);
+            const response = await fetch(pUrl);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            html = await response.text();
+            
+            // Check if the MPC returned its WebCS validation error
+            if (html.includes("Error from WebCS Script") || html.includes("Invalid data")) {
+                throw new Error("MPC WebCS validation failed");
+            }
+            
+            success = true;
+            break; // Exit loop if successful
+        } catch (err) {
+            console.warn(`[!] Proxy failed: ${pUrl}`, err);
+            lastError = err;
+        }
+    }
+    
+    if (!success) {
+        throw lastError || new Error("All proxies failed");
+    }
+    
+    // Update debug panel response HTML
+    const debugRespEl = document.getElementById("debugMpcResponse");
+    if (debugRespEl) debugRespEl.value = html;
     
     try {
-        const response = await fetch(proxyUrl);
-        if (!response.ok) throw new Error(`MPC Query failed (HTTP ${response.status})`);
-        
-        const html = await response.text();
-        
-        // Update debug panel response HTML
-        const debugRespEl = document.getElementById("debugMpcResponse");
-        if (debugRespEl) debugRespEl.value = html;
-        
-        // Check if the MPC returned its WebCS validation error
-        if (html.includes("Error from WebCS Script") || html.includes("Invalid data")) {
-            throw new Error("MPC WebCS validation failed");
-        }
-        
         const parsedAsteroids = parseMPCHtml(html);
         
         renderAsteroidsTable(parsedAsteroids);
