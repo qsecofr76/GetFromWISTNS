@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-08 13:22:05 UTC",
+    "generated_at": "2026-06-08 20:01:28 UTC",
     "days_limit": 120,
     "total_count": 535
   },
@@ -8135,7 +8135,7 @@
       "constellation": "Andromeda",
       "host_galaxy": "NGC 224",
       "host_galaxy_distance_ly": 2537000,
-      "host_galaxy_separation_deg": 0.023595055529143184,
+      "host_galaxy_separation_deg": 0.02359505552914318,
       "discoverydate": "2026-03-12 13:47:11.616",
       "discoverymag": 17.24,
       "discmagfilter": "1",
