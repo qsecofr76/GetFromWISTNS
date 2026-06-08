@@ -1658,5 +1658,5045 @@
     "host_galaxy": "PGC 1475616 (vicina, a 0.13°)",
     "host_galaxy_distance_ly": null,
     "host_galaxy_separation_deg": 0.12638914886362956
+  },
+  "2026ojs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ojj": {
+    "host_galaxy": "PGC 733680",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.024922477953568153
+  },
+  "2026ojl": {
+    "host_galaxy": "PGC 716995 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08468318568193904
+  },
+  "2026ojk": {
+    "host_galaxy": "PGC 61114 (CGCG56-1)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0025028149821053913
+  },
+  "2026oio": {
+    "host_galaxy": "PGC 1056533",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00392109868595213
+  },
+  "2026ohz": {
+    "host_galaxy": "PGC 1017199 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05664251254965433
+  },
+  "2026ofx": {
+    "host_galaxy": "PGC 184619 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07350376809927044
+  },
+  "2026oij": {
+    "host_galaxy": "PGC 44570 (DRCG26-130)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01208536213128846
+  },
+  "2026oig": {
+    "host_galaxy": "PGC 98081",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002329015951123261
+  },
+  "2026oic": {
+    "host_galaxy": "PGC 156387",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002027935277562731
+  },
+  "2026ofk": {
+    "host_galaxy": "PGC 2380537 (NPM1G+50.0428)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03427371702880992
+  },
+  "2026oih": {
+    "host_galaxy": "PGC 1686620 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1278227640973916
+  },
+  "2026ofi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026oht": {
+    "host_galaxy": "PGC 2174979 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09631612651218006
+  },
+  "2026ohu": {
+    "host_galaxy": "PGC 9381 ((UGC1925))",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.007277136761351552
+  },
+  "2026oii": {
+    "host_galaxy": "PGC 1759016 (CGMW5-7312)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04224192493592637
+  },
+  "2026ogm": {
+    "host_galaxy": "PGC 1261964 (NPM1G+03.0594)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000784677436235805
+  },
+  "2026oge": {
+    "host_galaxy": "PGC 1145835",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004895265896897118
+  },
+  "2026ogf": {
+    "host_galaxy": "PGC 43531 (DRCG25-108)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019787614725071162
+  },
+  "2026ofe": {
+    "host_galaxy": "PGC 772096",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004671518060865263
+  },
+  "2026ohx": {
+    "host_galaxy": "PGC 1656394 (NPM1G+21.0242)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005187403895163111
+  },
+  "2026oew": {
+    "host_galaxy": "PGC 858327 (NPM1G-18.0332)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.003207943904084104
+  },
+  "2026oex": {
+    "host_galaxy": "PGC 847707",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00021307426212668177
+  },
+  "2026ocz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026odv": {
+    "host_galaxy": "PGC 1003522 (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14612346444555552
+  },
+  "2026ods": {
+    "host_galaxy": "PGC 501166",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.010404788819467764
+  },
+  "2026odt": {
+    "host_galaxy": "PGC 248339 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08917748690312105
+  },
+  "2026oco": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026obf": {
+    "host_galaxy": "PGC 9066 (MCG-3-07-007)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004169518266276328
+  },
+  "2026oao": {
+    "host_galaxy": "PGC 2294279",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002348865834000131
+  },
+  "2026off": {
+    "host_galaxy": "PGC 8811 (KUG0215+32151)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0034932055622645362
+  },
+  "2026nzc": {
+    "host_galaxy": "PGC 857939",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01698907245781458
+  },
+  "2026oeb": {
+    "host_galaxy": "PGC 1668272",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008000373864364249
+  },
+  "2026ofy": {
+    "host_galaxy": "PGC 1826969 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13117131995680464
+  },
+  "2026nyz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nxf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ojp": {
+    "host_galaxy": "PGC 1968262 (NPM1G+31.0068)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0013928201698492904
+  },
+  "2026obc": {
+    "host_galaxy": "PGC 4011 (VZw51)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00040061184761760457
+  },
+  "2026nyv": {
+    "host_galaxy": "PGC 3090571 (NPM1G+15.0019)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008594426652740001
+  },
+  "2026odr": {
+    "host_galaxy": "PGC 5046 (ESO244-23)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009376969176822065
+  },
+  "2026nzw": {
+    "host_galaxy": "PGC 92436 (FGCE1132)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.007207970146033679
+  },
+  "2026nxa": {
+    "host_galaxy": "PGC 170118",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001969326958820332
+  },
+  "2026nyb": {
+    "host_galaxy": "PGC 1001526",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.043299135043702815
+  },
+  "2026nyc": {
+    "host_galaxy": "PGC 932809",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0015679303713732294
+  },
+  "2026nyf": {
+    "host_galaxy": "PGC 450443 (RKK2484)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0025026067340980806
+  },
+  "2026odc": {
+    "host_galaxy": "PGC 1780031 (NPM1G+26.0462)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008487815512767603
+  },
+  "2026nwh": {
+    "host_galaxy": "PGC 1895904 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10307129590756971
+  },
+  "2026nwf": {
+    "host_galaxy": "PGC 8028 (ESO298-8)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006956898584072371
+  },
+  "2026nwe": {
+    "host_galaxy": "PGC 10710 (ESO416-33)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.007022704323876112
+  },
+  "2026nwk": {
+    "host_galaxy": "PGC 1382789",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008649852124159396
+  },
+  "2026nwa": {
+    "host_galaxy": "PGC 671535",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.041816551907428105
+  },
+  "2026nwl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nye": {
+    "host_galaxy": "PGC 449665",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0421014259507453
+  },
+  "2026nve": {
+    "host_galaxy": "PGC 1779700",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0033806380136754527
+  },
+  "2026nvg": {
+    "host_galaxy": "PGC 617657",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005092419211067999
+  },
+  "2026nvf": {
+    "host_galaxy": "PGC 562528 (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14696512842126236
+  },
+  "2026nuz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nux": {
+    "host_galaxy": "PGC 2520480 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12481751736158803
+  },
+  "2026nuw": {
+    "host_galaxy": "PGC 24072 (UGC4451)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0030161251587083895
+  },
+  "2026nut": {
+    "host_galaxy": "PGC 625 (CGCG549-20)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0035318482800314977
+  },
+  "2026nuk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ntr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nts": {
+    "host_galaxy": "PGC 684110 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12460998567673563
+  },
+  "2026nuu": {
+    "host_galaxy": "PGC 58263 (MCG7-34-057)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00257585164568049
+  },
+  "2026ntn": {
+    "host_galaxy": "PGC 108694 (LCRSB011102.4-421644)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.028996400275222656
+  },
+  "2026nyd": {
+    "host_galaxy": "PGC 555382",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004109241917205741
+  },
+  "2026nwb": {
+    "host_galaxy": "PGC 4477 (ESO412-21)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009490407449738849
+  },
+  "2026ntl": {
+    "host_galaxy": "PGC 817890 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0750842181695925
+  },
+  "2026nsw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nwd": {
+    "host_galaxy": "PGC 951119 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08821028563620983
+  },
+  "2026nvd": {
+    "host_galaxy": "PGC 784830",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002761683257880114
+  },
+  "2026nsx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nwc": {
+    "host_galaxy": "PGC 262480",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00022324834033998127
+  },
+  "2026nvc": {
+    "host_galaxy": "PGC 154533",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00045821483566161193
+  },
+  "2026nul": {
+    "host_galaxy": "PGC 922579",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019426331864608815
+  },
+  "2026nxd": {
+    "host_galaxy": "PGC 1585863 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05928960887288636
+  },
+  "2026nrm": {
+    "host_galaxy": "PGC 828523",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.009933968906112471
+  },
+  "2026nrf": {
+    "host_galaxy": "PGC 6559 (VIZw31)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007087977185601832
+  },
+  "2026nrr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026npi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nnv": {
+    "host_galaxy": "PGC 563265",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.026336063744309354
+  },
+  "2026nnw": {
+    "host_galaxy": "PGC 715706",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008965229037997387
+  },
+  "2026nmw": {
+    "host_galaxy": "PGC 43105 (ESO322-76)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005559320531937461
+  },
+  "2026nmv": {
+    "host_galaxy": "PGC 33937 (ESO438-8)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019260917745048782
+  },
+  "2026nwp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nvb": {
+    "host_galaxy": "PGC 895002 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.107617593164639
+  },
+  "2026noc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nuy": {
+    "host_galaxy": "PGC 1109850",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02207104796627277
+  },
+  "2026nln": {
+    "host_galaxy": "PGC 7456 (UGC1447)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00047198472827331996
+  },
+  "2026nlw": {
+    "host_galaxy": "PGC 2302215 (NPM1G+47.0029) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.058197714868897014
+  },
+  "2026npe": {
+    "host_galaxy": "PGC 1234242",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0002646725844324365
+  },
+  "2026ntq": {
+    "host_galaxy": "PGC 850564 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05687166222981279
+  },
+  "2026ntp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nvy": {
+    "host_galaxy": "PGC 3864 (ESO113-10)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0013880067342231146
+  },
+  "2026nqm": {
+    "host_galaxy": "PGC 2601933",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00013069152465039973
+  },
+  "2026ntc": {
+    "host_galaxy": "PGC 335973",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000122961190724731
+  },
+  "2026nnr": {
+    "host_galaxy": "PGC 237145",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001038161370952088
+  },
+  "2026nik": {
+    "host_galaxy": "PGC 114830 (LCRSB112034.2-060009) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0815250579471222
+  },
+  "2026nsr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nqa": {
+    "host_galaxy": "PGC 742254 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.059485098029224276
+  },
+  "2026nwz": {
+    "host_galaxy": "PGC 530265 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1190464660311183
+  },
+  "2026nsz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nqn": {
+    "host_galaxy": "PGC 46350 (MCG-2-34-019)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.024510527226696225
+  },
+  "2026nhq": {
+    "host_galaxy": "PGC 1377993 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10589093995881281
+  },
+  "2026nho": {
+    "host_galaxy": "PGC 1303861",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0020259285864615553
+  },
+  "2026nnq": {
+    "host_galaxy": "PGC 2099350",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008482618211180558
+  },
+  "2026npo": {
+    "host_galaxy": "PGC 2228971",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007742281916612223
+  },
+  "2026njm": {
+    "host_galaxy": "PGC 206456 (CGMW4-1030) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08251900533335338
+  },
+  "2026nlm": {
+    "host_galaxy": "PGC 657 (CGCG433-27) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06614216436864553
+  },
+  "2026nes": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nkk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026neq": {
+    "host_galaxy": "PGC 83279 (DRCG20-42)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03929057682115366
+  },
+  "2026ofj": {
+    "host_galaxy": "PGC 2300381 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1019573269404524
+  },
+  "2026nfj": {
+    "host_galaxy": "PGC 2764656 (NPM1G+74.0157) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12520622471764709
+  },
+  "2026nmo": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nhs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nrw": {
+    "host_galaxy": "PGC 1002715 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12281712152843961
+  },
+  "2026nde": {
+    "host_galaxy": "PGC 272469 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11224053975295156
+  },
+  "2026ncw": {
+    "host_galaxy": "PGC 268376",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000487106859705202
+  },
+  "2026ndo": {
+    "host_galaxy": "PGC 545808",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0006786002191255122
+  },
+  "2026ncv": {
+    "host_galaxy": "PGC 575345 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0761146000973341
+  },
+  "2026ndg": {
+    "host_galaxy": "PGC 351768 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05149821116247258
+  },
+  "2026ndp": {
+    "host_galaxy": "PGC 484075 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13008626680014285
+  },
+  "2026nnu": {
+    "host_galaxy": "PGC 3078617 (WKK7265) (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05002760009304846
+  },
+  "2026ndl": {
+    "host_galaxy": "PGC 247539",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003628949793437631
+  },
+  "2026nau": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nal": {
+    "host_galaxy": "PGC 198959 (DUKST414-39)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019422042540477578
+  },
+  "2026nto": {
+    "host_galaxy": "PGC 889631 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05943593729431947
+  },
+  "2026ntm": {
+    "host_galaxy": "PGC 720784 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.052386030860015385
+  },
+  "2026mzk": {
+    "host_galaxy": "PGC 722843",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0021402969528704257
+  },
+  "2026ntk": {
+    "host_galaxy": "PGC 198816 (DUKST410-39)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00023802682533365454
+  },
+  "2026naf": {
+    "host_galaxy": "PGC 2457160",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.036140990632289455
+  },
+  "2026myk": {
+    "host_galaxy": "PGC 2171383 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09030824828451371
+  },
+  "2026nsq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026myn": {
+    "host_galaxy": "PGC 2601909",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00014152569775761342
+  },
+  "2026nco": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026myo": {
+    "host_galaxy": "PGC 1039560 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12554762380807924
+  },
+  "2026njk": {
+    "host_galaxy": "PGC 3093584 (NPM1G-12.0621)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0016701327071485044
+  },
+  "2026mzj": {
+    "host_galaxy": "PGC 1796713 (NPM1G+27.0188) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13130629709614347
+  },
+  "2026mva": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mxv": {
+    "host_galaxy": "PGC 2270278 (NPM1G+45.0321)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03686087549393302
+  },
+  "2026myz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ncn": {
+    "host_galaxy": "PGC 1596899",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00042209156452390487
+  },
+  "2026ncp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mvc": {
+    "host_galaxy": "PGC 637049",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04386275698098834
+  },
+  "2026mvg": {
+    "host_galaxy": "PGC 911625",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00930136771246556
+  },
+  "2026mvi": {
+    "host_galaxy": "PGC 142656",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0012525522837371972
+  },
+  "2026msu": {
+    "host_galaxy": "PGC 1711820 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.060720157799837374
+  },
+  "2026nfo": {
+    "host_galaxy": "PGC 6255 (UGC1186)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01303879738732338
+  },
+  "2026nfk": {
+    "host_galaxy": "PGC 1678113 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06034490114193972
+  },
+  "2026myb": {
+    "host_galaxy": "PGC 123184 (LCRSB225054.5-383359)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005514553592306617
+  },
+  "2026mqw": {
+    "host_galaxy": "PGC 3081265",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004634459043442402
+  },
+  "2026nzb": {
+    "host_galaxy": "PGC 1951376",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00013144787340563328
+  },
+  "2026mxo": {
+    "host_galaxy": "PGC 975810 (NPM1G-10.0650)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0032438955264506783
+  },
+  "2026mkm": {
+    "host_galaxy": "PGC 131937",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0023915222449930346
+  },
+  "2026mlp": {
+    "host_galaxy": "PGC 2225399 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09879088856826897
+  },
+  "2026mlb": {
+    "host_galaxy": "PGC 589010 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11018757598162866
+  },
+  "2026nja": {
+    "host_galaxy": "PGC 88404",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003171582363255873
+  },
+  "2026miw": {
+    "host_galaxy": "PGC 946601",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00011812661110616803
+  },
+  "2026msx": {
+    "host_galaxy": "PGC 2319996 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05359525906774836
+  },
+  "2026mjx": {
+    "host_galaxy": "PGC 3603 (UGC622)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0033671338908945513
+  },
+  "2026mjh": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026nrn": {
+    "host_galaxy": "PGC 600943",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03808562159528001
+  },
+  "2026mik": {
+    "host_galaxy": "PGC 73351 (DRCG1-29)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0012849443707713072
+  },
+  "2026mql": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mve": {
+    "host_galaxy": "PGC 20708 (VIIZw141)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.019465067998946126
+  },
+  "2026mij": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mhs": {
+    "host_galaxy": "PGC 152478 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06739798881064511
+  },
+  "2026mgg": {
+    "host_galaxy": "PGC 653683 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14085255138311373
+  },
+  "2026mhc": {
+    "host_galaxy": "PGC 91243 (FGC1536) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07490529449469764
+  },
+  "2026mfv": {
+    "host_galaxy": "PGC 138223 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14183606873007595
+  },
+  "2026mju": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mez": {
+    "host_galaxy": "PGC 1786336 (NPM1G+26.0489) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07892568586559158
+  },
+  "2026mhn": {
+    "host_galaxy": "PGC 756600 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08352653023020667
+  },
+  "2026msr": {
+    "host_galaxy": "PGC 2286134",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009725628623424548
+  },
+  "2026mbk": {
+    "host_galaxy": "PGC 1352362 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0633149055466283
+  },
+  "2026mao": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mke": {
+    "host_galaxy": "PGC 3084750 (NPM1G+32.0031)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000136245796612013
+  },
+  "2026mkz": {
+    "host_galaxy": "PGC 204288 (CGMW3-4109) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13018135393722532
+  },
+  "2026mjs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mfy": {
+    "host_galaxy": "PGC 453307",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01240643787577455
+  },
+  "2026mcc": {
+    "host_galaxy": "PGC 3082264 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07090218673329776
+  },
+  "2026lvx": {
+    "host_galaxy": "PGC 1307166 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1258196826542864
+  },
+  "2026mbe": {
+    "host_galaxy": "PGC 202955 (CGMW3-2705) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10262125207915954
+  },
+  "2026maf": {
+    "host_galaxy": "PGC 87059 (KUG2320+044) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13024864433739575
+  },
+  "2026nyt": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lum": {
+    "host_galaxy": "PGC 724737",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005982364584863428
+  },
+  "2026lua": {
+    "host_galaxy": "PGC 564079 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09387097124473213
+  },
+  "2026mkx": {
+    "host_galaxy": "PGC 2810073 (CGMW5-3688) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06715279187378265
+  },
+  "2026lva": {
+    "host_galaxy": "PGC 19671 (UGC3553)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005507097801103144
+  },
+  "2026mgb": {
+    "host_galaxy": "PGC 17035 (IRAS05129+5128)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0006628753792082746
+  },
+  "2026lts": {
+    "host_galaxy": "PGC 222879",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0032536656131933336
+  },
+  "2026mjq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lsk": {
+    "host_galaxy": "PGC 1847750 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08949122047752062
+  },
+  "2026lrk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lvk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lxc": {
+    "host_galaxy": "PGC 453035 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1202936622281724
+  },
+  "2026mjy": {
+    "host_galaxy": "PGC 1330568 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0773989584402814
+  },
+  "2026lqz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lxf": {
+    "host_galaxy": "PGC 1662070",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02624227150832539
+  },
+  "2026lsu": {
+    "host_galaxy": "PGC 80991 (ZOAG248.09+4.73)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002059640401600766
+  },
+  "2026mip": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lpu": {
+    "host_galaxy": "PGC 1004300",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0015954069060261761
+  },
+  "2026lpv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lqa": {
+    "host_galaxy": "PGC 878203",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.033239096785619836
+  },
+  "2026lou": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mgc": {
+    "host_galaxy": "PGC 1872578 (NPM1G+29.0023)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008724175621290677
+  },
+  "2026lst": {
+    "host_galaxy": "PGC 1554430 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06440293226211716
+  },
+  "2026mbd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lrg": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026loi": {
+    "host_galaxy": "PGC 2793468",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00041641928900148237
+  },
+  "2026lvj": {
+    "host_galaxy": "PGC 2810000 (CGMW5-3596)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03732819170866699
+  },
+  "2026loj": {
+    "host_galaxy": "PGC 1558985",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004398583492751298
+  },
+  "2026lnl": {
+    "host_galaxy": "PGC 2754166",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0021995247352638975
+  },
+  "2026lqi": {
+    "host_galaxy": "PGC 969278 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1330554012438636
+  },
+  "2026lse": {
+    "host_galaxy": "PGC 158690 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0852746027021795
+  },
+  "2026lod": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lmp": {
+    "host_galaxy": "PGC 2625565 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06641458891462049
+  },
+  "2026lmn": {
+    "host_galaxy": "PGC 636799",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.003316850950351409
+  },
+  "2026lnx": {
+    "host_galaxy": "PGC 33595 (KUG1103+451)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000832552326983725
+  },
+  "2026lmo": {
+    "host_galaxy": "PGC 31753 (CGCG351-30) (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12367805621524544
+  },
+  "2026lms": {
+    "host_galaxy": "PGC 951719",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 9.259410381831414e-05
+  },
+  "2026lol": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026llf": {
+    "host_galaxy": "PGC 295044",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0037078204029747353
+  },
+  "2026lle": {
+    "host_galaxy": "PGC 752306 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06268283341315685
+  },
+  "2026llq": {
+    "host_galaxy": "PGC 123188 (LCRSB225122.0-383925)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.032728193670316284
+  },
+  "2026lkx": {
+    "host_galaxy": "PGC 823830 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13614725554464863
+  },
+  "2026mfh": {
+    "host_galaxy": "PGC 398146",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005772671672211095
+  },
+  "2026lma": {
+    "host_galaxy": "PGC 1440197 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11351725623038846
+  },
+  "2026llg": {
+    "host_galaxy": "PGC 132335",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019281683456216809
+  },
+  "2026lmi": {
+    "host_galaxy": "PGC 3082510",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009673002969159026
+  },
+  "2026lmk": {
+    "host_galaxy": "PGC 982880",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005413140376347868
+  },
+  "2026lkf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lju": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ljo": {
+    "host_galaxy": "PGC 166393 (IRAS00501+5004421021)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001422932569693991
+  },
+  "2026lkb": {
+    "host_galaxy": "PGC 1397454 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13168762788439659
+  },
+  "2026ljs": {
+    "host_galaxy": "PGC 2081720",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009107912240482345
+  },
+  "2026loh": {
+    "host_galaxy": "PGC 2662129 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12972884846971222
+  },
+  "2026ljq": {
+    "host_galaxy": "PGC 2383032",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0002491922349952809
+  },
+  "2026lig": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mvj": {
+    "host_galaxy": "PGC 25286 (ESO60-22) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07216927450868693
+  },
+  "2026lun": {
+    "host_galaxy": "PGC 208274 (CGMW4-2871) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11220244588724967
+  },
+  "2026nav": {
+    "host_galaxy": "PGC 489502",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007423320054112415
+  },
+  "2026nzv": {
+    "host_galaxy": "PGC 456588",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04074217426028155
+  },
+  "2026loe": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lin": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lof": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mua": {
+    "host_galaxy": "PGC 1425556 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07741277026712858
+  },
+  "2026lfp": {
+    "host_galaxy": "PGC 1695622",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005027168289318091
+  },
+  "2026ldq": {
+    "host_galaxy": "PGC 90494 (FGC79)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005790735477272457
+  },
+  "2026lik": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lij": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lee": {
+    "host_galaxy": "PGC 508219 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1173597342719498
+  },
+  "2026luo": {
+    "host_galaxy": "PGC 751654",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0002727629759589769
+  },
+  "2026ldp": {
+    "host_galaxy": "PGC 3091635 (NPM1G+08.0462)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00029382716477437137
+  },
+  "2026lds": {
+    "host_galaxy": "PGC 210102 (CGMW4-4749)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.049316713933085066
+  },
+  "2026lcz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lcs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lcq": {
+    "host_galaxy": "PGC 2815042 (CGMW5-10459) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11011776439242037
+  },
+  "2026ldb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lch": {
+    "host_galaxy": "PGC 203067 (CGMW3-2824) (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14656016206279088
+  },
+  "2026lev": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ldc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mab": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lcc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lio": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lgd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lcd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lih": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ltr": {
+    "host_galaxy": "PGC 1482603 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08811268796154656
+  },
+  "2026lib": {
+    "host_galaxy": "PGC 203067 (CGMW3-2824) (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14801151213700953
+  },
+  "2026lew": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026laa": {
+    "host_galaxy": "PGC 2293999 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10838048687612305
+  },
+  "2026lab": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kzv": {
+    "host_galaxy": "PGC 1631165 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0526367569969989
+  },
+  "2026kzr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lcw": {
+    "host_galaxy": "PGC 1319675 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12648691448532046
+  },
+  "2026ncq": {
+    "host_galaxy": "PGC 204487 (CGMW3-4312) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09591161096083593
+  },
+  "2026lcu": {
+    "host_galaxy": "PGC 2810041 (CGMW5-3648)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.019259716332116393
+  },
+  "2026lhy": {
+    "host_galaxy": "PGC 719211",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00034137069209097174
+  },
+  "2026lbz": {
+    "host_galaxy": "PGC 202174 (CGMW3-1880)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.011828655863252482
+  },
+  "2026lke": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kwm": {
+    "host_galaxy": "PGC 55564 (MRK859)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010245518540218136
+  },
+  "2026kwi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kyi": {
+    "host_galaxy": "PGC 573599 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14225240035877845
+  },
+  "2026ldu": {
+    "host_galaxy": "PGC 517145",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00016263659660185694
+  },
+  "2026kxb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kul": {
+    "host_galaxy": "PGC 917646",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00018699786910378872
+  },
+  "2026ktq": {
+    "host_galaxy": "PGC 615413 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05741350620155773
+  },
+  "2026ljz": {
+    "host_galaxy": "PGC 314862 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07153147285037435
+  },
+  "2026lhw": {
+    "host_galaxy": "PGC 400242",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00014314655238841127
+  },
+  "2026leu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026lgj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ksi": {
+    "host_galaxy": "PGC 774339 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06676399247504816
+  },
+  "2026ksj": {
+    "host_galaxy": "PGC 48916 (ESO383-80)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0203626148336723
+  },
+  "2026krn": {
+    "host_galaxy": "PGC 97786",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.038564316863058
+  },
+  "2026lgh": {
+    "host_galaxy": "PGC 147179",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02358103928267007
+  },
+  "2026kue": {
+    "host_galaxy": "PGC 128813",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00035065264241906604
+  },
+  "2026kqm": {
+    "host_galaxy": "PGC 162670 (NPM1G-12.0529) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08385850263915608
+  },
+  "2026lei": {
+    "host_galaxy": "PGC 2537919 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.055251929040037166
+  },
+  "2026ksh": {
+    "host_galaxy": "PGC 2143205",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001296274155058789
+  },
+  "2026loq": {
+    "host_galaxy": "PGC 1380004",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0025307419248563764
+  },
+  "2026lck": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026len": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kqj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kpi": {
+    "host_galaxy": "PGC 165622 (IRAS13395-0450) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13335903736961746
+  },
+  "2026ldy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kph": {
+    "host_galaxy": "PGC 711683",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04403694780284425
+  },
+  "2026knc": {
+    "host_galaxy": "PGC 1794627 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06504074238338978
+  },
+  "2026kpa": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026koh": {
+    "host_galaxy": "PGC 2120329",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003037790941662195
+  },
+  "2026kqi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kpb": {
+    "host_galaxy": "PGC 2740190 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11295537219556186
+  },
+  "2026kpg": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kol": {
+    "host_galaxy": "PGC 62150 (CGCG228-18) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10988081617576018
+  },
+  "2026koq": {
+    "host_galaxy": "PGC 2515524 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05710717790429214
+  },
+  "2026ldt": {
+    "host_galaxy": "PGC 2740017 (NPM1G+71.0131)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00020226688729312633
+  },
+  "2026koc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kjy": {
+    "host_galaxy": "PGC 73002 (UGC12862)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006833362020481993
+  },
+  "2026kmx": {
+    "host_galaxy": "PGC 2745466 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06047685254144737
+  },
+  "2026kos": {
+    "host_galaxy": "PGC 3088801 (NPM1G+33.0362)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003809686871732939
+  },
+  "2026kjz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kop": {
+    "host_galaxy": "PGC 212177 (CGMW4-6880)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0017414000198879157
+  },
+  "2026kiv": {
+    "host_galaxy": "PGC 679096 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0636535857066553
+  },
+  "2026lcb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026koo": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kfx": {
+    "host_galaxy": "PGC 878688",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.038855396407461024
+  },
+  "2026mak": {
+    "host_galaxy": "PGC 2252668 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10756888993189469
+  },
+  "2026kea": {
+    "host_galaxy": "PGC 2103100 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09915605571181735
+  },
+  "2026kes": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kge": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kew": {
+    "host_galaxy": "PGC 366031 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1059676625718984
+  },
+  "2026kfe": {
+    "host_galaxy": "PGC 405470",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03826054931119145
+  },
+  "2026knd": {
+    "host_galaxy": "PGC 453957",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00010047722493490707
+  },
+  "2026knv": {
+    "host_galaxy": "PGC 2590639 (NPM1G+59.0021)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005943638307774798
+  },
+  "2026kfc": {
+    "host_galaxy": "PGC 138706",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0034008557606231573
+  },
+  "2026kjc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kcr": {
+    "host_galaxy": "PGC 667885 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08866763721570718
+  },
+  "2026kfi": {
+    "host_galaxy": "PGC 82064 (CGMW2-4431) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0813513332780723
+  },
+  "2026kci": {
+    "host_galaxy": "PGC 2169215 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11688093206725005
+  },
+  "2026kfa": {
+    "host_galaxy": "PGC 1156192",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008103202513593624
+  },
+  "2026kfl": {
+    "host_galaxy": "PGC 152312 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09359711618346954
+  },
+  "2026kaj": {
+    "host_galaxy": "PGC 1706591",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00044336836189706107
+  },
+  "2026kai": {
+    "host_galaxy": "PGC 1112348",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00033493835033702904
+  },
+  "2026kag": {
+    "host_galaxy": "PGC 1256918 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10317412934311204
+  },
+  "2026kaf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kae": {
+    "host_galaxy": "PGC 923213 (IRAS20597-1444) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09594317091112249
+  },
+  "2026kgd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kqh": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kbc": {
+    "host_galaxy": "PGC 141892 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13495189416227704
+  },
+  "2026kad": {
+    "host_galaxy": "PGC 1359910",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.031344804388664535
+  },
+  "2026kbf": {
+    "host_galaxy": "PGC 227801",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0017708706159835818
+  },
+  "2026jyt": {
+    "host_galaxy": "PGC 125838 (LCRSB115700.6-063018) (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13786326154324535
+  },
+  "2026jyw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kgb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026mal": {
+    "host_galaxy": "PGC 869811 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05394303177062543
+  },
+  "2026jxg": {
+    "host_galaxy": "PGC 1347311 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08685209053957664
+  },
+  "2026jvz": {
+    "host_galaxy": "PGC 120768 (LCRSB151244.5-055723)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.049306560885021944
+  },
+  "2026jvl": {
+    "host_galaxy": "PGC 1027047 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06863238086332264
+  },
+  "2026kbz": {
+    "host_galaxy": "PGC 3077458 (WKK5353)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006542266124659105
+  },
+  "2026jxk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jxd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jvk": {
+    "host_galaxy": "PGC 63707 (UGC11481) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09442563577556098
+  },
+  "2026kfz": {
+    "host_galaxy": "PGC 2807306 (CGMW5-117) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08932211818988663
+  },
+  "2026kja": {
+    "host_galaxy": "PGC 790923",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00030937368988418845
+  },
+  "2026juw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jvc": {
+    "host_galaxy": "PGC 924596 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11418125853951767
+  },
+  "2026juu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jut": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jqs": {
+    "host_galaxy": "PGC 128665",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002755842734132814
+  },
+  "2026jsf": {
+    "host_galaxy": "PGC 177973",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00039156297111457805
+  },
+  "2026jsd": {
+    "host_galaxy": "PGC 88331",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007362242181818226
+  },
+  "2026khx": {
+    "host_galaxy": "PGC 71672 (CGCG476-60)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0001149047384976903
+  },
+  "2026kgc": {
+    "host_galaxy": "PGC 204051 (CGMW3-3860) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11202924242586508
+  },
+  "2026kmn": {
+    "host_galaxy": "PGC 2813399 (CGMW5-8325) (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05177415410293593
+  },
+  "2026ljn": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jrk": {
+    "host_galaxy": "PGC 2764891",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003160323620735358
+  },
+  "2026jra": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jyv": {
+    "host_galaxy": "PGC 52945 (ESO512-22) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09863021520227593
+  },
+  "2026kbl": {
+    "host_galaxy": "PGC 275254",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0013481331893283868
+  },
+  "2026jqt": {
+    "host_galaxy": "PGC 230064 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11806742825794342
+  },
+  "2026jqw": {
+    "host_galaxy": "PGC 415301 (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14573586640978212
+  },
+  "2026jsb": {
+    "host_galaxy": "PGC 239368",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007530472317107142
+  },
+  "2026jtc": {
+    "host_galaxy": "PGC 607662",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0022249367432174007
+  },
+  "2026jry": {
+    "host_galaxy": "PGC 577727 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08074040195099956
+  },
+  "2026jrc": {
+    "host_galaxy": "PGC 14333 (UGC2931)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004217560410344368
+  },
+  "2026jsh": {
+    "host_galaxy": "PGC 149121",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0032693902621749914
+  },
+  "2026kaz": {
+    "host_galaxy": "PGC 457080",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00044428972885031604
+  },
+  "2026jph": {
+    "host_galaxy": "PGC 1367357 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07692682715898268
+  },
+  "2026joz": {
+    "host_galaxy": "PGC 661361",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.022487273336969524
+  },
+  "2026jot": {
+    "host_galaxy": "PGC 785317 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14401103236394197
+  },
+  "2026jsq": {
+    "host_galaxy": "PGC 813634",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007081608512128963
+  },
+  "2026jow": {
+    "host_galaxy": "PGC 2799931",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00322856217447025
+  },
+  "2026kov": {
+    "host_galaxy": "PGC 690252",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002080627282522184
+  },
+  "2026kev": {
+    "host_galaxy": "PGC 847942",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03357232582999967
+  },
+  "2026jqn": {
+    "host_galaxy": "PGC 2215667 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0886211882343177
+  },
+  "2026jox": {
+    "host_galaxy": "PGC 950674 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09587507653195851
+  },
+  "2026jtb": {
+    "host_galaxy": "PGC 78324 (CGMW1-1614) (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14470413579914856
+  },
+  "2026jnj": {
+    "host_galaxy": "PGC 53915 (ESO273-17) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12918324567023315
+  },
+  "2026jne": {
+    "host_galaxy": "PGC 2077065 (NPM1G+35.0441)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0018232883434988415
+  },
+  "2026jnk": {
+    "host_galaxy": "PGC 922614 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10422784941260772
+  },
+  "2026jpp": {
+    "host_galaxy": "PGC 1579673 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13715242061692265
+  },
+  "2026jjz": {
+    "host_galaxy": "PGC 786544",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006649531187609676
+  },
+  "2026jin": {
+    "host_galaxy": "PGC 474355",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008631740234083268
+  },
+  "2026jjm": {
+    "host_galaxy": "PGC 62584 (ESO337-2) (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12234057683131137
+  },
+  "2026jjn": {
+    "host_galaxy": "PGC 237865",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.049771377657378844
+  },
+  "2026jns": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026kbq": {
+    "host_galaxy": "PGC 35818 (ESO266-7)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004548698948829372
+  },
+  "2026kay": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jlp": {
+    "host_galaxy": "PGC 46355 (UGC8362)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000927710616887584
+  },
+  "2026jil": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jgy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jgw": {
+    "host_galaxy": "PGC 2479856",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008609789736336844
+  },
+  "2026jql": {
+    "host_galaxy": "PGC 1213072 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1164552272027648
+  },
+  "2026jep": {
+    "host_galaxy": "PGC 132420",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000905885623288769
+  },
+  "2026jeq": {
+    "host_galaxy": "PGC 142768",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.015724816462716496
+  },
+  "2026jes": {
+    "host_galaxy": "PGC 67570 (NPM1G-17.0467)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03362739413267323
+  },
+  "2026mam": {
+    "host_galaxy": "PGC 1146381",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.029154597206000554
+  },
+  "2026jev": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdi": {
+    "host_galaxy": "PGC 867691 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.052740173142749834
+  },
+  "2026jdt": {
+    "host_galaxy": "PGC 667360",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0023312723643274694
+  },
+  "2026jho": {
+    "host_galaxy": "PGC 2808444 (CGMW5-1608)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.031145359682922577
+  },
+  "2026jhn": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jcv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jcq": {
+    "host_galaxy": "PGC 745599 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13678318340277476
+  },
+  "2026jcu": {
+    "host_galaxy": "PGC 52586 (VIIZw563) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09310406773280093
+  },
+  "2026jrb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdk": {
+    "host_galaxy": "PGC 394664",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03235014676511029
+  },
+  "2026jcz": {
+    "host_galaxy": "PGC 218915",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009245426473135052
+  },
+  "2026jcy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdg": {
+    "host_galaxy": "PGC 451001",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0027392190850307656
+  },
+  "2026jer": {
+    "host_galaxy": "PGC 221804",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00025500119307169983
+  },
+  "2026jda": {
+    "host_galaxy": "PGC 128163",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00205378795406134
+  },
+  "2026jol": {
+    "host_galaxy": "PGC 1284544",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 9.363137488716463e-05
+  },
+  "2026ivf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jde": {
+    "host_galaxy": "PGC 156009",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001643943539206497
+  },
+  "2026jnl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdo": {
+    "host_galaxy": "PGC 426679",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0038195313900639496
+  },
+  "2026krf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iuz": {
+    "host_galaxy": "PGC 1053560",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.013538902902630575
+  },
+  "2026kez": {
+    "host_galaxy": "PGC 21705 (CGCG2-10)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002112345566872634
+  },
+  "2026iuv": {
+    "host_galaxy": "PGC 99133",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.037590043835884115
+  },
+  "2026jfx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iul": {
+    "host_galaxy": "PGC 1950418 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.061879946079772555
+  },
+  "2026iuu": {
+    "host_galaxy": "PGC 783326 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07257876765703228
+  },
+  "2026iqp": {
+    "host_galaxy": "PGC 57280 (UGC10224) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06384713548485771
+  },
+  "2026ivt": {
+    "host_galaxy": "PGC 1102906",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008610661719657551
+  },
+  "2026ips": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdu": {
+    "host_galaxy": "PGC 544947",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.038568915012426354
+  },
+  "2026jdq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iqj": {
+    "host_galaxy": "PGC 957761",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04854821918838235
+  },
+  "2026ink": {
+    "host_galaxy": "PGC 472789 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1175483406626414
+  },
+  "2026jdc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jdf": {
+    "host_galaxy": "PGC 234767",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005933379735035422
+  },
+  "2026imw": {
+    "host_galaxy": "PGC 204689 (CGMW3-4534) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09469385879332375
+  },
+  "2026jdp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jds": {
+    "host_galaxy": "PGC 325099 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05772256211132518
+  },
+  "2026jdl": {
+    "host_galaxy": "PGC 286439 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05784274017710758
+  },
+  "2026jdr": {
+    "host_galaxy": "PGC 223219",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007309504179093692
+  },
+  "2026iqq": {
+    "host_galaxy": "PGC 1601222 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11418311800934541
+  },
+  "2026imo": {
+    "host_galaxy": "PGC 15199 (MCG-5-11-009)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.003178002642743831
+  },
+  "2026imu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026imv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jeu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iqe": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026imp": {
+    "host_galaxy": "PGC 748928 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12447422651352173
+  },
+  "2026imr": {
+    "host_galaxy": "PGC 851369",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04602774626710769
+  },
+  "2026iid": {
+    "host_galaxy": "PGC 1396585 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10020109901597099
+  },
+  "2026ims": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jey": {
+    "host_galaxy": "PGC 394421 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08825745271947491
+  },
+  "2026ihq": {
+    "host_galaxy": "PGC 1462098 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08183415608836518
+  },
+  "2026ihm": {
+    "host_galaxy": "PGC 67019 (ESO600-2)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006250556518131812
+  },
+  "2026jdb": {
+    "host_galaxy": "PGC 1421752",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00038330158102261046
+  },
+  "2026jez": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026idw": {
+    "host_galaxy": "PGC 1486884",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04446387930203757
+  },
+  "2026kox": {
+    "host_galaxy": "PGC 34810 (ESO439-1)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00022834574800733784
+  },
+  "2026img": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ihj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ihn": {
+    "host_galaxy": "PGC 557647",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.020155627397345593
+  },
+  "2026ihl": {
+    "host_galaxy": "PGC 129964",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002143803354869456
+  },
+  "2026ihr": {
+    "host_galaxy": "PGC 443384 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08294115949984053
+  },
+  "2026idp": {
+    "host_galaxy": "PGC 761504 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05384214318887738
+  },
+  "2026iml": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026idl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026idj": {
+    "host_galaxy": "PGC 186705",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004816622876569769
+  },
+  "2026idg": {
+    "host_galaxy": "PGC 1293127 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13635847729771539
+  },
+  "2026icp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026idf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026icz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ich": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hyy": {
+    "host_galaxy": "PGC 2254466 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08048583725813543
+  },
+  "2026hzf": {
+    "host_galaxy": "PGC 979546 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12444958068970596
+  },
+  "2026iaj": {
+    "host_galaxy": "PGC 260071",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.031931547970297014
+  },
+  "2026hzd": {
+    "host_galaxy": "PGC 161299 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13312215580018258
+  },
+  "2026hwa": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026idi": {
+    "host_galaxy": "PGC 388646",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03223020300603453
+  },
+  "2026hwc": {
+    "host_galaxy": "PGC 544695",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0072419451159520636
+  },
+  "2026hwb": {
+    "host_galaxy": "PGC 11655 (FAIRALL298)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0023175266916081044
+  },
+  "2026icd": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026icf": {
+    "host_galaxy": "PGC 1646514 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.053786367393834585
+  },
+  "2026hvy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iex": {
+    "host_galaxy": "PGC 210872 (CGMW4-5553)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04089546066418911
+  },
+  "2026hvx": {
+    "host_galaxy": "PGC 655460",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.028700161642758865
+  },
+  "2026jia": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iar": {
+    "host_galaxy": "PGC 148302",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0014787527152445713
+  },
+  "2026hvq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iqg": {
+    "host_galaxy": "PGC 3080829 (NPM1G+01.0172)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0006562759816342068
+  },
+  "2026imb": {
+    "host_galaxy": "PGC 1476901 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06500460249236528
+  },
+  "2026hvo": {
+    "host_galaxy": "PGC 52872 (UGC9533)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.003923017812317732
+  },
+  "2026hur": {
+    "host_galaxy": "PGC 166890 (CGMW3-1706) (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11671424751567315
+  },
+  "2026hup": {
+    "host_galaxy": "PGC 85049",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002880120706972948
+  },
+  "2026ici": {
+    "host_galaxy": "PGC 55760 (ESO583-2) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09413037832929827
+  },
+  "2026huq": {
+    "host_galaxy": "PGC 1053637 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06613575849886649
+  },
+  "2026hnn": {
+    "host_galaxy": "PGC 595759",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00036779117950232583
+  },
+  "2026hnz": {
+    "host_galaxy": "PGC 167646 (ZOAG95.45-7.93)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0026838428552757925
+  },
+  "2026icg": {
+    "host_galaxy": "PGC 2817141 (IRASF19130+6005)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010535137823712106
+  },
+  "2026jim": {
+    "host_galaxy": "PGC 2072384 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06311162076201265
+  },
+  "2026hnm": {
+    "host_galaxy": "PGC 319590 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12380315103043901
+  },
+  "2026hnl": {
+    "host_galaxy": "PGC 523532",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010674892061684252
+  },
+  "2026idn": {
+    "host_galaxy": "PGC 1642684",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005740240747423168
+  },
+  "2026hnv": {
+    "host_galaxy": "PGC 642493",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04490252523899717
+  },
+  "2026hnw": {
+    "host_galaxy": "PGC 679504 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.050827642487793555
+  },
+  "2026hnf": {
+    "host_galaxy": "PGC 328758 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09838964076286968
+  },
+  "2026hmo": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hlx": {
+    "host_galaxy": "PGC 830377",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02762360613315403
+  },
+  "2026hvh": {
+    "host_galaxy": "PGC 209176 (CGMW4-3791) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09261237230381734
+  },
+  "2026hlv": {
+    "host_galaxy": "PGC 50890 (ESO384-67)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001944437755530458
+  },
+  "2026hlz": {
+    "host_galaxy": "PGC 245392 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06011881423344073
+  },
+  "2026hkl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hlc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hlf": {
+    "host_galaxy": "PGC 80371 (CGMW2-2667) (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11560351709588562
+  },
+  "2026idk": {
+    "host_galaxy": "PGC 1576753",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04778893164160275
+  },
+  "2026hjj": {
+    "host_galaxy": "PGC 1479089 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07645410059673882
+  },
+  "2026hux": {
+    "host_galaxy": "PGC 8357 (VIZw181)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006724231484334644
+  },
+  "2026hoc": {
+    "host_galaxy": "PGC 321960 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10011253325918126
+  },
+  "2026hkz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hoq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hix": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hnp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hid": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hcl": {
+    "host_galaxy": "PGC 381696",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00019553839723980812
+  },
+  "2026hdj": {
+    "host_galaxy": "PGC 1000591",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007295894207440118
+  },
+  "2026hdn": {
+    "host_galaxy": "PGC 1277837",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00239906900497344
+  },
+  "2026hdl": {
+    "host_galaxy": "PGC 12188 (CGCG390-43)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007835293378190292
+  },
+  "2026hbv": {
+    "host_galaxy": "PGC 654656 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09607249416186193
+  },
+  "2026haz": {
+    "host_galaxy": "PGC 204061 (CGMW3-3870) (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14657169632525902
+  },
+  "2026haf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026gzv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hbg": {
+    "host_galaxy": "PGC 2327541",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007290827034091416
+  },
+  "2026hjc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hab": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026gzl": {
+    "host_galaxy": "PGC 1295144 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09457299395002478
+  },
+  "2026haa": {
+    "host_galaxy": "PGC 31437 (ESO501-33)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04473297908292335
+  },
+  "2026hno": {
+    "host_galaxy": "PGC 427767 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06878214283206349
+  },
+  "2026hiz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iap": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026gws": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hck": {
+    "host_galaxy": "PGC 3096632",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00020744591413735298
+  },
+  "2026hhs": {
+    "host_galaxy": "PGC 396595",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007245073058351173
+  },
+  "2026hly": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hlw": {
+    "host_galaxy": "PGC 794419 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13090049928958172
+  },
+  "2026had": {
+    "host_galaxy": "PGC 667431 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0680052575506473
+  },
+  "2026hla": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026gze": {
+    "host_galaxy": "PGC 1383042 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1209870819296842
+  },
+  "2026hhn": {
+    "host_galaxy": "PGC 762990 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1307921729971386
+  },
+  "2026hls": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hee": {
+    "host_galaxy": "PGC 828450",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010647272816772383
+  },
+  "2026gvx": {
+    "host_galaxy": "PGC 688637",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0011234181905165387
+  },
+  "2026gyb": {
+    "host_galaxy": "PGC 161047 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10350359298254871
+  },
+  "2026gwv": {
+    "host_galaxy": "PGC 989455 (NPM1G-09.0552) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11012630721400228
+  },
+  "2026gwi": {
+    "host_galaxy": "PGC 37780 (MCG4-28-115)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0037417043788195836
+  },
+  "2026gvc": {
+    "host_galaxy": "PGC 1024783",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.025665640094687088
+  },
+  "2026gzk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hju": {
+    "host_galaxy": "PGC 1398622",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.008124724945483002
+  },
+  "2026gug": {
+    "host_galaxy": "PGC 502798 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13330793213309053
+  },
+  "2026gvb": {
+    "host_galaxy": "PGC 1639622 (NPM1G+20.0094)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0025670980287974226
+  },
+  "2026hnq": {
+    "host_galaxy": "PGC 69248 ((ESO48-27)) (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1199379272657897
+  },
+  "2026gak": {
+    "host_galaxy": "PGC 305657",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.027453992626718472
+  },
+  "2026hiy": {
+    "host_galaxy": "PGC 162396",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008883308625840635
+  },
+  "2026fzh": {
+    "host_galaxy": "PGC 38446 (ESO505-14)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.014224087344518315
+  },
+  "2026gar": {
+    "host_galaxy": "PGC 312291",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0014890047372765009
+  },
+  "2026ioj": {
+    "host_galaxy": "PGC 200499 (CGMW3-116) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05957293687587388
+  },
+  "2026gzc": {
+    "host_galaxy": "PGC 368899",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002319842041380383
+  },
+  "2026hvl": {
+    "host_galaxy": "PGC 92568 (FGCE1437)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04680801777103707
+  },
+  "2026hlo": {
+    "host_galaxy": "PGC 220711",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.046565020491691096
+  },
+  "2026gaz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hzk": {
+    "host_galaxy": "PGC 3091946 (NPM1G+05.0112) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0852947269206908
+  },
+  "2026gaq": {
+    "host_galaxy": "PGC 175793",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005375778153370534
+  },
+  "2026fyc": {
+    "host_galaxy": "PGC 19797 (ESO122-9)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002298632817564082
+  },
+  "2026fvg": {
+    "host_galaxy": "PGC 654866",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001932419660505926
+  },
+  "2026gat": {
+    "host_galaxy": "PGC 330526 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1383032754290565
+  },
+  "2026gaw": {
+    "host_galaxy": "PGC 237955",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04089163204847688
+  },
+  "2026gap": {
+    "host_galaxy": "PGC 273412",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00014043473538447244
+  },
+  "2026gax": {
+    "host_galaxy": "PGC 349801",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002855465073979096
+  },
+  "2026ftg": {
+    "host_galaxy": "PGC 215279",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001986109467502646
+  },
+  "2026hmn": {
+    "host_galaxy": "PGC 2552600 (SBS1404+571)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001954360421533763
+  },
+  "2026fte": {
+    "host_galaxy": "PGC 542110 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10637477246785734
+  },
+  "2026fry": {
+    "host_galaxy": "PGC 944394 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13583214857037348
+  },
+  "2026frw": {
+    "host_galaxy": "PGC 167395 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13275414849881623
+  },
+  "2026fqs": {
+    "host_galaxy": "PGC 2049524",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03962856968709955
+  },
+  "2026gwn": {
+    "host_galaxy": "PGC 68972 (CGCG514-38) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06262392198132377
+  },
+  "2026fqr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fqp": {
+    "host_galaxy": "PGC 2266083",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.039927500993253366
+  },
+  "2026gba": {
+    "host_galaxy": "PGC 90142 (IRAS11118-5141031623)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009294215362852472
+  },
+  "2026fth": {
+    "host_galaxy": "PGC 267225",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0016895604508822349
+  },
+  "2026gxz": {
+    "host_galaxy": "PGC 1354322",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.046121112876431274
+  },
+  "2026gua": {
+    "host_galaxy": "PGC 47153 (UGC8457)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002542280598186802
+  },
+  "2026frj": {
+    "host_galaxy": "PGC 1057111",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001848104829528748
+  },
+  "2026hzp": {
+    "host_galaxy": "PGC 2158476",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03500058942733283
+  },
+  "2026fui": {
+    "host_galaxy": "PGC 848739 (NPM1G-19.0409)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004998697054312866
+  },
+  "2026fog": {
+    "host_galaxy": "PGC 1044512 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05629830933497751
+  },
+  "2026ful": {
+    "host_galaxy": "PGC 1059002 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08051355733110212
+  },
+  "2026ftz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fxf": {
+    "host_galaxy": "PGC 92641 (FGCE1559)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0050666818504097565
+  },
+  "2026hcj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fma": {
+    "host_galaxy": "PGC 265907",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001165014106513016
+  },
+  "2026frf": {
+    "host_galaxy": "PGC 3074538 (WKK1316) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09217819767353828
+  },
+  "2026fnr": {
+    "host_galaxy": "PGC 435941",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.021071548171831312
+  },
+  "2026fmb": {
+    "host_galaxy": "PGC 2809301 (CGMW5-2677)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.028790225844215617
+  },
+  "2026fkw": {
+    "host_galaxy": "PGC 840491 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13522431615339722
+  },
+  "2026flr": {
+    "host_galaxy": "PGC 652265 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09869205926965786
+  },
+  "2026fnu": {
+    "host_galaxy": "PGC 1153421 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08250384948109565
+  },
+  "2026fnx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fkv": {
+    "host_galaxy": "PGC 896606 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11598782294055077
+  },
+  "2026fre": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iai": {
+    "host_galaxy": "PGC 10374 (CGCG524-6)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000725290637106605
+  },
+  "2026fii": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ilm": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fic": {
+    "host_galaxy": "PGC 1701241 (NPM1G+23.0479)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0012713214231474211
+  },
+  "2026ilr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fuk": {
+    "host_galaxy": "PGC 875182",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005437606535576806
+  },
+  "2026gas": {
+    "host_galaxy": "PGC 227500 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11576418395161092
+  },
+  "2026fij": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fhe": {
+    "host_galaxy": "PGC 615800 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10913081950358929
+  },
+  "2026kjg": {
+    "host_galaxy": "PGC 55077 (ESO68-4)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004474130474130092
+  },
+  "2026fgu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fev": {
+    "host_galaxy": "PGC 720326 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06731491065340135
+  },
+  "2026fgk": {
+    "host_galaxy": "PGC 2746421 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08155985821732042
+  },
+  "2026ffj": {
+    "host_galaxy": "PGC 179181 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0966006596755453
+  },
+  "2026ffk": {
+    "host_galaxy": "PGC 179391 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06079708172423722
+  },
+  "2026fji": {
+    "host_galaxy": "PGC 224772",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.019118855673359057
+  },
+  "2026fje": {
+    "host_galaxy": "PGC 585340",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002146216456987764
+  },
+  "2026ffl": {
+    "host_galaxy": "PGC 233051 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13305290167236627
+  },
+  "2026ffi": {
+    "host_galaxy": "PGC 125414 (LCRSB035116.4-420006)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.008945295302942516
+  },
+  "2026idm": {
+    "host_galaxy": "PGC 395286 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11691163586248983
+  },
+  "2026fif": {
+    "host_galaxy": "PGC 637609",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005779877332356413
+  },
+  "2026ffo": {
+    "host_galaxy": "PGC 702553 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05606143591823162
+  },
+  "2026flt": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fds": {
+    "host_galaxy": "PGC 819089",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0023514721121648385
+  },
+  "2026fdv": {
+    "host_galaxy": "PGC 815195",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009620570573818402
+  },
+  "2026fdq": {
+    "host_galaxy": "PGC 2667353 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12583716466658393
+  },
+  "2026fdr": {
+    "host_galaxy": "PGC 2232931 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1397673383555509
+  },
+  "2026fbu": {
+    "host_galaxy": "PGC 2379981",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008482317443398273
+  },
+  "2026fbj": {
+    "host_galaxy": "PGC 2775915 (NPM1G+78.0062)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00036566338863869074
+  },
+  "2026fbo": {
+    "host_galaxy": "PGC 2832039 (GIN545)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0015402071846171892
+  },
+  "2026fbv": {
+    "host_galaxy": "PGC 2086427",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000673421236081602
+  },
+  "2026fet": {
+    "host_galaxy": "PGC 138311 (IRAS01040+2904422329)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0210613565271269
+  },
+  "2026fkq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fbz": {
+    "host_galaxy": "PGC 284651 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.136367525467634
+  },
+  "2026fid": {
+    "host_galaxy": "PGC 217217",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.022008266021483796
+  },
+  "2026fde": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fav": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ezy": {
+    "host_galaxy": "PGC 65337 (ESO47-12)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.008205609149253244
+  },
+  "2026fkg": {
+    "host_galaxy": "PGC 529047 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0570979518321773
+  },
+  "2026ffp": {
+    "host_galaxy": "PGC 218209",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0013623223342165295
+  },
+  "2026ffh": {
+    "host_galaxy": "PGC 268798",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0186396803585637
+  },
+  "2026fou": {
+    "host_galaxy": "PGC 225251",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005119695511123011
+  },
+  "2026his": {
+    "host_galaxy": "PGC 1126309 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13928707113169359
+  },
+  "2026ezp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026hzz": {
+    "host_galaxy": "PGC 1997559 (NPM1G+32.0557) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12728677932734456
+  },
+  "2026ikp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fbe": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026jic": {
+    "host_galaxy": "PGC 140786 (IRAS17341+0540) (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1494277909161185
+  },
+  "2026eyn": {
+    "host_galaxy": "PGC 2041459",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0048261145642176295
+  },
+  "2026ezo": {
+    "host_galaxy": "PGC 20248 (CGCG116-25)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009690549027424047
+  },
+  "2026fse": {
+    "host_galaxy": "PGC 1044159",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005629295531609659
+  },
+  "2026exi": {
+    "host_galaxy": "PGC 575943",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0018881682414572869
+  },
+  "2026fak": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fac": {
+    "host_galaxy": "PGC 1127666 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10027225485410977
+  },
+  "2026eyp": {
+    "host_galaxy": "PGC 741525 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13946744479999354
+  },
+  "2026fmg": {
+    "host_galaxy": "PGC 1214922 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06536799694374816
+  },
+  "2026ewh": {
+    "host_galaxy": "PGC 1937628",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03976208430511159
+  },
+  "2026faj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026exp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eyr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evo": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evn": {
+    "host_galaxy": "PGC 560640 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07534789246970758
+  },
+  "2026ewc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eyo": {
+    "host_galaxy": "PGC 59737 (ESO138-16) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.059590498207457716
+  },
+  "2026euz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eva": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eto": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evk": {
+    "host_galaxy": "PGC 83330 (IRAS10439-2809)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04163748657148225
+  },
+  "2026ezl": {
+    "host_galaxy": "PGC 672048 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07105528439424558
+  },
+  "2026ezz": {
+    "host_galaxy": "PGC 309392 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06637147518625704
+  },
+  "2026ezm": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026esf": {
+    "host_galaxy": "PGC 434303 (WKK920)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004328775521732897
+  },
+  "2026esg": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026erw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026etv": {
+    "host_galaxy": "PGC 75346 (DRCG11-79) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11477675504505443
+  },
+  "2026erc": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eqj": {
+    "host_galaxy": "PGC 43395 (KUG1247+343)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.023545221691525918
+  },
+  "2026him": {
+    "host_galaxy": "PGC 3090052 (NPM1G+19.0082) (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13967348674319757
+  },
+  "2026esb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026epx": {
+    "host_galaxy": "PGC 595125 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11859356359642674
+  },
+  "2026erp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eqz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026epv": {
+    "host_galaxy": "PGC 3603 (UGC622)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006226651337399737
+  },
+  "2026era": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fty": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026fnv": {
+    "host_galaxy": "PGC 1357844",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04510543511324124
+  },
+  "2026eys": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026evw": {
+    "host_galaxy": "PGC 312401",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002983524192561371
+  },
+  "2026epr": {
+    "host_galaxy": "PGC 329630",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.049349020043050876
+  },
+  "2026erb": {
+    "host_galaxy": "PGC 3075860 (WKK3082)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009623112247666135
+  },
+  "2026enq": {
+    "host_galaxy": "PGC 2811042 (CGMW5-4924)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0024154341377302315
+  },
+  "2026iac": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026iad": {
+    "host_galaxy": "PGC 2669632",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.013023176376106043
+  },
+  "2026epo": {
+    "host_galaxy": "PGC 3082084",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03311629681718753
+  },
+  "2026eku": {
+    "host_galaxy": "PGC 1063161 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07416722941368968
+  },
+  "2026epq": {
+    "host_galaxy": "PGC 644028 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08610186627867339
+  },
+  "2026eps": {
+    "host_galaxy": "PGC 803793",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0013774560271240025
+  },
+  "2026eoa": {
+    "host_galaxy": "PGC 801164 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0671153943428206
+  },
+  "2026ejl": {
+    "host_galaxy": "PGC 48721 (MCG10-20-023)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005518297786403085
+  },
+  "2026enw": {
+    "host_galaxy": "PGC 16755 (ESO203-20)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004294771680935636
+  },
+  "2026fil": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026efp": {
+    "host_galaxy": "PGC 1184762",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019323734516384875
+  },
+  "2026ejs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eom": {
+    "host_galaxy": "PGC 1668281 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09693556214506188
+  },
+  "2026ebr": {
+    "host_galaxy": "PGC 2033053",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.046825128440922875
+  },
+  "2026egy": {
+    "host_galaxy": "PGC 1270152 (NPM1G+04.0367) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06891939638329383
+  },
+  "2026egi": {
+    "host_galaxy": "PGC 1177907",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0018206055890363023
+  },
+  "2026egj": {
+    "host_galaxy": "PGC 1334665 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.072646536829577
+  },
+  "2026eao": {
+    "host_galaxy": "PGC 1412732 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0755863577673876
+  },
+  "2026ean": {
+    "host_galaxy": "PGC 79206 (CGMW1-2001) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06079001396000003
+  },
+  "2026eam": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ekq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026egp": {
+    "host_galaxy": "PGC 2782567 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06676326246048844
+  },
+  "2026egk": {
+    "host_galaxy": "PGC 960113",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.018439635623139782
+  },
+  "2026emy": {
+    "host_galaxy": "PGC 478997",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019331773283370647
+  },
+  "2026eaj": {
+    "host_galaxy": "PGC 1506050 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05843338358379605
+  },
+  "2026eau": {
+    "host_galaxy": "PGC 2597892",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009443747724389379
+  },
+  "2026dvu": {
+    "host_galaxy": "PGC 42344",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00016909676255031422
+  },
+  "2026evr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026eas": {
+    "host_galaxy": "PGC 655154",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04934190228887686
+  },
+  "2026eqy": {
+    "host_galaxy": "PGC 238882",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00941794219599216
+  },
+  "2026dzi": {
+    "host_galaxy": "PGC 142122 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08192667288399594
+  },
+  "2026duu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026esh": {
+    "host_galaxy": "PGC 510801 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05506916563081627
+  },
+  "2026drm": {
+    "host_galaxy": "PGC 375426 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11716039073003973
+  },
+  "2026ebj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dvi": {
+    "host_galaxy": "PGC 751244 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10984371932693247
+  },
+  "2026drj": {
+    "host_galaxy": "PGC 27718 (SBS0938+552)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00040365529540424246
+  },
+  "2026ewi": {
+    "host_galaxy": "PGC 2516529",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00013776478433957887
+  },
+  "2026ewj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dsi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ebm": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dsh": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dqw": {
+    "host_galaxy": "PGC 4373 (CGCG520-25) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07337392698846407
+  },
+  "2026ejn": {
+    "host_galaxy": "PGC 910111 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09299131978612214
+  },
+  "2026dml": {
+    "host_galaxy": "PGC 678294",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010427470678088884
+  },
+  "2026dwv": {
+    "host_galaxy": "PGC 75991 (CGMW1-348) (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14918002292017515
+  },
+  "2026dzh": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dsn": {
+    "host_galaxy": "PGC 96562 (WKK4767)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001026122624626705
+  },
+  "2026ehw": {
+    "host_galaxy": "PGC 135733 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0587226326584031
+  },
+  "2026dlg": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dke": {
+    "host_galaxy": "PGC 1949507",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03974041722290356
+  },
+  "2026dos": {
+    "host_galaxy": "PGC 179746 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0645386315729144
+  },
+  "2026dli": {
+    "host_galaxy": "PGC 521525 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10568757117087715
+  },
+  "2026dlj": {
+    "host_galaxy": "PGC 143825 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08074631760477022
+  },
+  "2026djk": {
+    "host_galaxy": "PGC 139019 (IRAS07240+1333) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08793198219879586
+  },
+  "2026dhx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026djl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dgw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dhs": {
+    "host_galaxy": "PGC 34196 (CGCG39-81) (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11117576393083838
+  },
+  "2026dhr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dhq": {
+    "host_galaxy": "PGC 1460115",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01240551211118634
+  },
+  "2026dgs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dbl": {
+    "host_galaxy": "PGC 1562192 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11081582759166642
+  },
+  "2026dlp": {
+    "host_galaxy": "PGC 3075995 (WKK3243)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.011570496838174668
+  },
+  "2026dfu": {
+    "host_galaxy": "PGC 632983",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0430302944219485
+  },
+  "2026dim": {
+    "host_galaxy": "PGC 3074280 (WKK878) (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0660879840839601
+  },
+  "2026dit": {
+    "host_galaxy": "PGC 3074122 (WKK605) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09962014463324126
+  },
+  "2026dlk": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dlm": {
+    "host_galaxy": "PGC 90057 (IRAS07085-7049)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02253123115406435
+  },
+  "2026dig": {
+    "host_galaxy": "PGC 324411",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03113354457928783
+  },
+  "2026dfg": {
+    "host_galaxy": "PGC 1397763",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004041939737093973
+  },
+  "2026dic": {
+    "host_galaxy": "PGC 329844",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.038720024255306434
+  },
+  "2026dib": {
+    "host_galaxy": "PGC 52435 (ESO386-5) (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0628441013238985
+  },
+  "2026dii": {
+    "host_galaxy": "PGC 1026810 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09515213032047562
+  },
+  "2026dhz": {
+    "host_galaxy": "PGC 12610 (HCG26G)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0038164288417273395
+  },
+  "2026diu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dis": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dmr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dif": {
+    "host_galaxy": "PGC 788756",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004953889506574496
+  },
+  "2026dhm": {
+    "host_galaxy": "PGC 875655",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.039636888539423265
+  },
+  "2026dot": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cza": {
+    "host_galaxy": "PGC 1135407 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09137400925908044
+  },
+  "2026dia": {
+    "host_galaxy": "PGC 229148",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00261258348943028
+  },
+  "2026dfw": {
+    "host_galaxy": "PGC 375163",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.008538647483670857
+  },
+  "2026dfv": {
+    "host_galaxy": "PGC 382388 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09669671953351866
+  },
+  "2026cze": {
+    "host_galaxy": "PGC 2770862",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005645335736342672
+  },
+  "2026czk": {
+    "host_galaxy": "PGC 1003280 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05315127449148193
+  },
+  "2026cxf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dgu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026dfh": {
+    "host_galaxy": "PGC 1182346",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.027674943767265262
+  },
+  "2026cus": {
+    "host_galaxy": "PGC 469786",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02558646574955387
+  },
+  "2026cuw": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cwm": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cwk": {
+    "host_galaxy": "PGC 394517",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000800018252704015
+  },
+  "2026did": {
+    "host_galaxy": "PGC 244037 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0534959473579846
+  },
+  "2026cwl": {
+    "host_galaxy": "PGC 367865",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.033517923044411424
+  },
+  "2026din": {
+    "host_galaxy": "PGC 699471 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06894092960902837
+  },
+  "2026cso": {
+    "host_galaxy": "PGC 2828731 (MRC1608+113) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09677717979407181
+  },
+  "2026cwa": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ctp": {
+    "host_galaxy": "PGC 179032 (IRAS06075-4633)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001651326690267182
+  },
+  "2026cry": {
+    "host_galaxy": "PGC 627486",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00022400130996355928
+  },
+  "2026cwb": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026csb": {
+    "host_galaxy": "PGC 759464 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.057893303669381335
+  },
+  "2026crn": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026czh": {
+    "host_galaxy": "PGC 3088558 (NPM1G+35.0395)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008418874865783498
+  },
+  "2026crl": {
+    "host_galaxy": "PGC 700981",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04224476625031599
+  },
+  "2026div": {
+    "host_galaxy": "PGC 483752",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003602155904232154
+  },
+  "2026dqx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cuy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cqc": {
+    "host_galaxy": "PGC 2470588 (NPM1G+54.0278) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08100894113720565
+  },
+  "2026cpv": {
+    "host_galaxy": "PGC 2275166",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0310234556242125
+  },
+  "2026cqj": {
+    "host_galaxy": "PGC 771782 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0696321511690008
+  },
+  "2026cox": {
+    "host_galaxy": "PGC 2783942",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0341684775562149
+  },
+  "2026cqh": {
+    "host_galaxy": "PGC 44354 (UGC8074) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08364191069584713
+  },
+  "2026cqk": {
+    "host_galaxy": "PGC 837533",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.031964354683752465
+  },
+  "2026coj": {
+    "host_galaxy": "PGC 1066826 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08615011032219186
+  },
+  "2026coi": {
+    "host_galaxy": "PGC 23581 (KUG0821+23950) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08801048545367937
+  },
+  "2026coq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ciw": {
+    "host_galaxy": "PGC 2039324",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.038466741854929584
+  },
+  "2026ctb": {
+    "host_galaxy": "PGC 1031046",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.030676964262869536
+  },
+  "2026cpm": {
+    "host_galaxy": "PGC 146825 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06982499696613131
+  },
+  "2026cqd": {
+    "host_galaxy": "PGC 458493",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0034838525257386422
+  },
+  "2026cjp": {
+    "host_galaxy": "PGC 594321",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008726656787097957
+  },
+  "2026cju": {
+    "host_galaxy": "PGC 420874 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09458666539621616
+  },
+  "2026cjm": {
+    "host_galaxy": "PGC 3085551 (vicina, a 0.15°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14796753257779913
+  },
+  "2026cou": {
+    "host_galaxy": "PGC 1401267 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06806107983136957
+  },
+  "2026cjo": {
+    "host_galaxy": "PGC 657400 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05718180627261671
+  },
+  "2026cjr": {
+    "host_galaxy": "PGC 735391 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07828636945847273
+  },
+  "2026fcx": {
+    "host_galaxy": "PGC 35429 (ESO571-4)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0011349606497383189
+  },
+  "2026chy": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cig": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cie": {
+    "host_galaxy": "PGC 148755",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.034538284337369676
+  },
+  "2026cop": {
+    "host_galaxy": "PGC 1356411",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002271309742411292
+  },
+  "2026chf": {
+    "host_galaxy": "PGC 34824 (CGCG96-33)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0037764916727833875
+  },
+  "2026cux": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cjv": {
+    "host_galaxy": "PGC 76522 (CGMW2-382)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001096775849780183
+  },
+  "2026cix": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cif": {
+    "host_galaxy": "PGC 2178204 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10841433494478786
+  },
+  "2026ihv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ceu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cdv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cez": {
+    "host_galaxy": "PGC 436811",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000963027153761044
+  },
+  "2026eqv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cer": {
+    "host_galaxy": "PGC 1636239 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07987254931771179
+  },
+  "2026ceq": {
+    "host_galaxy": "PGC 21047 (MCG3-19-015) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08684296379428329
+  },
+  "2026cmz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cfn": {
+    "host_galaxy": "PGC 2812144 (CGMW5-6642) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10257958810915829
+  },
+  "2026dil": {
+    "host_galaxy": "PGC 154634",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04216577076000889
+  },
+  "2026cct": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cii": {
+    "host_galaxy": "PGC 871562 (NPM1G-18.0061)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.019550630360791944
+  },
+  "2026cbt": {
+    "host_galaxy": "PGC 4044 (UGC704)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00461364158744654
+  },
+  "2026ccz": {
+    "host_galaxy": "PGC 597369 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.053220925472521545
+  },
+  "2026cbz": {
+    "host_galaxy": "PGC 2171531",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0006568943533514678
+  },
+  "2026cda": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cih": {
+    "host_galaxy": "PGC 138893",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 4.367617590805535e-05
+  },
+  "2026ceg": {
+    "host_galaxy": "PGC 240246",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001989462976872464
+  },
+  "2026byv": {
+    "host_galaxy": "PGC 837274",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0003043915586802578
+  },
+  "2026byp": {
+    "host_galaxy": "PGC 1238661",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0033504154595430384
+  },
+  "2026bzi": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ccs": {
+    "host_galaxy": "PGC 616983",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.037338076787219406
+  },
+  "2026bzq": {
+    "host_galaxy": "PGC 2522517",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000833911799810155
+  },
+  "2026cav": {
+    "host_galaxy": "PGC 62539 (CGCG323-4) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08989299959532576
+  },
+  "2026cae": {
+    "host_galaxy": "PGC 887401 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14400635667540512
+  },
+  "2026bzb": {
+    "host_galaxy": "PGC 1510549",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001313583403569016
+  },
+  "2026byz": {
+    "host_galaxy": "PGC 1667896",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0014701578103440977
+  },
+  "2026cdk": {
+    "host_galaxy": "PGC 1057643",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0006100940069499081
+  },
+  "2026bxt": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026bwg": {
+    "host_galaxy": "PGC 2046921 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07947728548625173
+  },
+  "2026bwh": {
+    "host_galaxy": "PGC 3091633 (NPM1G+08.0448) (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.12816642450020355
+  },
+  "2026cef": {
+    "host_galaxy": "PGC 3095633 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07291724571311553
+  },
+  "2026bvs": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026buj": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026bzt": {
+    "host_galaxy": "PGC 2816825 (IRAS12301+4426)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0009311547540281668
+  },
+  "2026cdp": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026brw": {
+    "host_galaxy": "PGC 1211114",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00023456877408576746
+  },
+  "2026cdh": {
+    "host_galaxy": "PGC 2264088 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07216438094058931
+  },
+  "2026bwj": {
+    "host_galaxy": "PGC 2318943",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002710764536676258
+  },
+  "2026cdo": {
+    "host_galaxy": "PGC 455452",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00012092280408186987
+  },
+  "2026bvm": {
+    "host_galaxy": "PGC 2590103",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04879084642925564
+  },
+  "2026bsx": {
+    "host_galaxy": "PGC 61893 (UGC11240)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0036863341930134003
+  },
+  "2026buf": {
+    "host_galaxy": "PGC 1515653 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0665384460958372
+  },
+  "2026bsw": {
+    "host_galaxy": "PGC 751718",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.000739720346439449
+  },
+  "2026bpj": {
+    "host_galaxy": "PGC 2632169 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13937480837292315
+  },
+  "2026bvp": {
+    "host_galaxy": "PGC 183455 (NPM1G-15.0453)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0002429222337837852
+  },
+  "2026brx": {
+    "host_galaxy": "PGC 1592660 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1423704163638469
+  },
+  "2026bph": {
+    "host_galaxy": "PGC 1520921 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07505956950667678
+  },
+  "2026brb": {
+    "host_galaxy": "PGC 1331058 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07227976981974525
+  },
+  "2026bve": {
+    "host_galaxy": "PGC 947830 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08656522378035225
+  },
+  "2026byy": {
+    "host_galaxy": "PGC 834737",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001979822112879892
+  },
+  "2026bvh": {
+    "host_galaxy": "PGC 1007726",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0019781207618568357
+  },
+  "2026bkl": {
+    "host_galaxy": "PGC 2790345 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06443814288284287
+  },
+  "2026bkm": {
+    "host_galaxy": "PGC 97394",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0024942878355194114
+  },
+  "2026bjp": {
+    "host_galaxy": "PGC 1008899",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005059687663946738
+  },
+  "2026dvs": {
+    "host_galaxy": "PGC 2056516",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.028065362573927544
+  },
+  "2026bgx": {
+    "host_galaxy": "PGC 1124157 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08052554061921505
+  },
+  "2026bfj": {
+    "host_galaxy": "PGC 3082339",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0005994609797923835
+  },
+  "2026bcj": {
+    "host_galaxy": "PGC 45011 ([DCL86]467)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04489650812084377
+  },
+  "2026azn": {
+    "host_galaxy": "PGC 1607006",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.018026494977676118
+  },
+  "2026bbq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026azs": {
+    "host_galaxy": "PGC 78603 (ZOAG236.65+3.62) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10423878569063263
+  },
+  "2026azo": {
+    "host_galaxy": "PGC 663758",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04982587966036213
+  },
+  "2026aza": {
+    "host_galaxy": "PGC 3085176",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.005077741010966433
+  },
+  "2026bwu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026awf": {
+    "host_galaxy": "PGC 2670164",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.035590896665948994
+  },
+  "2026azk": {
+    "host_galaxy": "PGC 3814 (ESO79-15)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.006275180662352267
+  },
+  "2026aux": {
+    "host_galaxy": "PGC 2176169 (NPM1G+41.0136) (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.07725132456816174
+  },
+  "2026avr": {
+    "host_galaxy": "PGC 136558 (ZOAG205.43+4.87) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08880142307127785
+  },
+  "2026avq": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026atz": {
+    "host_galaxy": "PGC 790966",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0011876503918215446
+  },
+  "2026aub": {
+    "host_galaxy": "PGC 740508",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00023045088878056625
+  },
+  "2026ayx": {
+    "host_galaxy": "PGC 2238318",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04382007361690028
+  },
+  "2026ash": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026asi": {
+    "host_galaxy": "PGC 751343 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.14267697024061665
+  },
+  "2026arf": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ark": {
+    "host_galaxy": "PGC 146402 (IRAS04323-1028)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0008819428043256132
+  },
+  "2026aqn": {
+    "host_galaxy": "PGC 657601",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00038131102442195275
+  },
+  "2026atu": {
+    "host_galaxy": "PGC 667263 (vicina, a 0.08°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08303283309167633
+  },
+  "2026apo": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026apn": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026bjy": {
+    "host_galaxy": "PGC 3082710 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.059320718168756295
+  },
+  "2026aus": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026aoy": {
+    "host_galaxy": "PGC 35555 (MCG9-19-104) (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.08754640783606865
+  },
+  "2026buy": {
+    "host_galaxy": "PGC 797394 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.051372020606626566
+  },
+  "2026dhv": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026anc": {
+    "host_galaxy": "PGC 1048577 (NPM1G-04.0429)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00027663583659125776
+  },
+  "2026aoz": {
+    "host_galaxy": "PGC 220955",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0024034539442485893
+  },
+  "2026anh": {
+    "host_galaxy": "PGC 1545595",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0004377994419225084
+  },
+  "2026ang": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026anj": {
+    "host_galaxy": "PGC 1050254",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.039837483002740974
+  },
+  "2026alz": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026cgi": {
+    "host_galaxy": "PGC 1270735 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10497393594318034
+  },
+  "2026als": {
+    "host_galaxy": "PGC 3088579 (NPM1G+35.0464)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04931702654131558
+  },
+  "2026btp": {
+    "host_galaxy": "PGC 1146007",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00030907313533467043
+  },
+  "2026alh": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ake": {
+    "host_galaxy": "PGC 573268 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11360628444952917
+  },
+  "2026aos": {
+    "host_galaxy": "PGC 21106 (ESO208-17)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002284133651523115
+  },
+  "2026akw": {
+    "host_galaxy": "PGC 43314 (UM520)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.03954951202605238
+  },
+  "2026aqf": {
+    "host_galaxy": "PGC 1051072 (IRASF22014-0512)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.04711715392234551
+  },
+  "2026alc": {
+    "host_galaxy": "PGC 675915",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0001324147602290826
+  },
+  "2026ajj": {
+    "host_galaxy": "PGC 28609 (MRK711)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007611620699570621
+  },
+  "2026bcn": {
+    "host_galaxy": "PGC 1515122 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.1370189771872095
+  },
+  "2026bco": {
+    "host_galaxy": "PGC 1491776",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.02088459190744677
+  },
+  "2026aii": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026aok": {
+    "host_galaxy": "PGC 877400",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.034152192607651045
+  },
+  "2026aib": {
+    "host_galaxy": "PGC 517307",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00041332257134093673
+  },
+  "2026ava": {
+    "host_galaxy": "PGC 1460354 (NPM1G+14.0504)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0001186714656610296
+  },
+  "2026aef": {
+    "host_galaxy": "PGC 1117749 (vicina, a 0.12°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.11665987689028687
+  },
+  "2026ace": {
+    "host_galaxy": "PGC 798160",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00023072906995223464
+  },
+  "2026abt": {
+    "host_galaxy": "PGC 433110 (RKK3222)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.002872787582720406
+  },
+  "2026ahx": {
+    "host_galaxy": "PGC 382526",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0020774770821246945
+  },
+  "2026blr": {
+    "host_galaxy": "PGC 1272755 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0692168556024694
+  },
+  "2026aar": {
+    "host_galaxy": "PGC 87393",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0014095789971834255
+  },
+  "2026zl": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026vz": {
+    "host_galaxy": "PGC 637372",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.046465146412010265
+  },
+  "2026wa": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026aic": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026wb": {
+    "host_galaxy": "PGC 232047 (vicina, a 0.13°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13477566055584944
+  },
+  "2026us": {
+    "host_galaxy": "PGC 1017017",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00033482407460544325
+  },
+  "2026ve": {
+    "host_galaxy": "PGC 43497 (CGCG43-43)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01921821915256319
+  },
+  "2026uh": {
+    "host_galaxy": "PGC 2069913 (vicina, a 0.07°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06775004625123715
+  },
+  "2026ua": {
+    "host_galaxy": "PGC 2423905 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.06070577830480242
+  },
+  "2026uv": {
+    "host_galaxy": "PGC 149372",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.031218108245977094
+  },
+  "2026ui": {
+    "host_galaxy": "PGC 309145",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.004966266636518968
+  },
+  "2026qp": {
+    "host_galaxy": "PGC 794960",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 6.029238021890997e-05
+  },
+  "2026qg": {
+    "host_galaxy": "PGC 1482051 (vicina, a 0.14°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.13843889422195946
+  },
+  "2026yi": {
+    "host_galaxy": "PGC 689484",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0016078613848615707
+  },
+  "2026uw": {
+    "host_galaxy": "PGC 125272 (LCRSB020139.5-450202)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00017944282944688214
+  },
+  "2026pt": {
+    "host_galaxy": "PGC 55557 (CGCG78-24)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.009684920560828657
+  },
+  "2026pu": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026tc": {
+    "host_galaxy": "PGC 826353",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.001100210499047515
+  },
+  "2026pl": {
+    "host_galaxy": "PGC 1682828",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.01158270388420192
+  },
+  "2026po": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026pa": {
+    "host_galaxy": "PGC 476537",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00020220561340952698
+  },
+  "2026pb": {
+    "host_galaxy": "PGC 53883 (KUG1504+56570)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00030094521916998874
+  },
+  "2026ul": {
+    "host_galaxy": "PGC 394057 (vicina, a 0.06°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.056599130199971606
+  },
+  "2026oh": {
+    "host_galaxy": "PGC 328758",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0010031854875891227
+  },
+  "2026ol": {
+    "host_galaxy": "PGC 413328 (vicina, a 0.05°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.05385708436190351
+  },
+  "2026ph": {
+    "host_galaxy": "PGC 3086586 (NPM1G+63.0073)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.00017624584850432185
+  },
+  "2026oi": {
+    "host_galaxy": "PGC 424893 (vicina, a 0.09°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09120062351068856
+  },
+  "2026no": {
+    "host_galaxy": "PGC 2320905",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0017530707066334926
+  },
+  "2026ot": {
+    "host_galaxy": "PGC 1319883",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.0007574449598256477
+  },
+  "2026nx": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026qt": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ta": {
+    "host_galaxy": "PGC 754853 (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.09981775531581315
+  },
+  "2026ow": {
+    "host_galaxy": "PGC 137044 (ZOAG121.01-6.33) (vicina, a 0.10°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10407999721560124
+  },
+  "2026on": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026ov": {
+    "host_galaxy": "PGC 2149241 (vicina, a 0.11°)",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.10652169134079166
+  },
+  "2026om": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
+  },
+  "2026oo": {
+    "host_galaxy": "PGC 645331",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": 0.018948661239053075
+  },
+  "2026zr": {
+    "host_galaxy": "N/A",
+    "host_galaxy_distance_ly": null,
+    "host_galaxy_separation_deg": null
   }
 }
