@@ -182,8 +182,8 @@ def find_closest_ngc_galaxy(ra, dec, max_radius_deg=0.15):
         print(f"[!] Error finding closest NGC/IC galaxy: {e}")
     return "N/A", None, None
 
-# Configurable constants (defaulting to 150 days = 5 months)
-DAYS_LIMIT = int(os.environ.get("DAYS_LIMIT", "150"))
+# Configurable constants (defaulting to 120 days = 4 months)
+DAYS_LIMIT = int(os.environ.get("DAYS_LIMIT", "120"))
 TNS_ZIP_URL = "https://www.wis-tns.org/system/files/tns_public_objects/tns_public_objects.csv.zip"
 OUTPUT_FILENAME = "supernovae.json"
 
@@ -354,7 +354,7 @@ def fetch_and_parse():
             except ValueError:
                 mag = None
 
-            if mag is None or mag >= 19.0:
+            if mag is None or mag >= 18.5:
                 skipped_count += 1
                 continue
 

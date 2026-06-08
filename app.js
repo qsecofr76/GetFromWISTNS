@@ -848,8 +848,8 @@ function drawRadar(offsetHours) {
     
     // Plot visible Supernovae
     visibleSupernovae.forEach(sn => {
-        // Only plot supernovas brighter than magnitude 17.5 on the celestial radar map
-        if (sn.discoverymag === null || sn.discoverymag >= 17.5) {
+        // Only plot supernovas brighter than magnitude 16.5 on the celestial radar map
+        if (sn.discoverymag === null || sn.discoverymag >= 16.5) {
             return;
         }
         

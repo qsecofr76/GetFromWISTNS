@@ -41,7 +41,7 @@ jobs:
           TNS_BOT_ID: ${{ secrets.TNS_BOT_ID }}
           TNS_BOT_NAME: ${{ secrets.TNS_BOT_NAME }}
           TNS_API_KEY: ${{ secrets.TNS_API_KEY }}
-          DAYS_LIMIT: 150
+          DAYS_LIMIT: 120
         run: python scripts/update_data.py
 
       - name: Commit and Push Updated Data
