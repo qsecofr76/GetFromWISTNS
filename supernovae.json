@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "generated_at": "2026-06-08 20:01:28 UTC",
+    "generated_at": "2026-06-09 19:56:38 UTC",
     "days_limit": 120,
-    "total_count": 535
+    "total_count": 531
   },
   "supernovae": [
     {
@@ -10623,86 +10623,6 @@
       "reporting_group": "ATLAS",
       "source_group": "ATLAS",
       "redshift": null,
-      "reporters": "J. Tonry, L. Denneau, H. Weiland (IfA, University of Hawaii), N. Erasmus, W. Koorts (South African Astronomical Observatory), A. Jordan, V. Suc (UAI, Obstech), M. R. Alarcón, J. Licandro, P. Nichita (IAC), S. J. Smartt, K. W. Smith (Oxford/QUB), D. R. Young, M. Nicholl, M. Fulton, M. McCollum, T. Moore, J. Weston, X. Sheng, C. R. Angus, A. Wilson, A. Aamer, D. Magill, P. J. Broda, A. J. Smith (QUB), P. Ramsden (Birmingham/QUB), L. Shingles (GSI/QUB), S. Srivastav, J. H. Gillanders, H. Stevance, A. J. Cooper, F. Stoppa, J. Tweddle, L. Eastman (Oxford), L. Rhodes (TSI/McGill), A. Rest (STScI), T.-W. Chen (NCU), C. Stubbs (Harvard), J. S. Sommer (LMU), B. P. Schmidt (ANU)"
-    },
-    {
-      "objid": 200805,
-      "name": "2026cqc",
-      "prefix": "AT",
-      "ra": 288.86575,
-      "dec": 54.405028,
-      "type": "Supernova (Unclassified)",
-      "constellation": "Cygnus",
-      "host_galaxy": "PGC 2470588 (NPM1G+54.0278) (vicina, a 0.08°)",
-      "host_galaxy_distance_ly": null,
-      "host_galaxy_separation_deg": 0.08100894113720565,
-      "discoverydate": "2026-02-09 12:37:35.904",
-      "discoverymag": 16.4,
-      "discmagfilter": "0",
-      "filter": "Other",
-      "reporting_group": "MASTER",
-      "source_group": "MASTER",
-      "redshift": null,
-      "reporters": "T.Migal, V.Lipunov, E.Gorbovskoy, A.Kuznetsov, K.Zhirkov, I.Panchenko, N.Tiurina, P.Balanutsa, V.Topolev, D.Vlasenko, G.Antipov, A.Sankovich, Yu.Tselik, Ya.Kechin, V.Senik, A.Chasovnikov, K.Labsina, I. Gorbunov (Lomonosov MSU), O.Gress, N.Budnev (ISU), C.Francile, F. Podesta, R.Podesta, E. Gonzalez (Observatorio Astronomico Felix Aguilar (OAFA), A. Tlatov, D. Dormidontov (Kislovodsk Solar Station of the Pulkovo Observatory), A.Sosnovskij (CrAO), A. Gabovich, V.Yurkov (Blagoveschensk Educational StateUniversity), D.Buckley (SAAO), R.Rebolo (The Instituto de Astrofisica de Canarias), L.Carrasco, J.R.Valdes, V.Chavushyan, V.M.Patino Alvarez, J.Martinez, A.R.Corella, L.H.Rodriguez (INAOE, Guillermo Haro Astrophysics Observatory)"
-    },
-    {
-      "objid": 200798,
-      "name": "2026cpv",
-      "prefix": "AT",
-      "ra": 290.735875,
-      "dec": 46.083611,
-      "type": "Supernova (Unclassified)",
-      "constellation": "Cygnus",
-      "host_galaxy": "PGC 2275166",
-      "host_galaxy_distance_ly": null,
-      "host_galaxy_separation_deg": 0.0310234556242125,
-      "discoverydate": "2026-02-09 12:11:49.344",
-      "discoverymag": 15.8,
-      "discmagfilter": "0",
-      "filter": "Other",
-      "reporting_group": "MASTER",
-      "source_group": "MASTER",
-      "redshift": null,
-      "reporters": "T.Migal, V.Lipunov, E.Gorbovskoy, A.Kuznetsov, K.Zhirkov, I.Panchenko, N.Tiurina, P.Balanutsa, V.Topolev, D.Vlasenko, G.Antipov, A.Sankovich, Yu.Tselik, Ya.Kechin, V.Senik, A.Chasovnikov, K.Labsina, I. Gorbunov (Lomonosov MSU), O.Gress, N.Budnev (ISU), C.Francile, F. Podesta, R.Podesta, E. Gonzalez (Observatorio Astronomico Felix Aguilar (OAFA), A. Tlatov, D. Dormidontov (Kislovodsk Solar Station of the Pulkovo Observatory), A.Sosnovskij (CrAO), A. Gabovich, V.Yurkov (Blagoveschensk Educational StateUniversity), D.Buckley (SAAO), R.Rebolo (The Instituto de Astrofisica de Canarias), L.Carrasco, J.R.Valdes, V.Chavushyan, V.M.Patino Alvarez, J.Martinez, A.R.Corella, L.H.Rodriguez (INAOE, Guillermo Haro Astrophysics Observatory)"
-    },
-    {
-      "objid": 200812,
-      "name": "2026cqj",
-      "prefix": "AT",
-      "ra": 194.545517,
-      "dec": -26.124483,
-      "type": "Supernova (Unclassified)",
-      "constellation": "Hydra",
-      "host_galaxy": "PGC 771782 (vicina, a 0.07°)",
-      "host_galaxy_distance_ly": null,
-      "host_galaxy_separation_deg": 0.0696321511690008,
-      "discoverydate": "2026-02-09 06:46:39.360",
-      "discoverymag": 18.287,
-      "discmagfilter": "72",
-      "filter": "orange",
-      "reporting_group": "ATLAS",
-      "source_group": "ATLAS",
-      "redshift": null,
-      "reporters": "J. Tonry, L. Denneau, H. Weiland (IfA, University of Hawaii), N. Erasmus, W. Koorts (South African Astronomical Observatory), A. Jordan, V. Suc (UAI, Obstech), M. R. Alarcón, J. Licandro, P. Nichita (IAC), S. J. Smartt, K. W. Smith (Oxford/QUB), D. R. Young, M. Nicholl, M. Fulton, M. McCollum, T. Moore, J. Weston, X. Sheng, C. R. Angus, A. Wilson, A. Aamer, D. Magill, P. J. Broda, A. J. Smith (QUB), P. Ramsden (Birmingham/QUB), L. Shingles (GSI/QUB), S. Srivastav, J. H. Gillanders, H. Stevance, A. J. Cooper, F. Stoppa, J. Tweddle, L. Eastman (Oxford), L. Rhodes (TSI/McGill), A. Rest (STScI), T.-W. Chen (NCU), C. Stubbs (Harvard), J. S. Sommer (LMU), B. P. Schmidt (ANU)"
-    },
-    {
-      "objid": 200809,
-      "name": "2026cqg",
-      "prefix": "SN",
-      "ra": 180.996535,
-      "dec": -33.33104125,
-      "type": "SN Ia",
-      "constellation": "Hydra",
-      "host_galaxy": "PGC 678147",
-      "host_galaxy_distance_ly": null,
-      "host_galaxy_separation_deg": 0.04512125172758072,
-      "discoverydate": "2026-02-09 06:05:36.096",
-      "discoverymag": 18.215,
-      "discmagfilter": "72",
-      "filter": "orange",
-      "reporting_group": "ATLAS",
-      "source_group": "ATLAS",
-      "redshift": 0.054,
       "reporters": "J. Tonry, L. Denneau, H. Weiland (IfA, University of Hawaii), N. Erasmus, W. Koorts (South African Astronomical Observatory), A. Jordan, V. Suc (UAI, Obstech), M. R. Alarcón, J. Licandro, P. Nichita (IAC), S. J. Smartt, K. W. Smith (Oxford/QUB), D. R. Young, M. Nicholl, M. Fulton, M. McCollum, T. Moore, J. Weston, X. Sheng, C. R. Angus, A. Wilson, A. Aamer, D. Magill, P. J. Broda, A. J. Smith (QUB), P. Ramsden (Birmingham/QUB), L. Shingles (GSI/QUB), S. Srivastav, J. H. Gillanders, H. Stevance, A. J. Cooper, F. Stoppa, J. Tweddle, L. Eastman (Oxford), L. Rhodes (TSI/McGill), A. Rest (STScI), T.-W. Chen (NCU), C. Stubbs (Harvard), J. S. Sommer (LMU), B. P. Schmidt (ANU)"
     }
   ]
